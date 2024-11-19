@@ -27,19 +27,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link active" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about-menu">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#our-it-services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Support</a>
+            <a class="nav-link" href="#support">Support</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#contact-menu">Contact</a>
           </li>
         </ul>
       </div>
@@ -83,11 +83,20 @@
 
   <!-- About Section -->
   <section id="section2" class="py-5">
-    <div class="container my-auto">
+    <div id="about-menu" class="container my-auto">
       <div class="d-flex justify-content-center align-items-center">
         <div class="col-md-10">
-          <svg id="svg-square" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600"><path d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969" fill="hsl(103, 69%, 60%)"></path><path d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 " fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0" stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path></svg>
-          <h2 class="text-center mb-5 fs-1 fw-bold">ABOUT CCP</h2>
+          <svg id="svg-square" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600">
+            <path
+              d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969"
+              fill="hsl(103, 69%, 60%)"></path>
+            <path
+              d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 "
+              fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0"
+              stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+          </svg>
+          <h2  class="text-center mb-5 fs-1 fw-bold about-ccp">ABOUT CCP</h2>
           <p class="fs-3 bold-text">
             Founded in 1993 by John Hellinckx, CCP is a full-service IT provider with a rich history of technological
             evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
@@ -100,40 +109,33 @@
             their core business goals, driving success, growth, and profitability.
           </p>
           <br>
-          <p class="fs-3 bold-text">
+          <p id="our-it-services" class="fs-3 bold-text">
             Not every organization can afford an in-house IT specialist—this is where we come in, acting as your
             dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
             high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
             at competitive rates.
           </p>
-          <div class="d-flex justify-content-center mt-5">
-            <button class="styled-button mt-5 btn-lg" type="button" data-bs-toggle="collapse"
+          <div  class="d-flex justify-content-center mt-5">
+            <button  class="styled-button mt-5 btn-lg" type="button" data-bs-toggle="collapse"
               data-bs-target="#services-grid" aria-expanded="false" aria-controls="services-grid">
               Our IT Services
               <div class="inner-button">
-                <svg
-                  id="Arrow"
-                  viewBox="0 0 32 32"
-                  xmlns="http://www.w3.org/2000/svg"
-                  height="30px"
-                  width="30px"
-                  class="icon"
-                >
+                <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px"
+                  class="icon">
                   <defs>
                     <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
                       <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
                       <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
                     </linearGradient>
                   </defs>
-                  <path
-                    fill="url(#iconGradient)"
-                    d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"
-                  ></path>
+                  <path fill="url(#iconGradient)"
+                    d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z">
+                  </path>
                 </svg>
               </div>
             </button>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -163,7 +165,7 @@
             </div>
 
             <!-- End-User Support -->
-            <div class="col-md-4">
+            <div  class="col-md-4">
               <div class="card service-card text-center p-3">
                 <div>
                   <i class="bi bi-person-fill service-icon"></i>
@@ -244,6 +246,112 @@
   </section>
 
 
+  <section id="support">
+    <div class="container my-auto ">
+      <div class="d-flex justify-content-center align-items-center">
+        <div class="col-md-10">
+          <svg id="svg-square" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600">
+            <path
+              d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969"
+              fill="hsl(103, 69%, 60%)"></path>
+            <path
+              d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 "
+              fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0"
+              stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+          </svg>
+          <h2  class="text-center mb-5 fs-1 fw-bold about-ccp">SUPPORT</h2>
+
+          <div class="container my-auto pt-5">
+            <div class="d-flex justify-content-center align-items-center flex-column">
+              <div class="col-md-8 download-card">
+                <h3 class="text-center">ISL (Remote Support) <span></span></h3>
+                <p class="fs-4 pt-3">ISL Remote Support is a software for remote assistance that allows secure access and control of devices, ideal for IT support and remote management.</p>
+
+                  <div class="text-center mt-4">
+                    <a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.htm" target="_blank" download class="text-decoration-none m-5 styled-button d-inline-flex align-items-center justify-content-center">
+                      Download ISL
+                      <div class="inner-button ms-2">
+                        <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
+                          <defs>
+                            <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+                              <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+                              <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+                            </linearGradient>
+                          </defs>
+                          <path fill="url(#iconGradient)"
+                            d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z">
+                          </path>
+                        </svg>
+                      </div>
+                    </a>
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <svg id="svg-square-3" xmlns="http://www.w3.org/2000/svg" version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600">
+      <path
+        d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969"
+        fill="hsl(103, 69%, 60%)"></path>
+      <path
+        d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 "
+        fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0"
+        stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+    </svg>
+      <h2 id="contact-menu" class="text-center mb-5 fs-1 fw-bold about-ccp">CONTACT</h2>
+        <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="custom-card-form">
+              
+                <div class="p-4">
+                    <form action="#" method="POST" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label" style="color: #fff;">Full Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                            <div class="invalid-feedback" style="color: #fff;">Please enter your name.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" style="color: #fff;">Email Address</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="youremail@example.com" required>
+                            <div class="invalid-feedback" style="color: #fff;">Please enter a valid email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label" style="color: #fff;">Subject</label>
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                            <div class="invalid-feedback" style="color: #fff;">Please enter a subject.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label" style="color: #fff;">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                            <div class="invalid-feedback" style="color: #fff;">Please enter your message.</div>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+                            <label class="form-check-label" for="consent" style="color: #fff;">
+                                I agree to have my data collected and stored for the purpose of contacting me.
+                            </label>
+                            <div class="invalid-feedback" style="color: #fff;">You must agree before submitting.</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
   <!-- Footer -->
   <footer class=" text-light pt-5 pb-4">
@@ -278,31 +386,15 @@
             <li><a href="#" class="text-light text-decoration-none">Terms</a></li>
           </ul>
         </div>
-        <!-- Social Media -->
-        <div class="col-md-4">
-          <h5 class="text-uppercase fw-bold">Follow Us</h5>
-          <p>Stay connected through our social platforms.</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-light fs-4">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="text-light fs-4">
-              <i class="bi bi-twitter"></i>
-            </a>
-            <a href="#" class="text-light fs-4">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="#" class="text-light fs-4">
-              <i class="bi bi-linkedin"></i>
-            </a>
-          </div>
-        </div>
+        <!-- BADGE co2 -->
+        <div id="wcb" class="carbonbadge col-md-4"></div>
+<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       </div>
       <hr class="bg-light" />
       <!-- Footer Bottom -->
       <div class="row mt-3">
         <div class="col text-center">
-          <p class="mb-0">&copy;  <span id="current-year"></span> CCP. All Rights Reserved.</p>
+          <p class="mb-0">&copy; <span id="current-year"></span> CCP. All Rights Reserved.</p>
         </div>
       </div>
     </div>

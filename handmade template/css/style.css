@@ -14,6 +14,22 @@ svg {
     top: -1px; 
 }
 
+/*=== Sections ===*/ 
+
+#support{
+
+  display: block;
+  position: relative;
+  bottom:10rem ;
+}
+#section2{
+  display: block;
+  position: relative;
+  top: -165px;
+}
+
+
+
 
 
 .bold-text {
@@ -84,6 +100,58 @@ svg {
   }
 }
 
+
+/*Custom Form Card */
+
+.custom-card-form {
+  background-color: #1c1c1c;
+  background-image: url(../image/ssspot.svg);
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+.custom-card-header {
+  background-color: #32CD32; /* Lime green */ 
+  color: #000;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.btn-primary {
+  background-color: #32CD32; /* Lime green */
+  border-color: #32CD32;
+}
+.btn-primary:hover {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.form-control, .form-select {
+  background-color: #2b2b2b;
+  color: #fff; /* White text inside inputs */
+  border: 1px solid #3a3a3a;
+}
+.form-control::placeholder, .form-select::placeholder {
+  color: #ccc; /* Placeholder text color */
+}
+.form-control:focus, .form-select:focus {
+  background-color: #333;
+  color: #fff; /* Focused input text color */
+  border-color: #32CD32;
+  box-shadow: 0 0 5px #32CD32;
+}
+.form-check-input {
+  background-color: #2b2b2b;
+  border-color: #32CD32;
+}
+.form-check-input:checked {
+  background-color: #32CD32;
+  border-color: #32CD32;
+}
+textarea {
+  resize: none; /* Disable resizing */
+}
 /*=======FOOTER=========*/
 footer {
   background: url('../image/ssscribble.svg') no-repeat center center;
@@ -105,6 +173,14 @@ footer {
   position: relative;
   left: 5rem;
   top: 12rem;
+}
+#svg-square-3{
+  width: 20rem;
+  display: flex;
+  position: relative;
+  top: 11rem;
+  right: 14rem;
+
 }
 /*button classes*/
 .styled-button {
