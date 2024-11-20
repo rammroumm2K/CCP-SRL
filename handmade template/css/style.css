@@ -28,6 +28,20 @@ svg {
   top: -165px;
 }
 
+#contact-block{
+  display: block;
+  position: relative;
+  top: -220px;
+}
+
+.why-icon-style{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 255, 0, 0.4);
+}
+
 
 
 
