@@ -101,19 +101,6 @@ svg {
   min-height: 350px; /* Altezza minima per le carte */
 }
 
-/* Responsive styling */
-@media (max-width: 768px) {
-  .service-card {
-    min-height: 300px; /* Altezza per dispositivi mobili */
-  }
-}
-
-@media (min-width: 1200px) {
-  .service-card {
-    min-height: 400px; /* Altezza per grandi monitor */
-  }
-}
-
 
 /*Custom Form Card */
 
@@ -196,6 +183,16 @@ footer {
   right: 14rem;
 
 }
+#circle-svg {
+  width: 50%; 
+  height: auto; 
+  display: block;
+  position: absolute; 
+  top: 150rem; 
+  right: 15rem; 
+   z-index: -2;
+}
+
 /*button classes*/
 .styled-button {
   position: relative;
@@ -274,4 +271,61 @@ footer {
   filter: drop-shadow(0 10px 20px rgba(50, 50, 50, 1))
     drop-shadow(0 0 20px rgba(2, 2, 2, 1));
   transform: rotate(90deg) scale(1.1); /* Enhance hover effect */
+}
+
+
+/* Accordion button styles */
+.lime-accordion {
+  background-color: #f8f9fa !important; /* Light background */
+  color: #333 !important; /* Dark text */
+  border: 1px solid #ddd !important; /* Light border */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+.lime-accordion:hover,
+.lime-accordion:focus {
+  transform: scale(0.95); /* Zoom out effect */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef !important; /* Slightly darker when expanded */
+  color: #212529 !important; /* Keep the text readable */
+  box-shadow: none; /* Remove shadow on active state */
+}
+
+.accordion-item {
+  border: none; /* Remove default border between items */
+  margin-bottom: 10px; /* Add spacing between accordion items */
+}
+
+.accordion-body {
+  background-color: #fff; /* White background for body */
+  border: 1px solid #ddd; /* Border for the body content */
+  border-top: none; /* Seamless integration with header */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+
+
+/*=== Responsive CSS for Tablebt and Mobile ===*/
+
+/* Mobile (fino a 767px) */
+@media (max-width: 767px) {
+  .service-card {
+    min-height: 300px; 
+  }
+}
+
+/* Tablet (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+}
+
+/* PC (da 1025px in su) */
+@media (min-width: 1025px) {
+  service-card {
+    min-height: 400px; /* Altezza per grandi monitor */
+  }
 }

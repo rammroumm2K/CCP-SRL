@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CCP Template</title>
+  <title>CCP SRL</title>
+  <!-- Customize browser tab color for mobile -->
+  <meta name="theme-color" content="#98c379"> 
+  <!--Logo browser-->
+  <link rel="icon" type="image/x-icon" href="/image/LOGO/ccp-_logo.png" >
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
@@ -248,7 +252,7 @@
   </section>
 
 
-  <section id="support">
+  <section id="support" class="bg-light pb-5" >
     <div class="container my-auto ">
       <div class="d-flex justify-content-center align-items-center">
         <div class="col-md-10">
@@ -270,24 +274,24 @@
                 <h3 class="text-center">ISL (Remote Support) <span></span></h3>
                 <p class="fs-4 pt-3">ISL Remote Support is a software for remote assistance that allows secure access and control of devices, ideal for IT support and remote management.</p>
 
-                  <div class="text-center mt-4">
-                    <a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.htm" target="_blank" download class="text-decoration-none m-5 styled-button d-inline-flex align-items-center justify-content-center">
-                      Download ISL
-                      <div class="inner-button ms-2">
-                        <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
-                          <defs>
-                            <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
-                              <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
-                              <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
-                            </linearGradient>
-                          </defs>
-                          <path fill="url(#iconGradient)"
-                            d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z">
-                          </path>
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
+                <div class="text-center mt-4">
+                  <a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.html" target="_blank" class="text-decoration-none styled-button d-inline-flex align-items-center justify-content-center">
+                    Download ISL
+                    <div class="inner-button ms-2">
+                      <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
+                        <defs>
+                          <linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+                            <stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+                            <stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+                          </linearGradient>
+                        </defs>
+                        <path fill="url(#iconGradient)"
+                          d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z">
+                        </path>
+                      </svg>
+                    </div>
+                  </a>
+                </div>
                   
               </div>
             </div>
@@ -299,6 +303,8 @@
       </div>
     </div>
   </section>
+  <img id="circle-svg" src="image/vvvortex.svg" alt="circile" />
+
 
   <div id="contact-block" class="container my-5">
     <div class="row justify-content-center">
@@ -390,54 +396,148 @@
   </div>
 </section>
 
-
-
-  <!-- Footer -->
-  <footer class=" text-light pt-5 pb-4">
-    <div class="container">
-      <div class="row">
-        <!-- Company Info -->
-        <div class="col-md-4 mb-4">
-          <h5 class="text-uppercase fw-bold">CCP</h5>
-          <p>
-            Creating innovative and tailored solutions to help businesses thrive
-            in the digital era. Connect with us for cutting-edge technology and
-            support.
-          </p>
+<section class="faq-section py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 mb-5 fs-1 fw-bold about-ccp">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            How can I register for your services?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body mt-3">
+            You can register for our services by filling out the form on the <a href="#contact-menu" class="text-decoration-none">contact</a> form.
+          </div>
         </div>
-        <!-- Quick Links -->
-        <div class="col-md-2 mb-4">
-          <h5 class="text-uppercase fw-bold">Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-            <li><a href="#" class="text-light text-decoration-none">About</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Services</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
-          </ul>
-        </div>
-        <!-- Resources -->
-        <div class="col-md-2 mb-4">
-          <h5 class="text-uppercase fw-bold">Resources</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Cookies</a></li>
-            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Policy & Privacy</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Terms</a></li>
-          </ul>
-        </div>
-        <!-- BADGE co2 -->
-        <div id="wcb" class="carbonbadge col-md-4"></div>
-<script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
       </div>
-      <hr class="bg-light" />
-      <!-- Footer Bottom -->
-      <div class="row mt-3">
-        <div class="col text-center">
-          <p class="mb-0">&copy; <span id="current-year"></span> CCP. All Rights Reserved.</p>
+
+
+
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Are there any hidden costs in your pricing?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body mt-3">
+            No, our pricing is transparent. All costs are clearly outlined in our quotes, and there are no hidden fees.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            What should I do if I encounter an issue with the service?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body mt-3">
+            If you encounter any issues, you can contact our support team from 9:00 AM to 6:00 PM, Monday to Friday.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Can I customize your services to meet my needs?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body mt-3">
+            Absolutely! We offer fully customizable services. Contact us with your requirements, and we’ll provide a tailored solution.
+          </div>
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSix">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+            Where is the CCP office located?
+          </button>
+        </h2>
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+          <div class="accordion-body mt-3">
+            The CCP office is located at Rue Van Eyck 22, 1000 Brussels, Belgium.
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Footer -->
+<footer class="text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+      <!-- Company Info -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold">CCP</h5>
+        <p>
+          Creating innovative and tailored solutions to help businesses thrive
+          in the digital era. Connect with us for cutting-edge technology and
+          support.
+        </p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase fw-bold">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="#about-menu" class="text-light text-decoration-none">About</a></li>
+          <li><a href="#our-it-services" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="#contact-menu" class="text-light text-decoration-none">Contact</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Why Choose Us</a></li>
+        </ul>
+      </div>
+      <!-- Resources -->
+      <div class="col-md-2 mb-4">
+        <h5 class="text-uppercase fw-bold">Resources</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Cookies</a></li>
+          <li><a href="#faqs" class="text-light text-decoration-none">FAQs</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Policy & Privacy</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Terms</a></li>
+        </ul>
+      </div>
+      <!-- BADGE CO2 and Maps -->
+      <div class="col-md-4 mb-4 d-flex flex-column align-items-center">
+        <div id="wcb" class="carbonbadge mb-3"></div>
+        <script src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js" defer></script>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.588626906843!2d4.3654296775229735!3d50.82026006066697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4ee169e2a49%3A0x7094246845ea0297!2sCCP%20SRL!5e0!3m2!1ses!2sbe!4v1732101548783!5m2!1ses!2sbe" 
+          width="300" 
+          height="200" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    <hr class="bg-light" />
+    <!-- Footer Bottom -->
+    <div class="row mt-3">
+      <div class="col text-center">
+        <p class="mb-0">&copy; <span id="current-year"></span> CCP. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -445,7 +545,8 @@
   <script src="js/script.js"></script>
    <!-- Font Awesome -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
+<!--GCaptcha-->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 
