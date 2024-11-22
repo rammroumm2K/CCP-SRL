@@ -21,6 +21,7 @@ svg {
   display: block;
   position: relative;
   bottom:10rem ;
+  z-index: -1;
 }
 #section2{
   display: block;
