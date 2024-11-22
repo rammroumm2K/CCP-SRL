@@ -238,7 +238,7 @@ body {
   display: inline-block;
   width: 2px; /* Più visibile */
   height: 1em; /* Allineato all'altezza del testo */
-  background-color: #0d6efd; /* Colore del cursore */
+  background-color: #00d412; /* Colore del cursore */
   margin-left: 2px; /* Spazio tra testo e cursore */
   animation: blink 0.7s infinite; /* Lampeggia */
 }
