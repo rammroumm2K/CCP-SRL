@@ -181,6 +181,11 @@ body {
   color: #71ff8d !important;
 }
 
+textarea {
+  resize: none;
+}
+
+
 /*Footer*/
 
 /* Footer styles */
@@ -228,24 +233,28 @@ body {
 
 /* Fade-in animation class */
 .animate-fade-in {
-  opacity: 0; /* Inizia invisibile */
+  opacity: 0; 
   animation: fadeIn 1s ease-out forwards;
-  animation-delay: 0s; /* Ritardo personalizzabile */
+  animation-delay: 0s; 
 }
 
 /* Cursor style*/
 .typed-cursor {
   display: inline-block;
-  width: 2px; /* Più visibile */
-  height: 1em; /* Allineato all'altezza del testo */
-  background-color: #00d412; /* Colore del cursore */
-  margin-left: 2px; /* Spazio tra testo e cursore */
-  animation: blink 0.7s infinite; /* Lampeggia */
+  width: 2px; 
+  height: 1em; 
+  background-color: #00d412; 
+  margin-left: 2px; 
+  animation: blink 0.7s infinite; 
 }
 @keyframes blink {
   50% {
       opacity: 0;
   }
+}
+
+.icon{
+  color: #00e42e;
 }
 
 
