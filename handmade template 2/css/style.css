@@ -16,6 +16,11 @@ body {
 
   }
 
+  #text-services{
+    text-shadow: 0 5px 50px rgb(0, 0, 0);
+    font-weight: bold;
+  }
+
 
   .service-what{
     color: greenyellow;
@@ -36,6 +41,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     color: #ffffff;
+    
   }
   .hero-subtitle {
     font-size: 1.25rem;
@@ -69,24 +75,33 @@ body {
    z-index: -10;
    display: block;
    position: absolute;
-   right: 150vh;
-   top: 140vh;
-   width: 150vh;
+   right: 90em;
+   bottom: 5em;
+   width: 150em;
    
   }
 
+  #title-container {
+    position: relative; /* Necessario per il posizionamento assoluto */
+    display: inline-block; /* Adatta il contenitore alla larghezza del titolo */
+    
+  }
+
+ 
+
   #pointer-svg{
-    display: block;
+    
     position: absolute;
     z-index: -1;
-    width: 15rem;
-    left: 43vh;
+    width: 15em;
+    right: 25em;
+  
   }
 
   #contact-svg{
     display: block;
     position: absolute;
-    width: 100vh;
+    
     top:12rem;
     left: 2rem;
     z-index: -1;
@@ -297,7 +312,7 @@ textarea {
 /*RESPONSIVE CSS*/
 
 /* Mobile devices */
-@media (max-width: 600px) {
+@media (max-width: 990px) {
 
   #bg-svg {
     display: none;
@@ -308,6 +323,24 @@ textarea {
   #contact-svg {
     display: none;
   }
+
+  #get-in{
+    margin-top: 5em;
+    
+  }
+  section{
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  .hero-section{
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  
+  
+  
   
 }
 
@@ -323,32 +356,24 @@ textarea {
   #navbar {}
   #blur-green {}
   #bg-svg {}
-  #pointer-svg {}
-  #contact-svg {}
-  .custom-btn {}
-  .custom-btn:hover {}
-  .custom-btn:active {}
-  .custom-btn::after {}
-  .service-card {}
-  #modern-navbar {}
-  #modern-navbar .logo {}
-  #modern-navbar .logo:hover {}
-  .navbar-nav .nav-link {}
-  .navbar-nav .nav-link::after {}
-  .navbar-nav .nav-link:hover {}
-  textarea {}
-  #minimal-footer {}
-  .footer-link {}
-  .footer-links li {}
-  .footer-links li:not(:last-child) {}
-  .animate-fade-in {}
-  .typed-cursor {}
-  .icon {}
-  .icon-2 {}
+  #pointer-svg {
+    position: static;
+    left: 5em;
+
+  }
+  #contact-svg {
+    display: none;
+  }
+  
 }
 
 /* Large monitors */
-@media (min-width: 1025px) {
+@media (min-width: 1930px) {
+  .container {
+    max-width: 100% !important; /* Forza larghezza piena */
+    padding-left: 20em;
+    padding-right: 20em;
+  }
   .gg {}
   .service-what {}
   .hero-section {}
