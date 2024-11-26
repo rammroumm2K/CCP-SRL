@@ -57,12 +57,34 @@ body {
     height: 10vh;
     
   }
+  /* SVG */
   #blur-green{
     display: block;
     position: absolute;
     z-index: -100;
 
   }
+
+  #bg-svg{
+   z-index: -10;
+   display: block;
+   position: absolute;
+   right: 150vh;
+   top: 140vh;
+   width: 150vh;
+   
+  }
+
+  #pointer-svg{
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 15rem;
+    left: 43vh;
+  }
+
+  
+
 
   /*== BUTTON STYLE ==*/
   .custom-btn {
