@@ -44,15 +44,20 @@
   
   
  <!-- Contact Section-->
- <section id="get-in" class="py-3 py-md-5 ">
+ <section id="get-in" class="py-3 py-md-5 mb-5  ">
   <div class="container">
     <div class="row gy-3 gy-md-4 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">
         <div class="row justify-content-xl-center">
           <div class="col-12 col-xl-11">
             
-            <h1 class="h1 mb-3 text-light hero-title animate-fade-in" style="animation-delay: 0.1s;"><img id="contact-svg" src="/image/contact.svg" class="animate-fade-in" alt="contact">Get in touch</h1>
+            <div id="text-get-in">
+                <h1 class="h1 mb-3 text-light hero-title animate-fade-in" style="animation-delay: 0.1s;">
+                
+                <img id="contact-svg" src="/image/contact.svg" class="animate-fade-in" alt="contact">Get in touch</h1>
             <p class="lead fs-4 text-light mb-5 animate-fade-in" style="animation-delay: .2s;">"Get in touch with us using the methods below, and we'll respond as soon as possible.</p>
+              </div>
+              
             <div class="d-flex mb-5 animate-fade-in" style="animation-delay: 0.4s;">
               <div class="me-4 icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
@@ -88,7 +93,7 @@
         <div class="bg-black text-light border border-success shadow-sm overflow-hidden animate-fade-in" style="animation-delay: 0.6s;">
 
           <form id="bsb-contact-2" action="./process-contact-2.php" data-bsb-form-loading="Please wait..." data-bsb-form-error="Your email could not be sent. Please wait a few minutes before you try again.">
-            <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+            <div class="row gy-4 gy-xl-5 p-4 mb-5 p-xl-5">
               <div class="col-12">
                 <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
                 <input type="text" class="form-control" id="fullname" name="fullname" value="" required="">
@@ -141,15 +146,14 @@
 </section>
 
   
-
-   <!--Footer-->
-   <footer id="minimal-footer" class="text-center py-4">
+  <!--Footer-->
+  <footer id="minimal-footer" class="text-center py-4">
     <div class="container">
       <p class="mb-2">&copy; <span id="current-year"></span> CCP SRL. All rights reserved.</p>
       <ul class="footer-links d-flex justify-content-center list-unstyled">
-        <li class="mx-3"><a href="#" class="footer-link">Privacy Policy</a></li>
-        <li class="mx-3"><a href="#" class="footer-link">Terms of Service</a></li>
-        <li class="mx-3"><a href="#" class="footer-link">Contact</a></li>
+        <li class="mx-3"><a href="privacy.html" class="footer-link">Privacy Policy</a></li>
+        <li class="mx-3"><a href="terms.html" class="footer-link">Terms of Service</a></li>
+        <li class="mx-3"><a href="contact.html" class="footer-link">Contact</a></li>
         <li class="mx-3"><a href="#" class="footer-link">Cookies</a></li>
       </ul>
     </div>

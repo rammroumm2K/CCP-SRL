@@ -71,15 +71,7 @@ body {
 
   }
 
-  #bg-svg{
-   z-index: -10;
-   display: block;
-   position: absolute;
-   right: 90em;
-   bottom: 5em;
-   width: 150em;
-   
-  }
+
 
   #title-container {
     position: relative; /* Necessario per il posizionamento assoluto */
@@ -98,15 +90,47 @@ body {
   
   }
 
+  #text-services{
+    position: relative;
+    display: inline-block;
+  }
+
+  #bg-svg{
+    z-index: -10;
+    pointer-events: none ;
+    position: absolute;
+    right: 0;
+    top: -20em;
+    width: 100em;
+    
+   }
+
+   #text-get-in{
+    display: inline-block;
+    position: relative;
+   }
+
   #contact-svg{
     display: block;
     position: absolute;
-    
-    top:12rem;
-    left: 2rem;
+    top: -6em;
+    right: -2em;
     z-index: -1;
     animation-delay: 300ms;
+    width: 20em;
+    
   }
+
+  .card {
+    border: none !important;
+    border-bottom: 2px solid #85AFFF !important; 
+}
+
+
+  .card img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 
   
 
@@ -306,7 +330,6 @@ textarea {
 
 .icon-2{
   color: #85AFFF  ;
-  border-color: #85AFFF;
 }
 
 /*RESPONSIVE CSS*/
@@ -357,8 +380,7 @@ textarea {
   #blur-green {}
   #bg-svg {}
   #pointer-svg {
-    position: static;
-    left: 5em;
+    position: absolute;
 
   }
   #contact-svg {
