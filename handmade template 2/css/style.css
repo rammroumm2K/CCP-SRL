@@ -338,6 +338,12 @@ textarea {
 /* Mobile devices */
 @media (max-width: 990px) {
 
+  #iframe-G{
+    width: 21em;
+    height: 15em;
+    margin-bottom: 2.5em;
+    display: flex;
+  }
   #bg-svg {
     display: none;
   }
