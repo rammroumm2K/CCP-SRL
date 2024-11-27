@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+#wcb.wcb-d #wcb_a{
+  background: #adff2f !important;
+}
+
 body {
     background-color: #000000; /* Light grid-like background */
     font-family: 'Arial', sans-serif;
