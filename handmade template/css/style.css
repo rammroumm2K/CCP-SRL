@@ -9,30 +9,23 @@
 
 
 
-svg {
-    position: relative;
-    top: -1px; 
-}
+
 
 /*=== Sections ===*/ 
 
 #support{
 
-  display: block;
-  position: relative;
-  bottom:10rem ;
-  z-index: -1;
+ 
 }
 #section2{
-  display: block;
-  position: relative;
-  top: -165px;
+
+  margin-top: 10em;
+  margin-bottom: 10em;
+  
 }
 
 #contact-block{
-  display: block;
-  position: relative;
-  top: -220px;
+
 }
 
 .why-icon-style{
@@ -107,7 +100,7 @@ svg {
 
 .custom-card-form {
   background-color: #1c1c1c;
-  background-image: url(../image/ssspot.svg);
+  
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
@@ -169,12 +162,26 @@ footer {
 
 /*svg round*/
 
-#svg-square{
-  width: 20rem;
-  display: flex;
+.about-ccp{
+ 
+  
+  
+}
+
+#svg-title{
+  display: inline-block;
   position: relative;
-  left: 5rem;
-  top: 12rem;
+  
+  
+}
+
+#svg-square{
+  width: 20em;
+  right: 15em;
+  bottom: -5.8em;
+  
+  position: absolute;
+  
 }
 #svg-square-3{
   width: 20rem;
