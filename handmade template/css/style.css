@@ -168,6 +168,15 @@ footer {
   
 }
 
+#wave {
+  width: 100%;
+  height: auto; /* o 100% se necessario */
+  position: relative;
+  top: -1px;
+  
+}
+
+
 #svg-title{
   display: inline-block;
   position: relative;
