@@ -13,10 +13,6 @@
 
 /*=== Sections ===*/ 
 
-#support{
-
- 
-}
 #section2{
 
   margin-top: 10em;
@@ -149,9 +145,14 @@ textarea {
 }
 /*=======FOOTER=========*/
 footer {
-  background: url('../image/ssscribble.svg') no-repeat center center;
-  background-size: cover; 
+  background: url('../image/vvvortex.svg') no-repeat center center;
+  background-repeat: no-repeat;
+  background-size: 100em;
   background-color: #000;
+  background-position-x: 65em;
+  font-size: large;
+  font-weight: bold;
+  
 
 }
 
@@ -162,10 +163,8 @@ footer {
 
 /*svg round*/
 
-.about-ccp{
- 
-  
-  
+#wcb_2{
+  color: white !important;
 }
 
 #wave {
@@ -176,18 +175,18 @@ footer {
   
 }
 
+.svg-title {
+  display: inline-block; /* Mantieni inline-block se necessario */
+  position: relative; /* Mantieni se richiesto */
 
-#svg-title{
-  display: inline-block;
-  position: relative;
-  
-  
+
 }
 
 #svg-square{
   width: 20em;
   right: 15em;
   bottom: -5.8em;
+  
   
   position: absolute;
   
@@ -199,6 +198,13 @@ footer {
   top: 11rem;
   right: 14rem;
 
+}
+
+#svg-square2{
+  position: absolute;
+  top: -7em;
+  right: 10em;
+  width: 18em;
 }
 #circle-svg {
   width: 50%; 
@@ -332,7 +338,24 @@ footer {
 @media (max-width: 767px) {
   .service-card {
     min-height: 300px; 
+
   }
+  
+#svg-square{
+  display: none;
+  
+}
+#svg-square-3{
+ display: none;
+
+}
+
+#svg-square2{
+  display: none;
+}
+#circle-svg {
+display: none;
+}
 }
 
 /* Tablet (768px - 1024px) */

@@ -39,7 +39,12 @@
             <a class="nav-link" href="#about-menu">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#our-it-services">Services</a>
+            <a href="#our-it-services" 
+            class="styled-link nav-link " 
+            data-bs-toggle="collapse" 
+            data-bs-target="#services-grid" 
+            aria-expanded="false" 
+            aria-controls="services-grid"">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#support">Support</a>
@@ -91,8 +96,8 @@
   <section id="section2" class="py-5">
     <div id="about-menu" class="container my-auto">
       <div class="d-flex justify-content-center">
-        <div class="col-md-10 text-center">
-          <div id="svg-title">
+        <div class="col-md-10 text-center mx-3">
+          <div class="svg-title">
             <svg id="svg-square" xmlns="http://www.w3.org/2000/svg" version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600">
             <path
@@ -103,10 +108,10 @@
               fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0"
               stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
           </svg>
-          <h2  class=" mb-5 fs-1 fw-bold about-ccp">ABOUT CCP</h2>
+          <h2  class=" mb-5 fs-1 fw-bold  mt-5">ABOUT CCP</h2>
           </div>
           
-          <p class="fs-3 bold-text text-start">
+          <p class="fs-3 bold-text mt-5 text-start">
             Founded in 1993 by John Hellinckx, CCP is a full-service IT provider with a rich history of technological
             evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
             systems to modern cloud computing.
@@ -151,7 +156,7 @@
   </section>
 
   <!-- Services Grid Section -->
-  <section id="section3" class="py-5">
+  <section id="section3" class="py-5 collapse show">
     <div class="container">
       <div id="services-grid" class="collapse row g-4">
 
@@ -255,11 +260,12 @@
   </section>
 
 
-  <section id="support" class="bg-light pb-5" >
+  <section id="support" class="bg-light pb-5 py-5" >
     <div class="container my-auto ">
       <div class="d-flex justify-content-center align-items-center">
-        <div class="col-md-10">
-          <svg id="svg-square2" xmlns="http://www.w3.org/2000/svg" version="1.1"
+        <div class="col-md-10 text-center">
+          <div class="svg-title text-center">
+            <svg id="svg-square2" xmlns="http://www.w3.org/2000/svg" version="1.1"
             xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 600 600">
             <path
               d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969"
@@ -270,15 +276,16 @@
               stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
           </svg>
           <h2  class="text-center mb-5 fs-1 fw-bold about-ccp">SUPPORT</h2>
+          </div>
 
           <div class="container my-auto pt-5">
             <div class="d-flex justify-content-center align-items-center flex-column">
               <div class="col-md-8 download-card">
                 <h3 class="text-center">ISL (Remote Support) <span></span></h3>
-                <p class="fs-4 pt-3">ISL Remote Support is a software for remote assistance that allows secure access and control of devices, ideal for IT support and remote management.</p>
+                <p class="fs-4 pt-3 text-start">ISL Remote Support is a software for remote assistance that allows secure access and control of devices, ideal for IT support and remote management.</p>
 
                 <div class="text-center mt-4">
-                  <a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.html" target="_blank" class="text-decoration-none styled-button d-inline-flex align-items-center justify-content-center">
+                  <a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.htm" target="_blank" class="text-decoration-none styled-button d-inline-flex align-items-center justify-content-center">
                     Download ISL
                     <div class="inner-button ms-2">
                       <svg id="Arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
@@ -325,7 +332,7 @@
         <div class="col-lg-6 col-md-8 col-sm-10">
             <div class="custom-card-form">
               
-                <div class="p-4">
+                <div class="p-4 mt-5">
                     <form action="#" method="POST" class="needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="name" class="form-label" style="color: #fff;">Full Name</label>
@@ -418,8 +425,6 @@
         </div>
       </div>
 
-
-
       <!-- Question 3 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
@@ -448,27 +453,28 @@
         </div>
       </div>
 
-      <!-- Question 6 -->
+      <!-- Question 5 -->
       <div class="accordion-item">
-        <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
             Can I customize your services to meet my needs?
           </button>
         </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
           <div class="accordion-body mt-3">
             Absolutely! We offer fully customizable services. Contact us with your requirements, and we’ll provide a tailored solution.
           </div>
         </div>
       </div>
+
       <!-- Question 6 -->
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
-          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          <button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixUnique" aria-expanded="false" aria-controls="collapseSixUnique">
             Where is the CCP office located?
           </button>
         </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+        <div id="collapseSixUnique" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
           <div class="accordion-body mt-3">
             The CCP office is located at Rue Van Eyck 22, 1000 Brussels, Belgium.
           </div>
@@ -480,10 +486,8 @@
 
 
 
-
-
   <!-- Footer -->
-<footer class="text-light pt-5 pb-4">w
+<footer class="text-light pt-5 pb-4">
   <div class="container">
     <div class="row">
       <!-- Company Info -->
@@ -503,7 +507,7 @@
           <li><a href="#about-menu" class="text-light text-decoration-none">About</a></li>
           <li><a href="#our-it-services" class="text-light text-decoration-none">Services</a></li>
           <li><a href="#contact-menu" class="text-light text-decoration-none">Contact</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Why Choose Us</a></li>
+          
         </ul>
       </div>
       <!-- Resources -->
@@ -512,8 +516,8 @@
         <ul class="list-unstyled">
           <li><a href="#" class="text-light text-decoration-none">Cookies</a></li>
           <li><a href="#faqs" class="text-light text-decoration-none">FAQs</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Policy & Privacy</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Terms</a></li>
+          <li><a href="privacy.html" target="_blank" class="text-light text-decoration-none">Policy & Privacy</a></li>
+          <li><a href="terms.html" target="_blank" class="text-light text-decoration-none">Terms</a></li>
         </ul>
       </div>
       <!-- BADGE CO2 and Maps -->
