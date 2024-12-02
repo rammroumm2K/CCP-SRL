@@ -369,3 +369,69 @@ display: none;
     min-height: 400px; /* Altezza per grandi monitor */
   }
 }
+
+/*Cookies*/
+/* Stile per il Modal dei Cookie */
+#cookieModal {
+  position: fixed;
+  bottom: 5% !important;
+  right: 5% !important;
+  z-index: 1050;
+  display: none;
+  background: #eaeaea !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0);
+  padding: 20px !important;
+  
+  
+  width: 300px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Icona del cookie */
+#cookieModal img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Titolo */
+#cookieModal h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Testo */
+#cookieModal p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Pulsanti */
+#cookieModal button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Pulsante "Allow" */
+#cookieModal #allowCookies {
+  background-color: #60c257 !important;
+  color: white;
+  margin-right: 10px;
+}
+
+/* Pulsante "Decline" */
+#cookieModal #declineCookies {
+  background-color: #ccc;
+  color: #333;
+}
+
+/* Effetto hover sui pulsanti */
+#cookieModal button:hover {
+  opacity: 0.9;
+}
