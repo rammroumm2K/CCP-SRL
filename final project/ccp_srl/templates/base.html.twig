@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+	<head>
+    {% block head %}
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CCP SRL</title>
+		<!-- Customize browser tab color for mobile -->
+		<meta
+		name="theme-color" content="#98c379">
+		<!--Logo browser-->
+		<link
+		rel="icon" type="image/x-icon" href="{{asset ('assets/image/LOGO/ccp-_logo.png')}}">
+		<!-- Bootstrap CSS -->
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="{{asset ('styles/app.css') }}">
+
+		<!-- Font Icon Bootstrao (for icons) -->
+		<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    {% endblock %}
+	</head>
+
+	<body class="d-flex flex-column min-vh-100">
+	{% block navbar %}
+
+{% endblock %}
+		<!-- Hero Section -->
+		<section class="hero text-center pt-5 ">
+			<div class="container">
+				<h1 class=" display-4  fw-semibold text-white  ">“Empowering Your Business Through Tailored IT Solutions Since 1993”
+				</h1>
+				<p class="lead text-white">
+					By
+					<a class="text-decoration-none text-info" href="https://be.linkedin.com/in/john-hellinckx-19309b1" target="_blank">John Hellinckx</a>
+				</p>
+			</div>
+
+		</section>
+		<svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewbox="0 0 1440 280" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveaspectratio="none">
+			<defs>
+				<linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+					<stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+					<stop stop-color="rgba(30.053, 255, 0, 1)" offset="100%"></stop>
+				</linearGradient>
+			</defs>
+			<path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,28L14.1,37.3C28.2,47,56,65,85,98C112.9,131,141,177,169,200.7C197.6,224,226,224,254,191.3C282.4,159,311,93,339,79.3C367.1,65,395,103,424,107.3C451.8,112,480,84,508,65.3C536.5,47,565,37,593,37.3C621.2,37,649,47,678,51.3C705.9,56,734,56,762,74.7C790.6,93,819,131,847,149.3C875.3,168,904,168,932,149.3C960,131,988,93,1016,102.7C1044.7,112,1073,168,1101,163.3C1129.4,159,1158,93,1186,56C1214.1,19,1242,9,1271,4.7C1298.8,0,1327,0,1355,42C1383.5,84,1412,168,1440,191.3C1468.2,215,1496,177,1525,163.3C1552.9,149,1581,159,1609,154C1637.6,149,1666,131,1694,126C1722.4,121,1751,131,1779,154C1807.1,177,1835,215,1864,214.7C1891.8,215,1920,177,1948,140C1976.5,103,2005,65,2019,46.7L2032.9,28L2032.9,280L2018.8,280C2004.7,280,1976,280,1948,280C1920,280,1892,280,1864,280C1835.3,280,1807,280,1779,280C1750.6,280,1722,280,1694,280C1665.9,280,1638,280,1609,280C1581.2,280,1553,280,1525,280C1496.5,280,1468,280,1440,280C1411.8,280,1384,280,1355,280C1327.1,280,1299,280,1271,280C1242.4,280,1214,280,1186,280C1157.6,280,1129,280,1101,280C1072.9,280,1045,280,1016,280C988.2,280,960,280,932,280C903.5,280,875,280,847,280C818.8,280,791,280,762,280C734.1,280,706,280,678,280C649.4,280,621,280,593,280C564.7,280,536,280,508,280C480,280,452,280,424,280C395.3,280,367,280,339,280C310.6,280,282,280,254,280C225.9,280,198,280,169,280C141.2,280,113,280,85,280C56.5,280,28,280,14,280L0,280Z"></path>
+			<defs>
+				<linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0">
+					<stop stop-color="rgba(0, 0, 0, 1)" offset="0%"></stop>
+					<stop stop-color="rgba(0, 0, 0, 1)" offset="100%"></stop>
+				</linearGradient>
+			</defs>
+			<path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,168L14.1,149.3C28.2,131,56,93,85,65.3C112.9,37,141,19,169,37.3C197.6,56,226,112,254,149.3C282.4,187,311,205,339,196C367.1,187,395,149,424,112C451.8,75,480,37,508,23.3C536.5,9,565,19,593,23.3C621.2,28,649,28,678,32.7C705.9,37,734,47,762,42C790.6,37,819,19,847,32.7C875.3,47,904,93,932,116.7C960,140,988,140,1016,154C1044.7,168,1073,196,1101,205.3C1129.4,215,1158,205,1186,168C1214.1,131,1242,65,1271,51.3C1298.8,37,1327,75,1355,116.7C1383.5,159,1412,205,1440,214.7C1468.2,224,1496,196,1525,154C1552.9,112,1581,56,1609,56C1637.6,56,1666,112,1694,116.7C1722.4,121,1751,75,1779,84C1807.1,93,1835,159,1864,186.7C1891.8,215,1920,205,1948,172.7C1976.5,140,2005,84,2019,56L2032.9,28L2032.9,280L2018.8,280C2004.7,280,1976,280,1948,280C1920,280,1892,280,1864,280C1835.3,280,1807,280,1779,280C1750.6,280,1722,280,1694,280C1665.9,280,1638,280,1609,280C1581.2,280,1553,280,1525,280C1496.5,280,1468,280,1440,280C1411.8,280,1384,280,1355,280C1327.1,280,1299,280,1271,280C1242.4,280,1214,280,1186,280C1157.6,280,1129,280,1101,280C1072.9,280,1045,280,1016,280C988.2,280,960,280,932,280C903.5,280,875,280,847,280C818.8,280,791,280,762,280C734.1,280,706,280,678,280C649.4,280,621,280,593,280C564.7,280,536,280,508,280C480,280,452,280,424,280C395.3,280,367,280,339,280C310.6,280,282,280,254,280C225.9,280,198,280,169,280C141.2,280,113,280,85,280C56.5,280,28,280,14,280L0,280Z"></path>
+		</svg>
+
+
+		<!-- About Section -->
+		<section id="section2" class="py-5">
+			<div id="about-menu" class="container my-auto">
+				<div class="d-flex justify-content-center">
+					<div class="col-md-10 text-center mx-3">
+						<div class="svg-title">
+							<svg id="svg-square" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewbox="0 0 600 600">
+								<path d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969" fill="hsl(103, 69%, 60%)"></path>
+								<path d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 " fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0" stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+							</svg>
+							<h2 class=" mb-5 fs-1 fw-bold  mt-5">ABOUT CCP</h2>
+						</div>
+
+						<p class="fs-3 bold-text mt-5 text-start">
+							Founded in 1993 by John Hellinckx, CCP is a full-service IT provider with a rich history of technological
+							            evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
+							            systems to modern cloud computing.
+						</p>
+						<br>
+						<p class="fs-3 bold-text text-start">
+							Today, we offer comprehensive IT maintenance and services to large enterprises, SMBs, and NGOs across
+							            Belgium and Europe. Our mission is to provide tailored IT solutions that empower our clients to focus on
+							            their core business goals, driving success, growth, and profitability.
+						</p>
+						<br>
+						<p id="our-it-services" class="fs-3 bold-text text-start">
+							Not every organization can afford an in-house IT specialist—this is where we come in, acting as your
+							            dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
+							            high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
+							            at competitive rates.
+						</p>
+						<div class="d-flex justify-content-center mt-5 ">
+							<button class="styled-button mt-5 btn-lg" type="button" data-bs-toggle="collapse" data-bs-target="#services-grid" aria-expanded="false" aria-controls="services-grid">
+								Our IT Services
+								<div class="inner-button">
+									<svg id="Arrow" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
+										<defs>
+											<linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+												<stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+												<stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+											</linearGradient>
+										</defs>
+										<path fill="url(#iconGradient)" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
+									</svg>
+								</div>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Services Grid Section -->
+		<section id="section3" class="py-5 collapse show">
+			<div class="container">
+				<div
+					id="services-grid" class="collapse row g-4">
+
+					<!--ALl services cards here-->
+					<div class="container my-5">
+						<div
+							class="row g-4">
+							<!-- Managed IT Service -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-gear-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">Managed IT Service</h5>
+									<p class="service-description text-start fs-5 fs-sm-1">Our managed IT services allow us to act as your
+										                  dedicated IT department, providing tailored support that aligns with the criticality of your
+										                  equipment, system specifics, and budget constraints. Whether you need full IT management or occasional
+										                  assistance, we offer a service customized to your needs, helping you maintain a reliable and efficient
+										                  IT infrastructure.</p>
+								</div>
+							</div>
+
+							<!-- End-User Support -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-person-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">End-User Support</h5>
+									<p class="service-description text-start fs-5">Does your team need daily IT assistance? We offer
+										                  responsive remote and onsite support for end-users, ensuring they have the help they need to stay
+										                  productive. Our end-user support service includes troubleshooting, assistance with day-to-day issues,
+										                  and guidance on best IT practices.</p>
+								</div>
+							</div>
+
+							<!-- Cloud Migration and Management -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-cloud-upload-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">Cloud Migration and Management</h5>
+									<p class="service-description text-start fs-5">Transition to the cloud seamlessly with our migration and
+										                  management services. We specialize in platforms like Microsoft Azure, Office 365, Google Workspace,
+										                  AWS, and more. Whether you’re moving to the cloud or need management for an existing setup, we ensure
+										                  smooth operations, optimal performance, and security for your cloud environment.</p>
+								</div>
+							</div>
+
+							<!-- Consulting -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-chat-left-dots-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">Consulting</h5>
+									<p class="service-description text-start fs-5">Need expert advice on your IT setup? Our consulting
+										                  service offers audits, project implementation support, and long-term strategic planning to enhance
+										                  your IT infrastructure. We cover areas like IT master plans, helpdesk setup, cloud computing,
+										                  licensing, and hosting advisory to ensure your IT aligns with your business goals.</p>
+								</div>
+							</div>
+
+							<!-- Project Management -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-briefcase-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">Project Management</h5>
+									<p class="service-description text-start fs-5">From planning to execution, our project management
+										                  service supports your IT initiatives from start to finish. We ensure that each project is completed on
+										                  time, within budget, and to your specifications, allowing you to focus on core business activities.
+									</p>
+								</div>
+							</div>
+
+							<!-- Virtualisation -->
+							<div class="col-md-4">
+								<div class="card service-card text-center p-3">
+									<div>
+										<i class="bi bi-display-fill service-icon"></i>
+									</div>
+									<h5 class="service-title mt-3">Virtualisation</h5>
+									<p class="service-description text-start fs-5">Optimize your resources and improve scalability with our
+										                  virtualization solutions. We provide expert support in implementing and managing virtual environments,
+										                  helping you reduce costs, increase efficiency, and enhance flexibility.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+
+
+		</section>
+
+
+		<section id="support" class="bg-light  py-5 my-5">
+			<div class="container my-auto ">
+				<div class="d-flex justify-content-center align-items-center">
+					<div class="col-md-10 text-center">
+						<div class="svg-title text-center">
+							<svg id="svg-square2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewbox="0 0 600 600">
+								<path d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969" fill="hsl(103, 69%, 60%)"></path>
+								<path d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 " fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0" stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+							</svg>
+							<h2 class="text-center mb-5 fs-1 fw-bold about-ccp">SUPPORT</h2>
+						</div>
+
+						<div class="container my-auto pt-5">
+							<div class="d-flex justify-content-center align-items-center flex-column">
+								<div class="col-md-8 download-card">
+									<h3 class="text-center">ISL (Remote Support)
+										<span></span>
+									</h3>
+									<p class="fs-4 pt-3 text-start">ISL Remote Support is a software for remote assistance that allows secure access and control of devices, ideal for IT support and remote management.</p>
+
+									<div class="text-center mt-4">
+										<a href="https://www.islonline.com/be/en/downloads/download-isl-light-client.htm" target="_blank" class="text-decoration-none styled-button d-inline-flex align-items-center justify-content-center">
+											Download ISL
+											<div class="inner-button ms-2">
+												<svg id="Arrow" viewbox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" height="30px" width="30px" class="icon">
+													<defs>
+														<linearGradient y2="100%" x2="100%" y1="0%" x1="0%" id="iconGradient">
+															<stop style="stop-color:#FFFFFF;stop-opacity:1" offset="0%"></stop>
+															<stop style="stop-color:#AAAAAA;stop-opacity:1" offset="100%"></stop>
+														</linearGradient>
+													</defs>
+													<path fill="url(#iconGradient)" d="M4 15a1 1 0 0 0 1 1h19.586l-4.292 4.292a1 1 0 0 0 1.414 1.414l6-6a.99.99 0 0 0 .292-.702V15c0-.13-.026-.26-.078-.382a.99.99 0 0 0-.216-.324l-6-6a1 1 0 0 0-1.414 1.414L24.586 14H5a1 1 0 0 0-1 1z"></path>
+												</svg>
+											</div>
+										</a>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Why Choose Us Section -->
+		<section class="py-5 my-5 ">
+			<div class="container">
+				<h2 class="text-center mb-5 fs-1 fw-bold about-ccp">Why Choose Us</h2>
+				<div
+					class="row text-center">
+
+					<!-- Extensive IT Expertise -->
+					<div class="col-md-4 mb-4">
+						<div class="icon-box mx-auto d-flex justify-content-center align-items-center mb-3 why-icon-style">
+							<i class="fas fa-cloud fa-2x text-success"></i>
+						</div>
+						<h4>Extensive IT Expertise</h4>
+						<p>With 30+ years in IT, CCP delivers reliable solutions across cloud, support, and infrastructure management, keeping your business secure and efficient.</p>
+					</div>
+
+					<!-- Tailored Support -->
+					<div class="col-md-4 mb-4">
+						<div class="icon-box mx-auto d-flex justify-content-center align-items-center mb-3 why-icon-style">
+							<i class="fas fa-headset fa-2x text-success"></i>
+						</div>
+						<h4>Tailored Support</h4>
+						<p>We provide personalized, proactive IT support, ensuring seamless operations so you can focus on growing your business.</p>
+					</div>
+
+					<!-- Cost-Effective Solutions -->
+					<div class="col-md-4 mb-4">
+						<div class="icon-box mx-auto d-flex justify-content-center align-items-center mb-3 why-icon-style">
+							<i class="fas fa-dollar-sign fa-2x text-success"></i>
+						</div>
+						<h4>Cost-Effective Solutions</h4>
+						<p>Our flexible, budget-friendly services make expert IT support accessible, helping you maximize your investment and drive success.</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="faq-section py-5 bg-light">
+			<div class="container">
+				<h2 class="text-center mb-4 mb-5 fs-1 fw-bold about-ccp">Frequently Asked Questions</h2>
+				<div
+					class="accordion" id="faqAccordion">
+
+					<!-- Question 1 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingOne">
+							<button class="accordion-button lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								How can I register for your services?
+							</button>
+						</h2>
+						<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+							<div class="accordion-body mt-3">
+								You can register for our services by filling out the form on the
+								<a href="#contact-menu" class="text-decoration-none">contact</a>
+								form.
+							</div>
+						</div>
+					</div>
+
+					<!-- Question 3 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingThree">
+							<button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Are there any hidden costs in your pricing?
+							</button>
+						</h2>
+						<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+							<div class="accordion-body mt-3">
+								No, our pricing is transparent. All costs are clearly outlined in our quotes, and there are no hidden fees.
+							</div>
+						</div>
+					</div>
+
+					<!-- Question 4 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+							<button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+								What should I do if I encounter an issue with the service?
+							</button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+							<div class="accordion-body mt-3">
+								If you encounter any issues, you can contact our support team from 9:00 AM to 6:00 PM, Monday to Friday.
+							</div>
+						</div>
+					</div>
+
+					<!-- Question 5 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+							<button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+								Can I customize your services to meet my needs?
+							</button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+							<div class="accordion-body mt-3">
+								Absolutely! We offer fully customizable services. Contact us with your requirements, and we’ll provide a tailored solution.
+							</div>
+						</div>
+					</div>
+
+					<!-- Question 6 -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingSix">
+							<button class="accordion-button collapsed lime-accordion" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixUnique" aria-expanded="false" aria-controls="collapseSixUnique">
+								Where is the CCP office located?
+							</button>
+						</h2>
+						<div id="collapseSixUnique" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
+							<div class="accordion-body mt-3">
+								The CCP office is located at Rue Van Eyck 22, 1000 Brussels, Belgium.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<div class="container mb-5">
+			<div id="contact-block" class="row justify-content-center">
+				<svg id="svg-square-3" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewbox="0 0 600 600">
+					<path d="M278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969C457.33257548014325,258.68392690022785,278.0978291829427,220.0895792643229,247.4840087890625,239.58299255371094C216.87018839518228,259.07640584309894,243.03583272298178,395.13781992594403,278.8827819824219,402.856689453125C314.729731241862,410.57555898030597,467.798833211263,313.1084925333659,462.5657043457031,285.8962097167969" fill="hsl(103, 69%, 60%)"></path>
+					<path d="M209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655C388.25524619202423 166.84250214659752 209.02049989482367 128.2481545106926 178.40667950094348 147.74156780008062C147.79285910706326 167.23498108946862 173.95850343486276 303.29639517231317 209.80545269430286 311.0152646994942C245.65240195374298 318.7341342266751 398.721503923144 221.26706777973558 393.4883750575841 194.05478496316655 " fill-opacity="1" fill="hsl(0, 0%, 0%)" opacity="1" stroke-opacity="1" stroke-width="0" stroke="hsl(340, 45%, 30%)" transform="matrix(1,0,0,1,75,75)"></path>
+				</svg>
+				<h2 id="contact-menu" class="text-center mb-5 fs-1 fw-bold about-ccp">CONTACT</h2>
+				<div class="col-lg-6 col-md-8 col-sm-10">
+					<div class="custom-card-form">
+
+						<div class="p-4 mt-5">
+							<form action="#" method="POST" class="needs-validation" novalidate>
+								<div class="mb-3">
+									<label for="name" class="form-label" style="color: #fff;">Full Name</label>
+									<input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+									<div class="invalid-feedback" style="color: #fff;">Please enter your name.</div>
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label" style="color: #fff;">Email Address</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="youremail@example.com" required>
+									<div class="invalid-feedback" style="color: #fff;">Please enter a valid email.</div>
+								</div>
+								<div class="mb-3">
+									<label for="subject" class="form-label" style="color: #fff;">Subject</label>
+									<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+									<div class="invalid-feedback" style="color: #fff;">Please enter a subject.</div>
+								</div>
+								<div class="mb-3">
+									<label for="message" class="form-label" style="color: #fff;">Message</label>
+									<textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+									<div class="invalid-feedback" style="color: #fff;">Please enter your message.</div>
+								</div>
+								<div class="form-check mb-3">
+									<input type="checkbox" class="form-check-input" id="consent" name="consent" required>
+									<label class="form-check-label" for="consent" style="color: #fff;">
+										I agree to have my data collected and stored for the purpose of contacting me.
+									</label>
+									<div class="invalid-feedback" style="color: #fff;">You must agree before submitting.</div>
+								</div>
+								<button type="submit" class="btn btn-primary w-100">Send Message</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="circle-svg" src="{{asset ('image/vvvortex.svg')}}" alt="circile"/>
+		<!--Cookies Sections-->
+
+		<!-- Cookie Consent Modal -->
+			<div id="cookieModal" style="position: fixed; bottom: 20px; right: 20px; z-index: 1050; display: none; background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); padding: 20px; width: 300px; text-align: center; font-family: Arial, sans-serif;"> <div>
+				<img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Cookie Icon" style="width: 50px; margin-bottom: 10px;">
+				<h3 style="font-size: 18px; margin-bottom: 10px;">We use cookies</h3>
+				<p style="font-size: 14px; color: #666; margin-bottom: 20px;">This website uses cookies to ensure you get the best experience on our site.</p>
+				<button id="allowCookies" style="background-color: #7e57c2; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-right: 10px;">Allow</button>
+				<button id="declineCookies" style="background-color: #ccc; color: #333; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Decline</button>
+			</div>
+		</div>
+
+
+ 
+        {% block footer %}
+        {% endblock %}
+
+		<!-- Bootstrap JS -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Custom JS -->
+		<script src="{{asset ('assets/script.js')}}"></script>
+		<!-- Font Awesome -->
+
+		<!--GCaptcha-->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="{{asset ('assets/cookie-banner.js')}}"></script>
+		<!--Cookies Sections-->
+
+		<!-- Cookie Consent Modal -->
+		<div id="cookieModal">
+			<div>
+				<img src="https://cdn-icons-png.flaticon.com/512/2917/2917995.png" alt="Cookie Icon" style="width: 50px; margin-bottom: 10px;">
+				<h3>We use cookies</h3>
+				<p>This website uses cookies to ensure you get the best experience on our site.</p>
+				<button id="allowCookies">Allow</button>
+				<button id="declineCookies">Decline</button>
+			</div>
+		</div>
+	</body>
+
+</html>
