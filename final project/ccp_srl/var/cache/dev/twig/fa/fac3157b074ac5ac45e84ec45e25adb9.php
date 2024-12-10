@@ -484,6 +484,6 @@ class __TwigTemplate_b408cd038b5de74b7e6c3cf952e5b95b extends Template
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/layout.html.twig", "C:\\Users\\RamiBenSalem\\OneDrive - COMPUTER CONSULTANT PARTNERS\\Documents\\CCP WEBSITE\\final project\\ccp_srl\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\layout.html.twig");
+", "@WebProfiler/Profiler/layout.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\layout.html.twig");
     }
 }

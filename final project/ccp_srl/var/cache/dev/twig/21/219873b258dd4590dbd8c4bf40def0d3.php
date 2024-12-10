@@ -552,6 +552,6 @@ class __TwigTemplate_c5beeb4b3eb83bcf83345381d1501c95 extends Template
         }
     }
 </script>
-", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\RamiBenSalem\\OneDrive - COMPUTER CONSULTANT PARTNERS\\Documents\\CCP WEBSITE\\final project\\ccp_srl\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
+", "@WebProfiler/Profiler/base_js.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base_js.html.twig");
     }
 }

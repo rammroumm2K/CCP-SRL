@@ -222,6 +222,6 @@ class __TwigTemplate_30fa5667f4ab4e4e01422a5c8e322937 extends Template
 \t\t\t\t\t</div>
 \t\t\t\t</div>
 \t\t\t</div>
-\t\t</footer>", "elements/footer.html.twig", "C:\\Users\\RamiBenSalem\\OneDrive - COMPUTER CONSULTANT PARTNERS\\Documents\\CCP WEBSITE\\final project\\ccp_srl\\templates\\elements\\footer.html.twig");
+\t\t</footer>", "elements/footer.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\templates\\elements\\footer.html.twig");
     }
 }

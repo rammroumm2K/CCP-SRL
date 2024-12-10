@@ -169,6 +169,6 @@ class __TwigTemplate_dc4ed1af77a0d639799c811eda295ac3 extends Template
 
 {% block footer %}
 {% include \"elements/footer.html.twig\" %}
-{% endblock %}", "home/index.html.twig", "C:\\Users\\RamiBenSalem\\OneDrive - COMPUTER CONSULTANT PARTNERS\\Documents\\CCP WEBSITE\\final project\\ccp_srl\\templates\\home\\index.html.twig");
+{% endblock %}", "home/index.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\templates\\home\\index.html.twig");
     }
 }

@@ -493,7 +493,7 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t\t<!-- Custom JS -->
 \t\t<script src=\"";
         // line 456
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/script.js"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/script.js"), "html", null, true);
         yield "\"></script>
 \t\t<!-- Font Awesome -->
 
@@ -501,7 +501,7 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t\t<script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
 \t\t<script src=\"";
         // line 461
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/cookie-banner.js"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("cookie-banner.js"), "html", null, true);
         yield "\"></script>
 \t\t<!--Cookies Sections-->
 
@@ -552,7 +552,7 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t\t<link
 \t\trel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 14
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("assets/image/LOGO/ccp-_logo.png"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("image/LOGO/ccp-_logo.png"), "html", null, true);
         yield "\">
 \t\t<!-- Bootstrap CSS -->
 \t\t<link
@@ -666,7 +666,7 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t\tname=\"theme-color\" content=\"#98c379\">
 \t\t<!--Logo browser-->
 \t\t<link
-\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('assets/image/LOGO/ccp-_logo.png')}}\">
+\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('image/LOGO/ccp-_logo.png')}}\">
 \t\t<!-- Bootstrap CSS -->
 \t\t<link
 \t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
@@ -1108,12 +1108,12 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t\t<!-- Bootstrap JS -->
 \t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>
 \t\t<!-- Custom JS -->
-\t\t<script src=\"{{asset ('assets/script.js')}}\"></script>
+\t\t<script src=\"{{asset ('/script.js')}}\"></script>
 \t\t<!-- Font Awesome -->
 
 \t\t<!--GCaptcha-->
 \t\t<script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
-\t\t<script src=\"{{asset ('assets/cookie-banner.js')}}\"></script>
+\t\t<script src=\"{{asset ('cookie-banner.js')}}\"></script>
 \t\t<!--Cookies Sections-->
 
 \t\t<!-- Cookie Consent Modal -->
@@ -1129,6 +1129,6 @@ class __TwigTemplate_17cfcefa7ef21fafe108220df8d19273 extends Template
 \t</body>
 
 </html>
-", "base.html.twig", "C:\\Users\\RamiBenSalem\\OneDrive - COMPUTER CONSULTANT PARTNERS\\Documents\\CCP WEBSITE\\final project\\ccp_srl\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\templates\\base.html.twig");
     }
 }
