@@ -69,8 +69,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
             <h4 class=\"text-center\">CCP</h4>
             <h5 class=\"mt-4\">Tables</h5>
             <a href=\"#\">Supplier</a>
-            <a href=\"#\">Procedure</a>
-            <a href=\"#\">Pratical links</a>
+            
             
             <h5 class=\"mt-3\">User</h5>
             <a href=\"#\">Logout</a>
@@ -78,7 +77,10 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
 
  <!-- Main Content -->
 <div class=\"flex-grow-1 p-4\">
-    <h2>Supplier</h2>
+    <h2>Welcome back ";
+        // line 30
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["admin_name"]) || array_key_exists("admin_name", $context) ? $context["admin_name"] : (function () { throw new RuntimeError('Variable "admin_name" does not exist.', 30, $this->source); })()), "html", null, true);
+        yield " ! 😊</h2>
     
     <div class=\"table-container\">
         <div class=\"d-flex justify-content-between align-items-center mb-3\">
@@ -165,7 +167,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  61 => 12,  48 => 1,);
+        return array (  82 => 30,  61 => 12,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -191,8 +193,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
             <h4 class=\"text-center\">CCP</h4>
             <h5 class=\"mt-4\">Tables</h5>
             <a href=\"#\">Supplier</a>
-            <a href=\"#\">Procedure</a>
-            <a href=\"#\">Pratical links</a>
+            
             
             <h5 class=\"mt-3\">User</h5>
             <a href=\"#\">Logout</a>
@@ -200,7 +201,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
 
  <!-- Main Content -->
 <div class=\"flex-grow-1 p-4\">
-    <h2>Supplier</h2>
+    <h2>Welcome back {{ admin_name}} ! 😊</h2>
     
     <div class=\"table-container\">
         <div class=\"d-flex justify-content-between align-items-center mb-3\">

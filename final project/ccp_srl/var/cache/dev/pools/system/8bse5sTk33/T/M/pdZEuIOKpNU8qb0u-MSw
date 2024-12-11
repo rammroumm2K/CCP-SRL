@@ -1,0 +1,3 @@
+<?php //2e56245ea7a4029410f25aab920b0a05
+
+return [PHP_INT_MAX, 'styles/style-admin.css'];

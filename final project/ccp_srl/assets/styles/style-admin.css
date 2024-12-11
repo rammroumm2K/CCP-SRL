@@ -1,6 +1,6 @@
 body {
     background-color: #1c1e29;
-    color: #fff;
+    color: #ffffff;
 }
 .sidebar {
     background-color: #12141d;
@@ -27,4 +27,14 @@ body {
    
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+
+.truncate-link {
+    display: inline-block;
+    max-width: 300px; /* Puoi personalizzare la larghezza */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
 }

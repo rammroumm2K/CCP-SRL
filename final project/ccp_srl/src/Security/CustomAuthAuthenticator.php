@@ -43,15 +43,15 @@ class CustomAuthAuthenticator extends AbstractLoginFormAuthenticator
     }
 
     public function onAuthenticationSuccess(Request $request, TokenInterface $token, string $firewallName): ?Response
-    {
-        if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
-            return new RedirectResponse($targetPath);
-        }
-
-        // For example:
-        // return new RedirectResponse($this->urlGenerator->generate('some_route'));
-        throw new \Exception('TODO: provide a valid redirect inside '.__FILE__);
+{
+    // Controlla se esiste un percorso target salvato (ad esempio, dopo un reindirizzamento protetto)
+    if ($targetPath = $this->getTargetPath($request->getSession(), $firewallName)) {
+        return new RedirectResponse($targetPath);
     }
+
+    // Reindirizza alla pagina admin
+    return new RedirectResponse($this->urlGenerator->generate('app_supplier_index'));
+}
 
     protected function getLoginUrl(Request $request): string
     {

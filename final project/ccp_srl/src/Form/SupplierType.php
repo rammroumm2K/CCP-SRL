@@ -21,6 +21,9 @@ class SupplierType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Supplier::class,
+            'csrf_protection' => true, // Abilita il token CSRF
+            'csrf_field_name' => '_token', // Nome del campo token
+            'csrf_token_id'   => 'supplier', // ID del token CSRF
         ]);
     }
 }

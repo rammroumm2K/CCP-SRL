@@ -16,8 +16,20 @@ final class SupplierController extends AbstractController{
     #[Route(name: 'app_supplier_index', methods: ['GET'])]
     public function index(SupplierRepository $supplierRepository): Response
     {
+        $admin = $this->getUser(); // Presuppone che tu abbia configurato il sistema di autenticazione
+
+        // Verifica se l'utente è loggato
+        if (!$admin) {
+            throw $this->createAccessDeniedException('You must be logged in to access this page.');
+        }
+
+        // Recupera il nome dal repository (opzionale, se non usi direttamente l'oggetto User)
+        $adminName = $admin->getName(); // Usa il metodo getName() direttamente dall'oggetto User
+
+
         return $this->render('supplier/index.html.twig', [
             'suppliers' => $supplierRepository->findAll(),
+            'admin_name' => $adminName,
         ]);
     }
 
