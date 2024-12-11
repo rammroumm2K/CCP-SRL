@@ -1,0 +1,30 @@
+body {
+    background-color: #1c1e29;
+    color: #fff;
+}
+.sidebar {
+    background-color: #12141d;
+    min-height: 100vh;
+    padding-top: 1rem;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.sidebar a:hover {
+    background-color: #343a40;
+    border-radius: 5px;
+}
+.table-container {
+    background-color: #2a2d3e;
+    padding: 20px;
+    border-radius: 10px;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #fff !important;
+   
+    border-radius: 5px;
+    padding: 5px 10px;
+}

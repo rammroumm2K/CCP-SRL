@@ -58,7 +58,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
     <!--CSS-->
     <link rel=\"stylesheet\" href=\"";
         // line 12
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/app.css"), "html", null, true);
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/style-admin.css"), "html", null, true);
         yield "\">
     
 </head>
@@ -181,7 +181,7 @@ class __TwigTemplate_2dc82703ef4d59eb04e6c695ce96a4d7 extends Template
     <!-- DataTables CSS -->
     <link href=\"https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css\" rel=\"stylesheet\">
     <!--CSS-->
-    <link rel=\"stylesheet\" href=\"{{asset ('styles/app.css')}}\">
+    <link rel=\"stylesheet\" href=\"{{asset ('styles/style-admin.css')}}\">
     
 </head>
 <body>

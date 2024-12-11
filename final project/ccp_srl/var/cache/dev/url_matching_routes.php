@@ -17,6 +17,8 @@ return [
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, null, null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
+        '/supplier' => [[['_route' => 'app_supplier_index', '_controller' => 'App\\Controller\\SupplierController::index'], null, ['GET' => 0], null, false, false, null]],
+        '/supplier/new' => [[['_route' => 'app_supplier_new', '_controller' => 'App\\Controller\\SupplierController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/admin' => [[['_route' => 'admin_page', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
@@ -39,6 +41,11 @@ return [
                         .')'
                     .')'
                 .')'
+                .'|/supplier/([^/]++)(?'
+                    .'|(*:223)'
+                    .'|/edit(*:236)'
+                    .'|(*:244)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -49,8 +56,11 @@ return [
         148 => [[['_route' => '_profiler_router', '_controller' => 'web_profiler.controller.router::panelAction'], ['token'], null, null, false, false, null]],
         168 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         181 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
-        191 => [
-            [['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null],
+        191 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
+        223 => [[['_route' => 'app_supplier_show', '_controller' => 'App\\Controller\\SupplierController::show'], ['id'], ['GET' => 0], null, false, true, null]],
+        236 => [[['_route' => 'app_supplier_edit', '_controller' => 'App\\Controller\\SupplierController::edit'], ['id'], ['GET' => 0, 'POST' => 1], null, false, false, null]],
+        244 => [
+            [['_route' => 'app_supplier_delete', '_controller' => 'App\\Controller\\SupplierController::delete'], ['id'], ['POST' => 0], null, false, true, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

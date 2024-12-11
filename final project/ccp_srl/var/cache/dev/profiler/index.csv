@@ -195,3 +195,9 @@ e12dbe,127.0.0.1,GET,http://127.0.0.1:8000/assets/style.css,1733918346,18e039,20
 d5b92c,127.0.0.1,GET,http://127.0.0.1:8000/styles/style.css,1733918385,627548,200,request
 627548,127.0.0.1,GET,http://127.0.0.1:8000/styles/style.css,1733918385,,404,request
 8da7e5,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733918446,,200,request
+6771c9,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733921287,,200,request
+f32782,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733921391,,200,request
+bbf56a,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733921476,,200,request
+eee62b,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733923363,,200,request
+7a145e,127.0.0.1,GET,http://127.0.0.1:8000/admin,1733924208,,200,request
+d3bdd9,127.0.0.1,GET,http://127.0.0.1:8000/supplier,1733924209,,200,request

@@ -5,12 +5,15 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use App\Repository\UserRepository;
+use App\Repository\SupplierRepository;
 
 class AdminController extends AbstractController
 {
     #[Route('/admin', name: 'admin_page')]
     public function index(UserRepository $userRepository): Response
     {
+
+        
         // Recupera l'ID dell'utente loggato
         $admin = $this->getUser(); // Presuppone che tu abbia configurato il sistema di autenticazione
 
@@ -25,5 +28,7 @@ class AdminController extends AbstractController
         return $this->render('admin/index.html.twig', [
             'admin_name' => $adminName,
         ]);
+
+        
     }
 }
