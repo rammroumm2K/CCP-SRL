@@ -2,9 +2,11 @@
 framework:
     secret: '%env(APP_SECRET)%'
     annotations: false
-    http_method_override: false
+    http_method_override: true
     handle_all_throwables: true
     error_controller: App\Controller\ErrorController::show
+    trusted_proxies: '127.0.0.1'
+    trusted_hosts: ~
 
     # Enables session support. Note that the session will ONLY be started if you read or write from it.
     # Remove or comment this section to explicitly disable session support.

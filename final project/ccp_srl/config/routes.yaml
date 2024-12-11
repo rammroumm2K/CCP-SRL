@@ -7,3 +7,7 @@ controllers:
 _errors:
     resource: ../src/Controller/ErrorController.php
     type: annotation
+
+admin_page:
+    path: /admin
+    controller: App\Controller\AdminController::index

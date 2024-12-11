@@ -49,48 +49,49 @@ class __TwigTemplate_639002c7bd217fdb47640f85043b02e1 extends Template
         // line 1
         yield "<!DOCTYPE html>
 <html lang=\"en\">
-
-<head>
+\t<head></head>
 \t<head>
-    ";
-        // line 6
+\t\t";
+        // line 5
         yield from $this->unwrap()->yieldBlock('head', $context, $blocks);
         // line 28
         yield "\t</head>
 \t<style>
 \t\t* {
-  margin:0px auto;
-  padding: 0px;
-text-align:center;
-}
+\t\t\tmargin: 0 auto;
+\t\t\tpadding: 0;
+\t\t\ttext-align: center;
+\t\t}
 \t</style>
 
 
-<body class=\"\">
-\t";
+\t<body class=\"\">
+\t\t";
         // line 39
         yield from $this->unwrap()->yieldBlock('navbar', $context, $blocks);
         // line 42
-        yield "\t\t\t\t<div class=\"cont_principal\">
-\t\t\t\t\t<div class=\"cont_error\">
-\t\t\t\t\t  
-\t\t\t\t\t<h1>Oops</h1>  
-\t\t\t\t\t  <p>The Page you're looking for isn't here.</p>
-\t\t\t\t\t  </div>
-\t\t\t\t\t<div class=\"cont_aura_1\"></div>
-\t\t\t\t\t<div class=\"cont_aura_2\"></div>
-\t\t\t\t\t</div>
+        yield "\t\t<div class=\"cont_principal\">
+\t\t\t<div class=\"cont_error\">
 
-       
-\t<script>
-\twindow.onload = function(){
-\t\tdocument.querySelector('.cont_principal').className= \"cont_principal cont_error_active\";  
-\t\t  
-\t\t}</script>
-\t\t
-</body>
+\t\t\t\t<h1>Oops</h1>
+\t\t\t\t<p>The Page you're looking for isn't here.</p>
+\t\t\t</div>
+\t\t\t<div class=\"cont_aura_1\"></div>
+\t\t\t<div class=\"cont_aura_2\"></div>
+\t\t</div>
 
-</html>";
+
+\t\t<script>
+\t\t\twindow.onload = function () {
+document.querySelector('.cont_principal').className = \"cont_principal cont_error_active\";
+
+}
+\t\t</script>
+
+\t</body>
+
+</html>
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -100,7 +101,7 @@ text-align:center;
         yield from [];
     }
 
-    // line 6
+    // line 5
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -113,34 +114,35 @@ text-align:center;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
 
-        // line 7
-        yield "\t\t<meta charset=\"UTF-8\">
-\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-\t\t<title>CCP SRL</title>
-\t\t<!-- Customize browser tab color for mobile -->
-\t\t<meta
-\t\tname=\"theme-color\" content=\"#98c379\">
-\t\t<!--Logo browser-->
-\t\t<link
-\t\trel=\"icon\" type=\"image/x-icon\" href=\"";
-        // line 15
+        // line 6
+        yield "\t\t\t<meta charset=\"UTF-8\">
+\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+\t\t\t<title>CCP SRL</title>
+\t\t\t<!-- Customize browser tab color for mobile -->
+\t\t\t<meta
+\t\t\tname=\"theme-color\" content=\"#98c379\">
+\t\t\t<!--Logo browser-->
+\t\t\t<link
+\t\t\trel=\"icon\" type=\"image/x-icon\" href=\"";
+        // line 14
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("image/LOGO/ccp-_logo.png"), "html", null, true);
         yield "\">
-\t\t<!-- Bootstrap CSS -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
-\t\t<!-- Custom CSS -->
-\t\t<link rel=\"stylesheet\" href=\"";
+\t\t\t<!-- Bootstrap CSS -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+\t\t\t<!-- Custom CSS -->
+\t\t\t<link
+\t\t\trel=\"stylesheet\" href=\"";
         // line 20
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/app.css"), "html", null, true);
         yield "\">
 
-\t\t<!-- Font Icon Bootstrao (for icons) -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
-\t\t<!-- Font Awesome -->
-\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
-    ";
+\t\t\t<!-- Font Icon Bootstrao (for icons) -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+\t\t\t<!-- Font Awesome -->
+\t\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
+\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -164,10 +166,10 @@ text-align:center;
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "navbar"));
 
         // line 40
-        yield "    ";
+        yield "\t\t\t";
         yield from $this->loadTemplate("elements/_menu.html.twig", "error/404.html.twig", 40)->unwrap()->yield($context);
         // line 41
-        yield "    ";
+        yield "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -190,71 +192,73 @@ text-align:center;
      */
     public function getDebugInfo(): array
     {
-        return array (  170 => 41,  167 => 40,  154 => 39,  135 => 20,  127 => 15,  117 => 7,  104 => 6,  74 => 42,  72 => 39,  59 => 28,  57 => 6,  50 => 1,);
+        return array (  172 => 41,  169 => 40,  156 => 39,  137 => 20,  128 => 14,  118 => 6,  105 => 5,  73 => 42,  71 => 39,  58 => 28,  56 => 5,  50 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("<!DOCTYPE html>
 <html lang=\"en\">
-
-<head>
+\t<head></head>
 \t<head>
-    {% block head %}
-\t\t<meta charset=\"UTF-8\">
-\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-\t\t<title>CCP SRL</title>
-\t\t<!-- Customize browser tab color for mobile -->
-\t\t<meta
-\t\tname=\"theme-color\" content=\"#98c379\">
-\t\t<!--Logo browser-->
-\t\t<link
-\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('image/LOGO/ccp-_logo.png')}}\">
-\t\t<!-- Bootstrap CSS -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
-\t\t<!-- Custom CSS -->
-\t\t<link rel=\"stylesheet\" href=\"{{asset ('styles/app.css') }}\">
+\t\t{% block head %}
+\t\t\t<meta charset=\"UTF-8\">
+\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+\t\t\t<title>CCP SRL</title>
+\t\t\t<!-- Customize browser tab color for mobile -->
+\t\t\t<meta
+\t\t\tname=\"theme-color\" content=\"#98c379\">
+\t\t\t<!--Logo browser-->
+\t\t\t<link
+\t\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('image/LOGO/ccp-_logo.png')}}\">
+\t\t\t<!-- Bootstrap CSS -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+\t\t\t<!-- Custom CSS -->
+\t\t\t<link
+\t\t\trel=\"stylesheet\" href=\"{{asset ('styles/app.css') }}\">
 
-\t\t<!-- Font Icon Bootstrao (for icons) -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
-\t\t<!-- Font Awesome -->
-\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
-    {% endblock %}
+\t\t\t<!-- Font Icon Bootstrao (for icons) -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+\t\t\t<!-- Font Awesome -->
+\t\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
+\t\t{% endblock %}
 \t</head>
 \t<style>
 \t\t* {
-  margin:0px auto;
-  padding: 0px;
-text-align:center;
-}
+\t\t\tmargin: 0 auto;
+\t\t\tpadding: 0;
+\t\t\ttext-align: center;
+\t\t}
 \t</style>
 
 
-<body class=\"\">
-\t{% block navbar %}
-    {% include \"elements/_menu.html.twig\" %}
-    {% endblock %}
-\t\t\t\t<div class=\"cont_principal\">
-\t\t\t\t\t<div class=\"cont_error\">
-\t\t\t\t\t  
-\t\t\t\t\t<h1>Oops</h1>  
-\t\t\t\t\t  <p>The Page you're looking for isn't here.</p>
-\t\t\t\t\t  </div>
-\t\t\t\t\t<div class=\"cont_aura_1\"></div>
-\t\t\t\t\t<div class=\"cont_aura_2\"></div>
-\t\t\t\t\t</div>
+\t<body class=\"\">
+\t\t{% block navbar %}
+\t\t\t{% include \"elements/_menu.html.twig\" %}
+\t\t{% endblock %}
+\t\t<div class=\"cont_principal\">
+\t\t\t<div class=\"cont_error\">
 
-       
-\t<script>
-\twindow.onload = function(){
-\t\tdocument.querySelector('.cont_principal').className= \"cont_principal cont_error_active\";  
-\t\t  
-\t\t}</script>
-\t\t
-</body>
+\t\t\t\t<h1>Oops</h1>
+\t\t\t\t<p>The Page you're looking for isn't here.</p>
+\t\t\t</div>
+\t\t\t<div class=\"cont_aura_1\"></div>
+\t\t\t<div class=\"cont_aura_2\"></div>
+\t\t</div>
 
-</html>", "error/404.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\templates\\error\\404.html.twig");
+
+\t\t<script>
+\t\t\twindow.onload = function () {
+document.querySelector('.cont_principal').className = \"cont_principal cont_error_active\";
+
+}
+\t\t</script>
+
+\t</body>
+
+</html>
+", "error/404.html.twig", "C:\\Users\\RamiBenSalem\\final_project\\CCP WEBSITE\\final project\\ccp_srl\\templates\\error\\404.html.twig");
     }
 }

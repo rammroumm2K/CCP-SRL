@@ -17,7 +17,7 @@ class ErrorController extends AbstractController
             ]);
         }
 
-        return $this->render('error/error.html.twig', [
+        return $this->render('error/404.html.twig', [
             'statusCode' => $statusCode,
             'message' => $exception->getMessage(),
         ]);
