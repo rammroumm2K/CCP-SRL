@@ -799,7 +799,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
      * @template TValue
      * @param TValue $value
      * Lock configuration
-     * @default {"enabled":false,"resources":{"default":["flock"]}}
+     * @default {"enabled":true,"resources":{"default":["flock"]}}
      * @return \Symfony\Config\Framework\LockConfig|$this
      * @psalm-return (TValue is array ? \Symfony\Config\Framework\LockConfig : static)
      */
@@ -984,7 +984,7 @@ class FrameworkConfig implements \Symfony\Component\Config\Builder\ConfigBuilder
      * @template TValue
      * @param TValue $value
      * Rate limiter configuration
-     * @default {"enabled":false,"limiters":[]}
+     * @default {"enabled":true,"limiters":[]}
      * @return \Symfony\Config\Framework\RateLimiterConfig|$this
      * @psalm-return (TValue is array ? \Symfony\Config\Framework\RateLimiterConfig : static)
      */

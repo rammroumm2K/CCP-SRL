@@ -1,5 +1,11 @@
 # see https://symfony.com/doc/current/reference/configuration/framework.html
 framework:
+    rate_limiter:
+        contact_form:
+            policy: 'fixed_window'
+            limit: 10
+            interval: '1 minute'
+
     secret: '%env(APP_SECRET)%'
     annotations: false
     http_method_override: true

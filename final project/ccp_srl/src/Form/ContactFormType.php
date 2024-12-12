@@ -19,9 +19,7 @@ class ContactFormType extends AbstractType
             ->add('name', TextType::class, [
                 'label' => 'Full Name',
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Please enter your full name.',
-                    ]),
+                    new NotBlank(['message' => 'Name is required.']),
                 ],
                 'attr' => [
                     'placeholder' => 'Enter your full name',
@@ -30,12 +28,8 @@ class ContactFormType extends AbstractType
             ->add('email', EmailType::class, [
                 'label' => 'Email Address',
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Please enter your email address.',
-                    ]),
-                    new Email([
-                        'message' => 'Please enter a valid email address.',
-                    ]),
+                    new NotBlank(['message' => 'Email is required.']),
+                    new Email(['message' => 'Please enter a valid email address.']),
                 ],
                 'attr' => [
                     'placeholder' => 'Enter your email address',
@@ -44,9 +38,7 @@ class ContactFormType extends AbstractType
             ->add('subject', TextType::class, [
                 'label' => 'Subject',
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Please enter the subject.',
-                    ]),
+                    new NotBlank(['message' => 'Subject is required.']),
                 ],
                 'attr' => [
                     'placeholder' => 'Enter the subject',
@@ -55,9 +47,7 @@ class ContactFormType extends AbstractType
             ->add('message', TextareaType::class, [
                 'label' => 'Message',
                 'constraints' => [
-                    new NotBlank([
-                        'message' => 'Please enter your message.',
-                    ]),
+                    new NotBlank(['message' => 'Message is required.']),
                 ],
                 'attr' => [
                     'placeholder' => 'Type your message here...',
@@ -66,11 +56,9 @@ class ContactFormType extends AbstractType
             ])
             ->add('consent', CheckboxType::class, [
                 'label' => 'I agree to have my data collected and stored for the purpose of contacting me.',
-                'mapped' => false, // Non associato a un'entità
+                'mapped' => false,
                 'constraints' => [
-                    new IsTrue([
-                        'message' => 'You must agree before submitting.',
-                    ]),
+                    new IsTrue(['message' => 'You must agree before submitting.']),
                 ],
             ]);
     }

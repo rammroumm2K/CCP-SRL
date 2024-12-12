@@ -9,8 +9,8 @@
     <parameter key="kernel.runtime_mode.cli">%env(not:default:kernel.runtime_mode.web:)%</parameter>
     <parameter key="kernel.runtime_mode.worker">%env(bool:default::key:worker:default:kernel.runtime_mode:)%</parameter>
     <parameter key="kernel.debug">true</parameter>
-    <parameter key="kernel.build_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev</parameter>
-    <parameter key="kernel.cache_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev</parameter>
+    <parameter key="kernel.build_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev</parameter>
+    <parameter key="kernel.cache_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev</parameter>
     <parameter key="kernel.logs_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\log</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
@@ -119,15 +119,15 @@
     <parameter key="translator.logging">false</parameter>
     <parameter key="translator.default_path">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl/translations</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/App_KernelDevDebugContainer.xml</parameter>
+    <parameter key="debug.container.dump">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/App_KernelDevDebugContainer.xml</parameter>
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
     <parameter key="router.resource">kernel::loadRoutes</parameter>
-    <parameter key="router.cache_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev</parameter>
+    <parameter key="router.cache_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
-    <parameter key="serializer.mapping.cache.file">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/serialization.php</parameter>
+    <parameter key="serializer.mapping.cache.file">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/serialization.php</parameter>
     <parameter key="cache.prefix.seed">_C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl.App_KernelDevDebugContainer</parameter>
     <parameter key="session.metadata.storage_key">_sf2_meta</parameter>
     <parameter key="session.storage.options" type="collection">
@@ -141,11 +141,11 @@
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
-    <parameter key="validator.mapping.cache.file">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/validation.php</parameter>
+    <parameter key="validator.mapping.cache.file">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/validation.php</parameter>
     <parameter key="validator.translation_domain">validators</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_main_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/profiler</parameter>
     <parameter key="doctrine.dbal.configuration.class">Doctrine\DBAL\Configuration</parameter>
     <parameter key="doctrine.data_collector.class">Doctrine\Bundle\DoctrineBundle\DataCollector\DoctrineDataCollector</parameter>
     <parameter key="doctrine.dbal.connection.event_manager.class">Symfony\Bridge\Doctrine\ContainerAwareEventManager</parameter>
@@ -211,7 +211,7 @@
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
     <parameter key="doctrine.orm.enable_lazy_ghost_objects">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="doctrine.migrations.preferred_em">null</parameter>
     <parameter key="doctrine.migrations.preferred_connection">null</parameter>
@@ -440,7 +440,7 @@
     </service>
     <service id="argument_resolver.service" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">
       <tag priority="-50" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\ServiceValueResolver">controller.argument_value_resolver</tag>
-      <argument type="service" id=".service_locator.tGECYDH"/>
+      <argument type="service" id=".service_locator.14c4F.i"/>
     </service>
     <service id="argument_resolver.default" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">
       <tag priority="-100" name="Symfony\Component\HttpKernel\Controller\ArgumentResolver\DefaultValueResolver">controller.argument_value_resolver</tag>
@@ -526,7 +526,7 @@
       </argument>
     </service>
     <service id="http_cache.store" class="Symfony\Component\HttpKernel\HttpCache\Store">
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/http_cache</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/http_cache</argument>
     </service>
     <service id="url_helper" class="Symfony\Component\HttpFoundation\UrlHelper">
       <argument type="service" id="request_stack"/>
@@ -536,7 +536,7 @@
       <tag name="container.no_preload"/>
       <argument type="tagged_iterator" tag="kernel.cache_warmer"/>
       <argument>true</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/App_KernelDevDebugContainerDeprecations.log</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/App_KernelDevDebugContainerDeprecations.log</argument>
     </service>
     <service id="cache_clearer" class="Symfony\Component\HttpKernel\CacheClearer\ChainCacheClearer">
       <argument type="tagged_iterator" tag="kernel.cache_clearer"/>
@@ -574,6 +574,7 @@
         <argument key="debug.stopwatch" type="service" id="debug.stopwatch" on-invalid="ignore_uninitialized"/>
         <argument key="debug.event_dispatcher" type="service" id="debug.event_dispatcher" on-invalid="ignore_uninitialized"/>
         <argument key="debug.log_processor" type="service" id="debug.log_processor" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.rate_limiter" type="service" id="cache.rate_limiter" on-invalid="ignore_uninitialized"/>
         <argument key="session_listener" type="service" id="session_listener" on-invalid="ignore_uninitialized"/>
         <argument key="form.choice_list_factory.cached" type="service" id="form.choice_list_factory.cached" on-invalid="ignore_uninitialized"/>
         <argument key="cache.validator_expression_language" type="service" id="cache.validator_expression_language" on-invalid="ignore_uninitialized"/>
@@ -636,6 +637,9 @@
           <argument>reset</argument>
         </argument>
         <argument key="debug.log_processor" type="collection">
+          <argument>reset</argument>
+        </argument>
+        <argument key="cache.rate_limiter" type="collection">
           <argument>reset</argument>
         </argument>
         <argument key="session_listener" type="collection">
@@ -859,6 +863,7 @@
         <argument>cache.property_info</argument>
         <argument>cache.asset_mapper</argument>
         <argument>cache.messenger.restart_workers_signal</argument>
+        <argument>cache.rate_limiter</argument>
         <argument>cache.validator_expression_language</argument>
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
@@ -908,6 +913,7 @@
         <argument>cache.property_info</argument>
         <argument>cache.asset_mapper</argument>
         <argument>cache.messenger.restart_workers_signal</argument>
+        <argument>cache.rate_limiter</argument>
         <argument>cache.validator_expression_language</argument>
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
@@ -934,6 +940,7 @@
         <argument>cache.property_info</argument>
         <argument>cache.asset_mapper</argument>
         <argument>cache.messenger.restart_workers_signal</argument>
+        <argument>cache.rate_limiter</argument>
         <argument>cache.validator_expression_language</argument>
         <argument>cache.doctrine.orm.default.result</argument>
         <argument>cache.doctrine.orm.default.query</argument>
@@ -1527,7 +1534,7 @@
       <argument></argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1546,7 +1553,7 @@
       <tag name="monolog.logger" channel="cache"/>
       <argument></argument>
       <argument>0</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -1632,6 +1639,7 @@
       <argument type="collection">
         <argument key="cache.app" type="service" id="cache.app" on-invalid="ignore_uninitialized"/>
         <argument key="cache.messenger.restart_workers_signal" type="service" id="cache.messenger.restart_workers_signal" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.rate_limiter" type="service" id="cache.rate_limiter" on-invalid="ignore_uninitialized"/>
       </argument>
     </service>
     <service id="cache.system_clearer" class="Symfony\Component\HttpKernel\CacheClearer\Psr6CacheClearer" public="true">
@@ -1661,6 +1669,7 @@
         <argument key="cache.property_info" type="service" id="cache.property_info" on-invalid="ignore_uninitialized"/>
         <argument key="cache.asset_mapper" type="service" id="cache.asset_mapper" on-invalid="ignore_uninitialized"/>
         <argument key="cache.messenger.restart_workers_signal" type="service" id="cache.messenger.restart_workers_signal" on-invalid="ignore_uninitialized"/>
+        <argument key="cache.rate_limiter" type="service" id="cache.rate_limiter" on-invalid="ignore_uninitialized"/>
         <argument key="cache.validator_expression_language" type="service" id="cache.validator_expression_language" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.result" type="service" id="cache.doctrine.orm.default.result" on-invalid="ignore_uninitialized"/>
         <argument key="cache.doctrine.orm.default.query" type="service" id="cache.doctrine.orm.default.query" on-invalid="ignore_uninitialized"/>
@@ -1718,7 +1727,7 @@
     <service id="asset_mapper.cached_mapped_asset_factory" class="Symfony\Component\AssetMapper\Factory\CachedMappedAssetFactory">
       <tag name="container.decorator" id="asset_mapper.mapped_asset_factory" inner="asset_mapper.cached_mapped_asset_factory.inner"/>
       <argument type="service" id="asset_mapper.cached_mapped_asset_factory.inner"/>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/asset_mapper</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/asset_mapper</argument>
       <argument>true</argument>
     </service>
     <service id="asset_mapper.repository" class="Symfony\Component\AssetMapper\AssetMapperRepository">
@@ -2086,7 +2095,7 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/translations</argument>
+        <argument key="cache_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
           <argument key="af" type="collection">
@@ -3332,7 +3341,7 @@
     </service>
     <service id="argument_resolver.not_tagged_controller" class="Symfony\Component\HttpKernel\Controller\ArgumentResolver\NotTaggedControllerValueResolver">
       <tag name="controller.argument_value_resolver" priority="-200"/>
-      <argument type="service" id=".service_locator.tGECYDH"/>
+      <argument type="service" id=".service_locator.14c4F.i"/>
     </service>
     <service id="debug.log_processor" class="Symfony\Bridge\Monolog\Processor\DebugProcessor">
       <tag name="kernel.reset" method="reset"/>
@@ -3435,7 +3444,7 @@
       <argument type="service" id=".service_locator.bN.V_Nq.router.default"/>
       <argument>kernel::loadRoutes</argument>
       <argument type="collection">
-        <argument key="cache_dir">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev</argument>
+        <argument key="cache_dir">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\CompiledUrlGenerator</argument>
         <argument key="generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\CompiledUrlGeneratorDumper</argument>
@@ -3614,10 +3623,10 @@
           </service>
         </argument>
       </argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/serialization.php</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/serialization.php</argument>
     </service>
     <service id="serializer.mapping.cache.symfony" class="Psr\Cache\CacheItemPoolInterface">
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/serialization.php</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/serialization.php</argument>
       <argument type="service" id="cache.serializer"/>
       <factory class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" method="create"/>
     </service>
@@ -3701,6 +3710,52 @@
       <tag name="property_info.description_extractor" priority="-1000"/>
       <tag name="property_info.type_extractor" priority="-1001"/>
     </service>
+    <service id="lock.store.combined.abstract" class="Symfony\Component\Lock\Store\CombinedStore" abstract="true">
+      <argument type="abstract">List of stores</argument>
+      <argument type="service" id="lock.strategy.majority"/>
+    </service>
+    <service id="lock.strategy.majority" class="Symfony\Component\Lock\Strategy\ConsensusStrategy"/>
+    <service id="lock.factory.abstract" class="Symfony\Component\Lock\LockFactory" abstract="true">
+      <tag name="monolog.logger" channel="lock"/>
+      <argument type="abstract">Store</argument>
+      <call method="setLogger">
+        <argument type="service" id="monolog.logger.lock" on-invalid="ignore"/>
+      </call>
+    </service>
+    <service id=".lock.default.store.TTEh_gT" class="Symfony\Component\Lock\PersistingStoreInterface">
+      <tag name="lock.store"/>
+      <argument>%env(LOCK_DSN)%</argument>
+      <factory class="Symfony\Component\Lock\Store\StoreFactory" method="createStore"/>
+    </service>
+    <service id="lock.default.factory" class="Symfony\Component\Lock\LockFactory">
+      <argument type="service" id=".lock.default.store.TTEh_gT"/>
+      <call method="setLogger">
+        <argument type="service" id="monolog.logger.lock" on-invalid="ignore"/>
+      </call>
+    </service>
+    <service id="cache.rate_limiter" class="Symfony\Component\Cache\Adapter\TraceableAdapter" public="true">
+      <tag name="cache.pool"/>
+      <tag name="kernel.reset" method="reset"/>
+      <argument type="service" id="cache.rate_limiter.recorder_inner"/>
+    </service>
+    <service id="limiter" class="Symfony\Component\RateLimiter\RateLimiterFactory" abstract="true">
+      <argument type="abstract">config</argument>
+      <argument type="abstract">storage</argument>
+      <argument>null</argument>
+    </service>
+    <service id="limiter.contact_form" class="Symfony\Component\RateLimiter\RateLimiterFactory">
+      <argument type="collection">
+        <argument key="policy">fixed_window</argument>
+        <argument key="limit">10</argument>
+        <argument key="interval">1 minute</argument>
+        <argument key="id">contact_form</argument>
+      </argument>
+      <argument type="service" id="limiter.storage.contact_form"/>
+      <argument type="service" id="lock.default.factory"/>
+    </service>
+    <service id="limiter.storage.contact_form" class="Symfony\Component\RateLimiter\Storage\CacheStorage">
+      <argument type="service" id="cache.rate_limiter"/>
+    </service>
     <service id="web_link.http_header_serializer" class="Symfony\Component\WebLink\HttpHeaderSerializer"/>
     <service id="web_link.add_link_header_listener" class="Symfony\Component\WebLink\EventListener\AddLinkHeaderListener">
       <tag name="kernel.event_subscriber"/>
@@ -3753,7 +3808,7 @@
       <argument>true</argument>
     </service>
     <service id="session.storage.factory.mock_file" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorageFactory">
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/sessions</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service">
         <service class="Symfony\Component\HttpFoundation\Session\Storage\MetadataBag">
@@ -3958,10 +4013,10 @@
     <service id="validator.mapping.cache_warmer" class="Symfony\Bundle\FrameworkBundle\CacheWarmer\ValidatorCacheWarmer">
       <tag name="kernel.cache_warmer"/>
       <argument type="service" id="validator.builder"/>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/validation.php</argument>
     </service>
     <service id="validator.mapping.cache.adapter" class="Symfony\Component\Cache\Adapter\PhpArrayAdapter" constructor="create">
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/validation.php</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/validation.php</argument>
       <argument type="service" id="cache.validator"/>
     </service>
     <service id="validator.validator_factory" class="Symfony\Component\Validator\ContainerConstraintValidatorFactory">
@@ -4621,7 +4676,7 @@
       </call>
     </service>
     <service id="profiler.storage" class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage">
-      <argument>file:C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/profiler</argument>
+      <argument>file:C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/profiler</argument>
     </service>
     <service id="profiler_listener" class="Symfony\Component\HttpKernel\EventListener\ProfilerListener">
       <tag name="kernel.event_subscriber"/>
@@ -4680,7 +4735,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <tag name="data_collector" template="@WebProfiler/Collector/logger.html.twig" id="logger" priority="300"/>
       <argument type="service" id="monolog.logger.profiler" on-invalid="ignore"/>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/App_KernelDevDebugContainer</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/App_KernelDevDebugContainer</argument>
       <argument type="service" id=".virtual_request_stack" on-invalid="ignore"/>
     </service>
     <service id="data_collector.time" class="Symfony\Component\HttpKernel\DataCollector\TimeDataCollector">
@@ -4732,6 +4787,10 @@
       <call method="addInstance">
         <argument>cache.messenger.restart_workers_signal</argument>
         <argument type="service" id="cache.messenger.restart_workers_signal"/>
+      </call>
+      <call method="addInstance">
+        <argument>cache.rate_limiter</argument>
+        <argument type="service" id="cache.rate_limiter"/>
       </call>
       <call method="addInstance">
         <argument>cache.validator_expression_language</argument>
@@ -5253,7 +5312,7 @@
         <argument type="service" id=".doctrine.orm.default_metadata_driver"/>
       </call>
       <call method="setProxyDir">
-        <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/doctrine/orm/Proxies</argument>
+        <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/doctrine/orm/Proxies</argument>
       </call>
       <call method="setProxyNamespace">
         <argument>Proxies</argument>
@@ -5665,7 +5724,7 @@
       <argument type="service" id="twig.loader.native_filesystem"/>
       <argument type="collection">
         <argument key="autoescape">name</argument>
-        <argument key="cache">C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/twig</argument>
+        <argument key="cache">C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="debug">true</argument>
         <argument key="strict_variables">true</argument>
@@ -7753,6 +7812,13 @@
         <argument key="exception" type="service_closure" id=".errored..service_locator.4elymRc.Throwable"/>
       </argument>
     </service>
+    <service id=".service_locator.c0qcjBY" class="Symfony\Component\DependencyInjection\ServiceLocator">
+      <tag name="container.service_locator"/>
+      <argument type="collection">
+        <argument key="contactFormLimiter" type="service_closure" id="limiter.contact_form"/>
+        <argument key="mailer" type="service_closure" id="mailer.mailer"/>
+      </argument>
+    </service>
     <service id=".service_locator.rSTd.nA" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
@@ -7784,11 +7850,12 @@
         <argument key="supplier" type="service_closure" id=".errored..service_locator.dvS6U1..App\Entity\Supplier"/>
       </argument>
     </service>
-    <service id=".service_locator.tGECYDH" class="Symfony\Component\DependencyInjection\ServiceLocator">
+    <service id=".service_locator.14c4F.i" class="Symfony\Component\DependencyInjection\ServiceLocator">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Controller\AdminController::index" type="service_closure" id=".service_locator.kPUOGb8"/>
         <argument key="App\Controller\ErrorController::show" type="service_closure" id=".service_locator.4elymRc"/>
+        <argument key="App\Controller\HomeController::index" type="service_closure" id=".service_locator.c0qcjBY"/>
         <argument key="App\Controller\SecurityController::login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="App\Controller\SupplierController::delete" type="service_closure" id=".service_locator.dvS6U1."/>
         <argument key="App\Controller\SupplierController::edit" type="service_closure" id=".service_locator.dvS6U1."/>
@@ -7801,6 +7868,7 @@
         <argument key="kernel::registerContainerConfiguration" type="service_closure" id=".service_locator.y4_Zrx."/>
         <argument key="App\Controller\AdminController:index" type="service_closure" id=".service_locator.kPUOGb8"/>
         <argument key="App\Controller\ErrorController:show" type="service_closure" id=".service_locator.4elymRc"/>
+        <argument key="App\Controller\HomeController:index" type="service_closure" id=".service_locator.c0qcjBY"/>
         <argument key="App\Controller\SecurityController:login" type="service_closure" id=".service_locator.rSTd.nA"/>
         <argument key="App\Controller\SupplierController:delete" type="service_closure" id=".service_locator.dvS6U1."/>
         <argument key="App\Controller\SupplierController:edit" type="service_closure" id=".service_locator.dvS6U1."/>
@@ -8247,6 +8315,16 @@
     </service>
     <service id="monolog.logger.router" class="Monolog\Logger">
       <argument>router</argument>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.console"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <configurator service="debug.debug_logger_configurator" method="pushDebugLogger"/>
+    </service>
+    <service id="monolog.logger.lock" class="Monolog\Logger">
+      <argument>lock</argument>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.console"/>
       </call>
@@ -9813,7 +9891,7 @@
     <service id="cache.app.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>U7wB2r-Jbw</argument>
       <argument>0</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -9823,7 +9901,7 @@
       <argument>+GLBvPHpKQ</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9831,7 +9909,7 @@
       <argument>30jH8e8wpu</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9839,7 +9917,7 @@
       <argument>Qv5NbT6vL3</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9847,7 +9925,7 @@
       <argument>mkQ+F01R4T</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9855,7 +9933,7 @@
       <argument>J9f1NRzpEe</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9863,14 +9941,23 @@
       <argument>8bse5sTk33</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
     <service id="cache.messenger.restart_workers_signal.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <argument>Nhx0R4q4j9</argument>
       <argument>0</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/app</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/app</argument>
+      <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
+      <call method="setLogger">
+        <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
+      </call>
+    </service>
+    <service id="cache.rate_limiter.recorder_inner" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
+      <argument>B-sykQclDd</argument>
+      <argument>0</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/app</argument>
       <argument type="service" id="cache.default_marshaller" on-invalid="ignore"/>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
@@ -9880,7 +9967,7 @@
       <argument>WSm3686Vwb</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9890,7 +9977,7 @@
       <argument>tU-C2vZkmM</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9898,7 +9985,7 @@
       <argument>+GGheCHrQV</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -9906,7 +9993,7 @@
       <argument>uijyHiUgj-</argument>
       <argument>0</argument>
       <argument>%container.build_id%</argument>
-      <argument>C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\var\cache\dev/pools/system</argument>
+      <argument>C:/Users/RamiBenSalem/final_project/CCP WEBSITE/final project/ccp_srl/var/cache/dev/pools/system</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -10009,6 +10096,10 @@
     <service id="Symfony\Component\PropertyInfo\PropertyInitializableExtractorInterface" alias="property_info"/>
     <service id="Symfony\Component\PropertyInfo\PropertyReadInfoExtractorInterface" alias="property_info.reflection_extractor"/>
     <service id="Symfony\Component\PropertyInfo\PropertyWriteInfoExtractorInterface" alias="property_info.reflection_extractor"/>
+    <service id="lock.factory" alias="lock.default.factory"/>
+    <service id="Symfony\Component\Lock\LockFactory" alias="lock.default.factory"/>
+    <service id=".Symfony\Component\RateLimiter\RateLimiterFactory $contact_form.limiter" alias="limiter.contact_form"/>
+    <service id="Symfony\Component\RateLimiter\RateLimiterFactory $contactFormLimiter" alias="limiter.contact_form"/>
     <service id="Symfony\Component\WebLink\HttpHeaderSerializer" alias="web_link.http_header_serializer"/>
     <service id="cache.default_redis_provider" alias=".cache_connection.GD_MSZC"/>
     <service id="cache.default_memcached_provider" alias=".cache_connection.JKE6keX"/>
@@ -10089,7 +10180,7 @@
     <service id="Psr\Log\LoggerInterface" alias="monolog.logger"/>
     <service id="container.env_var_processors_locator" alias=".service_locator.w7.f4fT" public="true"/>
     <service id="twig.loader.filesystem" alias="twig.loader.native_filesystem"/>
-    <service id="argument_resolver.controller_locator" alias=".service_locator.tGECYDH"/>
+    <service id="argument_resolver.controller_locator" alias=".service_locator.14c4F.i"/>
     <service id="doctrine.id_generator_locator" alias=".service_locator.KLVvNIq"/>
     <service id="twig.loader" alias="twig.loader.native_filesystem"/>
     <service id="Psr\Log\LoggerInterface $requestLogger" alias="monolog.logger.request"/>
@@ -10105,6 +10196,7 @@
     <service id="Psr\Log\LoggerInterface $phpLogger" alias="monolog.logger.php"/>
     <service id="Psr\Log\LoggerInterface $eventLogger" alias="monolog.logger.event"/>
     <service id="Psr\Log\LoggerInterface $routerLogger" alias="monolog.logger.router"/>
+    <service id="Psr\Log\LoggerInterface $lockLogger" alias="monolog.logger.lock"/>
     <service id="Psr\Log\LoggerInterface $profilerLogger" alias="monolog.logger.profiler"/>
     <service id="Psr\Log\LoggerInterface $doctrineLogger" alias="monolog.logger.doctrine"/>
     <service id="Psr\Log\LoggerInterface $debugLogger" alias="monolog.logger.debug"/>
@@ -10113,8 +10205,9 @@
     <service id=".service_locator.80edgLI" alias="messenger.receiver_locator"/>
     <service id=".service_locator.h8Jkkd2" alias="messenger.retry_strategy_locator"/>
     <service id=".service_locator.bJ.4HC5" alias=".service_locator.w7.f4fT"/>
+    <service id=".service_locator..vPJ.to" alias=".service_locator.c0qcjBY"/>
     <service id=".service_locator.T6ncYvc" alias=".service_locator.dvS6U1."/>
-    <service id=".service_locator.87KhePk" alias=".service_locator.tGECYDH"/>
+    <service id=".service_locator.HLPIp1g" alias=".service_locator.14c4F.i"/>
     <service id=".service_locator.BFrsqsn" alias=".service_locator.F9PKc.7"/>
     <service id=".service_locator.g_8kXIK" alias=".service_locator.ISEApdK"/>
     <service id=".service_locator.XtmiKbi" alias=".service_locator.MfxSDRP"/>
@@ -10142,6 +10235,7 @@
     <service id=".service_locator.gFlme_s" alias=".service_locator.y4_Zrx."/>
     <service id=".service_locator.025Wi8b" alias=".service_locator.kPUOGb8"/>
     <service id=".service_locator.plPJswW" alias=".service_locator.4elymRc"/>
+    <service id=".service_locator.dg6IwaR" alias=".service_locator.c0qcjBY"/>
     <service id=".service_locator.7NIAq8D" alias=".service_locator.rSTd.nA"/>
     <service id=".service_locator.6kFU5sQ" alias=".service_locator.Vzzoljw"/>
     <service id=".service_locator.9e2t_lq" alias=".service_locator.CsMkqUa"/>

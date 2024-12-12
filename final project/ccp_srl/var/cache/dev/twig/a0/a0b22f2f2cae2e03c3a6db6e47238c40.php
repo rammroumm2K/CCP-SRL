@@ -50,19 +50,18 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         // line 1
         yield "<!DOCTYPE html>
 <html lang=\"en\">
-    
+
 \t<head>
-    ";
+\t\t";
         // line 5
         yield from $this->unwrap()->yieldBlock('head', $context, $blocks);
-        // line 27
+        // line 28
         yield "\t</head>
 
-\t<body class=\"d-flex flex-column min-vh-100\">
-\t";
+\t<body class=\"d-flex flex-column min-vh-100\"> ";
         // line 30
         yield from $this->unwrap()->yieldBlock('navbar', $context, $blocks);
-        // line 33
+        // line 31
         yield "\t\t<!-- Hero Section -->
 \t\t<section class=\"hero text-center pt-5 \">
 \t\t\t<div class=\"container\">
@@ -108,21 +107,21 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 
 \t\t\t\t\t\t<p class=\"fs-3 bold-text mt-5 text-start\">
 \t\t\t\t\t\t\tFounded in 1993 by John Hellinckx, CCP is a full-service IT provider with a rich history of technological
-\t\t\t\t\t\t\t            evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
-\t\t\t\t\t\t\t            systems to modern cloud computing.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            systems to modern cloud computing.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<br>
 \t\t\t\t\t\t<p class=\"fs-3 bold-text text-start\">
 \t\t\t\t\t\t\tToday, we offer comprehensive IT maintenance and services to large enterprises, SMBs, and NGOs across
-\t\t\t\t\t\t\t            Belgium and Europe. Our mission is to provide tailored IT solutions that empower our clients to focus on
-\t\t\t\t\t\t\t            their core business goals, driving success, growth, and profitability.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            Belgium and Europe. Our mission is to provide tailored IT solutions that empower our clients to focus on
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            their core business goals, driving success, growth, and profitability.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<br>
 \t\t\t\t\t\t<p id=\"our-it-services\" class=\"fs-3 bold-text text-start\">
 \t\t\t\t\t\t\tNot every organization can afford an in-house IT specialist—this is where we come in, acting as your
-\t\t\t\t\t\t\t            dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
-\t\t\t\t\t\t\t            high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
-\t\t\t\t\t\t\t            at competitive rates.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            at competitive rates.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<div class=\"d-flex justify-content-center mt-5 \">
 \t\t\t\t\t\t\t<button class=\"styled-button mt-5 btn-lg\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#services-grid\" aria-expanded=\"false\" aria-controls=\"services-grid\">
@@ -164,10 +163,10 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Managed IT Service</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5 fs-sm-1\">Our managed IT services allow us to act as your
-\t\t\t\t\t\t\t\t\t\t                  dedicated IT department, providing tailored support that aligns with the criticality of your
-\t\t\t\t\t\t\t\t\t\t                  equipment, system specifics, and budget constraints. Whether you need full IT management or occasional
-\t\t\t\t\t\t\t\t\t\t                  assistance, we offer a service customized to your needs, helping you maintain a reliable and efficient
-\t\t\t\t\t\t\t\t\t\t                  IT infrastructure.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  dedicated IT department, providing tailored support that aligns with the criticality of your
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  equipment, system specifics, and budget constraints. Whether you need full IT management or occasional
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  assistance, we offer a service customized to your needs, helping you maintain a reliable and efficient
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  IT infrastructure.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -179,9 +178,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">End-User Support</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Does your team need daily IT assistance? We offer
-\t\t\t\t\t\t\t\t\t\t                  responsive remote and onsite support for end-users, ensuring they have the help they need to stay
-\t\t\t\t\t\t\t\t\t\t                  productive. Our end-user support service includes troubleshooting, assistance with day-to-day issues,
-\t\t\t\t\t\t\t\t\t\t                  and guidance on best IT practices.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  responsive remote and onsite support for end-users, ensuring they have the help they need to stay
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  productive. Our end-user support service includes troubleshooting, assistance with day-to-day issues,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  and guidance on best IT practices.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -193,9 +192,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Cloud Migration and Management</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Transition to the cloud seamlessly with our migration and
-\t\t\t\t\t\t\t\t\t\t                  management services. We specialize in platforms like Microsoft Azure, Office 365, Google Workspace,
-\t\t\t\t\t\t\t\t\t\t                  AWS, and more. Whether you’re moving to the cloud or need management for an existing setup, we ensure
-\t\t\t\t\t\t\t\t\t\t                  smooth operations, optimal performance, and security for your cloud environment.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  management services. We specialize in platforms like Microsoft Azure, Office 365, Google Workspace,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  AWS, and more. Whether you’re moving to the cloud or need management for an existing setup, we ensure
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  smooth operations, optimal performance, and security for your cloud environment.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -207,9 +206,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Consulting</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Need expert advice on your IT setup? Our consulting
-\t\t\t\t\t\t\t\t\t\t                  service offers audits, project implementation support, and long-term strategic planning to enhance
-\t\t\t\t\t\t\t\t\t\t                  your IT infrastructure. We cover areas like IT master plans, helpdesk setup, cloud computing,
-\t\t\t\t\t\t\t\t\t\t                  licensing, and hosting advisory to ensure your IT aligns with your business goals.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  service offers audits, project implementation support, and long-term strategic planning to enhance
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  your IT infrastructure. We cover areas like IT master plans, helpdesk setup, cloud computing,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  licensing, and hosting advisory to ensure your IT aligns with your business goals.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -221,8 +220,8 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Project Management</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">From planning to execution, our project management
-\t\t\t\t\t\t\t\t\t\t                  service supports your IT initiatives from start to finish. We ensure that each project is completed on
-\t\t\t\t\t\t\t\t\t\t                  time, within budget, and to your specifications, allowing you to focus on core business activities.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  service supports your IT initiatives from start to finish. We ensure that each project is completed on
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  time, within budget, and to your specifications, allowing you to focus on core business activities.
 \t\t\t\t\t\t\t\t\t</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
@@ -235,8 +234,8 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Virtualisation</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Optimize your resources and improve scalability with our
-\t\t\t\t\t\t\t\t\t\t                  virtualization solutions. We provide expert support in implementing and managing virtual environments,
-\t\t\t\t\t\t\t\t\t\t                  helping you reduce costs, increase efficiency, and enhance flexibility.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  virtualization solutions. We provide expert support in implementing and managing virtual environments,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  helping you reduce costs, increase efficiency, and enhance flexibility.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
@@ -428,109 +427,123 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t<h2 id=\"contact-menu\" class=\"text-center mb-5 fs-1 fw-bold about-ccp\">CONTACT</h2>
 \t\t\t\t<div class=\"col-lg-6 col-md-8 col-sm-10\">
 \t\t\t\t\t<div class=\"custom-card-form\">
-    <div class=\"p-4 mt-5\">
-        ";
-        // line 399
-        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 399, $this->source); })()), 'form_start', ["attr" => ["class" => "needs-validation", "novalidate" => "novalidate", "id" => "form-CCP"]]);
+\t\t\t\t\t\t<div class=\"p-4 mt-5\">
+\t\t\t\t\t\t\t";
+        // line 397
+        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 397, $this->source); })()), 'form_start', ["attr" => ["id" => "contact-form", "novalidate" => "novalidate"]]);
         yield "
-        
-        <div class=\"mb-3\">
-            <label for=\"";
-        // line 402
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 402, $this->source); })()), "name", [], "any", false, false, false, 402), "vars", [], "any", false, false, false, 402), "id", [], "any", false, false, false, 402), "html", null, true);
+
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"";
+        // line 400
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 400, $this->source); })()), "name", [], "any", false, false, false, 400), "vars", [], "any", false, false, false, 400), "id", [], "any", false, false, false, 400), "html", null, true);
         yield "\" class=\"form-label\" style=\"color: #fff;\">Full Name</label>
-            ";
-        // line 403
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 403, $this->source); })()), "name", [], "any", false, false, false, 403), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter your full name"]]);
+\t\t\t\t\t\t\t\t";
+        // line 401
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 401, $this->source); })()), "name", [], "any", false, false, false, 401), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter your full name"]]);
         yield "
-            <div class=\"invalid-feedback\">";
-        // line 404
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 404, $this->source); })()), "name", [], "any", false, false, false, 404), 'errors');
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">";
+        // line 402
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 402, $this->source); })()), "name", [], "any", false, false, false, 402), 'errors');
         yield "</div>
-        </div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"mb-3\">
-            <label for=\"";
-        // line 408
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 408, $this->source); })()), "email", [], "any", false, false, false, 408), "vars", [], "any", false, false, false, 408), "id", [], "any", false, false, false, 408), "html", null, true);
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"";
+        // line 406
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 406, $this->source); })()), "email", [], "any", false, false, false, 406), "vars", [], "any", false, false, false, 406), "id", [], "any", false, false, false, 406), "html", null, true);
         yield "\" class=\"form-label\" style=\"color: #fff;\">Email Address</label>
-            ";
-        // line 409
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 409, $this->source); })()), "email", [], "any", false, false, false, 409), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter your email address"]]);
+\t\t\t\t\t\t\t\t";
+        // line 407
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 407, $this->source); })()), "email", [], "any", false, false, false, 407), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter your email address"]]);
         yield "
-            <div class=\"invalid-feedback\">";
-        // line 410
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 410, $this->source); })()), "email", [], "any", false, false, false, 410), 'errors');
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">";
+        // line 408
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 408, $this->source); })()), "email", [], "any", false, false, false, 408), 'errors');
         yield "</div>
-        </div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"mb-3\">
-            <label for=\"";
-        // line 414
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 414, $this->source); })()), "subject", [], "any", false, false, false, 414), "vars", [], "any", false, false, false, 414), "id", [], "any", false, false, false, 414), "html", null, true);
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"";
+        // line 412
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 412, $this->source); })()), "subject", [], "any", false, false, false, 412), "vars", [], "any", false, false, false, 412), "id", [], "any", false, false, false, 412), "html", null, true);
         yield "\" class=\"form-label\" style=\"color: #fff;\">Subject</label>
-            ";
-        // line 415
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 415, $this->source); })()), "subject", [], "any", false, false, false, 415), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter the subject"]]);
+\t\t\t\t\t\t\t\t";
+        // line 413
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 413, $this->source); })()), "subject", [], "any", false, false, false, 413), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter the subject"]]);
         yield "
-            <div class=\"invalid-feedback\">";
-        // line 416
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 416, $this->source); })()), "subject", [], "any", false, false, false, 416), 'errors');
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">";
+        // line 414
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 414, $this->source); })()), "subject", [], "any", false, false, false, 414), 'errors');
         yield "</div>
-        </div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"mb-3\">
-            <label for=\"";
-        // line 420
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 420, $this->source); })()), "message", [], "any", false, false, false, 420), "vars", [], "any", false, false, false, 420), "id", [], "any", false, false, false, 420), "html", null, true);
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"";
+        // line 418
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 418, $this->source); })()), "message", [], "any", false, false, false, 418), "vars", [], "any", false, false, false, 418), "id", [], "any", false, false, false, 418), "html", null, true);
         yield "\" class=\"form-label\" style=\"color: #fff;\">Message</label>
-            ";
-        // line 421
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 421, $this->source); })()), "message", [], "any", false, false, false, 421), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Type your message here...", "rows" => "5"]]);
+\t\t\t\t\t\t\t\t";
+        // line 419
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 419, $this->source); })()), "message", [], "any", false, false, false, 419), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Type your message here...", "rows" => "5"]]);
         yield "
-            <div class=\"invalid-feedback\">";
-        // line 422
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 422, $this->source); })()), "message", [], "any", false, false, false, 422), 'errors');
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">";
+        // line 420
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 420, $this->source); })()), "message", [], "any", false, false, false, 420), 'errors');
         yield "</div>
-        </div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"form-check mb-3\">
-            ";
-        // line 426
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 426, $this->source); })()), "consent", [], "any", false, false, false, 426), 'widget', ["attr" => ["class" => "form-check-input"]]);
+\t\t\t\t\t\t\t<div class=\"form-check mb-3\">
+\t\t\t\t\t\t\t\t";
+        // line 424
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 424, $this->source); })()), "consent", [], "any", false, false, false, 424), 'widget', ["attr" => ["class" => "form-check-input"]]);
         yield "
-            <label for=\"";
-        // line 427
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 427, $this->source); })()), "consent", [], "any", false, false, false, 427), "vars", [], "any", false, false, false, 427), "id", [], "any", false, false, false, 427), "html", null, true);
+\t\t\t\t\t\t\t\t<label for=\"";
+        // line 425
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 425, $this->source); })()), "consent", [], "any", false, false, false, 425), "vars", [], "any", false, false, false, 425), "id", [], "any", false, false, false, 425), "html", null, true);
         yield "\" class=\"form-check-label\" style=\"color: #fff;\">
-                I agree to have my data collected and stored for the purpose of contacting me.
-            </label>
-            <div class=\"invalid-feedback\">";
-        // line 430
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 430, $this->source); })()), "consent", [], "any", false, false, false, 430), 'errors');
+\t\t\t\t\t\t\t\t\tI agree to have my data collected and stored for the purpose of contacting me.
+\t\t\t\t\t\t\t\t</label>
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">";
+        // line 428
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 428, $this->source); })()), "consent", [], "any", false, false, false, 428), 'errors');
         yield "</div>
-        </div>
+\t\t\t\t\t\t\t</div>
 
-        <input type=\"hidden\" name=\"captcha\" value=\"\">
-
-        <button type=\"submit\" class=\"btn btn-primary w-100\">Send Message</button>
-        ";
-        // line 436
-        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 436, $this->source); })()), 'form_end');
+\t\t\t\t\t\t\t<input type=\"hidden\" name=\"captcha\" value=\"test-token-valid\">
+\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary w-100\">Send Message</button>
+\t\t\t\t\t\t\t";
+        // line 433
+        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 433, $this->source); })()), 'form_end');
         yield "
-    </div>
-</div>
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
 
-<!-- Modal -->
-<div id=\"formModal\" class=\"modal fade\" tabindex=\"-1\" aria-hidden=\"true\">
+\t\t\t\t\t<!-- Modal -->
+\t\t\t\t\t<div id=\"formModal\" class=\"modal fade";
+        // line 438
+        if (CoreExtension::getAttribute($this->env, $this->source, (isset($context["modal"]) || array_key_exists("modal", $context) ? $context["modal"] : (function () { throw new RuntimeError('Variable "modal" does not exist.', 438, $this->source); })()), "show", [], "any", false, false, false, 438)) {
+            yield " show";
+        }
+        yield "\" tabindex=\"-1\" aria-labelledby=\"modalTitle\" aria-hidden=\"true\" ";
+        if (CoreExtension::getAttribute($this->env, $this->source, (isset($context["modal"]) || array_key_exists("modal", $context) ? $context["modal"] : (function () { throw new RuntimeError('Variable "modal" does not exist.', 438, $this->source); })()), "show", [], "any", false, false, false, 438)) {
+            yield "style=\"display: block;\"";
+        }
+        yield ">
     <div class=\"modal-dialog modal-dialog-centered\">
         <div class=\"modal-content bg-dark text-white\">
             <div class=\"modal-header\">
-                <h5 class=\"modal-title\" id=\"modalTitle\">Form Submission</h5>
+                <h5 class=\"modal-title\" id=\"modalTitle\">";
+        // line 442
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["modal"]) || array_key_exists("modal", $context) ? $context["modal"] : (function () { throw new RuntimeError('Variable "modal" does not exist.', 442, $this->source); })()), "title", [], "any", false, false, false, 442), "html", null, true);
+        yield "</h5>
                 <button type=\"button\" class=\"btn-close btn-close-white\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
             </div>
-            <div class=\"modal-body\" id=\"modalMessage\">
-                <!-- Messaggi saranno inseriti dinamicamente tramite JavaScript -->
+            <div class=\"modal-body\">
+                <p>";
+        // line 446
+        yield CoreExtension::getAttribute($this->env, $this->source, (isset($context["modal"]) || array_key_exists("modal", $context) ? $context["modal"] : (function () { throw new RuntimeError('Variable "modal" does not exist.', 446, $this->source); })()), "message", [], "any", false, false, false, 446);
+        yield "</p>
             </div>
             <div class=\"modal-footer\">
                 <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>
@@ -539,11 +552,13 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
     </div>
 </div>
 
+
+
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
 \t\t<img id=\"circle-svg\" src=\"";
-        // line 461
+        // line 460
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("image/vvvortex.svg"), "html", null, true);
         yield "\" alt=\"circile\"/>
 \t\t<!--Cookies Sections-->
@@ -559,17 +574,16 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t</div>
 
 
- 
-        ";
-        // line 476
+\t\t";
+        // line 474
         yield from $this->unwrap()->yieldBlock('footer', $context, $blocks);
-        // line 478
+        // line 475
         yield "
 \t\t<!-- Bootstrap JS -->
 \t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>
 \t\t<!-- Custom JS -->
 \t\t<script src=\"";
-        // line 482
+        // line 479
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("/script.js"), "html", null, true);
         yield "\"></script>
 \t\t<!-- Font Awesome -->
@@ -577,7 +591,7 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t<!--GCaptcha-->
 \t\t<script src=\"https://www.google.com/recaptcha/api.js\" async defer></script>
 \t\t<script src=\"";
-        // line 487
+        // line 484
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("cookie-banner.js"), "html", null, true);
         yield "\"></script>
 \t\t<!--Cookies Sections-->
@@ -595,20 +609,20 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 
 \t\t<!--reCaptcha Google-->
 \t\t<script src=\"https://www.google.com/recaptcha/api.js?render=";
-        // line 502
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["site_key"]) || array_key_exists("site_key", $context) ? $context["site_key"] : (function () { throw new RuntimeError('Variable "site_key" does not exist.', 502, $this->source); })()), "html", null, true);
+        // line 499
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["site_key"]) || array_key_exists("site_key", $context) ? $context["site_key"] : (function () { throw new RuntimeError('Variable "site_key" does not exist.', 499, $this->source); })()), "html", null, true);
         yield "\"></script>
 \t\t<script>
-\t\t\tdocument.addEventListener('DOMContentLoaded', function() {
-\t\t\t\tgrecaptcha.ready(function() {
-\t\t\t\t\tgrecaptcha.execute('";
-        // line 506
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["site_key"]) || array_key_exists("site_key", $context) ? $context["site_key"] : (function () { throw new RuntimeError('Variable "site_key" does not exist.', 506, $this->source); })()), "html", null, true);
-        yield "', {action: 'contact_form'}).then(function(token) {
-\t\t\t\t\t\tdocument.querySelector('input[name=\"captcha\"]').value = token;
-\t\t\t\t\t});
-\t\t\t\t});
-\t\t\t});
+\t\t\tdocument.addEventListener('DOMContentLoaded', function () {
+grecaptcha.ready(function () {
+grecaptcha.execute('";
+        // line 503
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape((isset($context["site_key"]) || array_key_exists("site_key", $context) ? $context["site_key"] : (function () { throw new RuntimeError('Variable "site_key" does not exist.', 503, $this->source); })()), "html", null, true);
+        yield "', {action: 'contact_form'}).then(function (token) {
+document.querySelector('input[name=\"captcha\"]').value = token;
+});
+});
+});
 \t\t</script>
 
 
@@ -639,33 +653,34 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "head"));
 
         // line 6
-        yield "\t\t<meta charset=\"UTF-8\">
-\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-\t\t<title>CCP SRL</title>
-\t\t<!-- Customize browser tab color for mobile -->
-\t\t<meta
-\t\tname=\"theme-color\" content=\"#98c379\">
-\t\t<!--Logo browser-->
-\t\t<link
-\t\trel=\"icon\" type=\"image/x-icon\" href=\"";
+        yield "\t\t\t<meta charset=\"UTF-8\">
+\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+\t\t\t<title>CCP SRL</title>
+\t\t\t<!-- Customize browser tab color for mobile -->
+\t\t\t<meta
+\t\t\tname=\"theme-color\" content=\"#98c379\">
+\t\t\t<!--Logo browser-->
+\t\t\t<link
+\t\t\trel=\"icon\" type=\"image/x-icon\" href=\"";
         // line 14
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("image/LOGO/ccp-_logo.png"), "html", null, true);
         yield "\">
-\t\t<!-- Bootstrap CSS -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
-\t\t<!-- Custom CSS -->
-\t\t<link rel=\"stylesheet\" href=\"";
-        // line 19
+\t\t\t<!-- Bootstrap CSS -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+\t\t\t<!-- Custom CSS -->
+\t\t\t<link
+\t\t\trel=\"stylesheet\" href=\"";
+        // line 20
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("styles/app.css"), "html", null, true);
         yield "\">
 
-\t\t<!-- Font Icon Bootstrao (for icons) -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
-\t\t<!-- Font Awesome -->
-\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
-    ";
+\t\t\t<!-- Font Icon Bootstrao (for icons) -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+\t\t\t<!-- Font Awesome -->
+\t\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
+\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -688,9 +703,6 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "navbar"));
 
-        // line 31
-        yield "
-";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -700,7 +712,7 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         yield from [];
     }
 
-    // line 476
+    // line 474
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -713,8 +725,6 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 477
-        yield "        ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -745,43 +755,41 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  717 => 477,  704 => 476,  692 => 31,  679 => 30,  660 => 19,  652 => 14,  642 => 6,  629 => 5,  606 => 506,  599 => 502,  581 => 487,  573 => 482,  567 => 478,  565 => 476,  547 => 461,  519 => 436,  510 => 430,  504 => 427,  500 => 426,  493 => 422,  489 => 421,  485 => 420,  478 => 416,  474 => 415,  470 => 414,  463 => 410,  459 => 409,  455 => 408,  448 => 404,  444 => 403,  440 => 402,  434 => 399,  66 => 33,  64 => 30,  59 => 27,  57 => 5,  51 => 1,);
+        return array (  716 => 474,  694 => 30,  675 => 20,  666 => 14,  656 => 6,  643 => 5,  620 => 503,  613 => 499,  595 => 484,  587 => 479,  581 => 475,  579 => 474,  562 => 460,  545 => 446,  538 => 442,  525 => 438,  517 => 433,  509 => 428,  503 => 425,  499 => 424,  492 => 420,  488 => 419,  484 => 418,  477 => 414,  473 => 413,  469 => 412,  462 => 408,  458 => 407,  454 => 406,  447 => 402,  443 => 401,  439 => 400,  433 => 397,  65 => 31,  63 => 30,  59 => 28,  57 => 5,  51 => 1,);
     }
 
     public function getSourceContext(): Source
     {
         return new Source("<!DOCTYPE html>
 <html lang=\"en\">
-    
-\t<head>
-    {% block head %}
-\t\t<meta charset=\"UTF-8\">
-\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
-\t\t<title>CCP SRL</title>
-\t\t<!-- Customize browser tab color for mobile -->
-\t\t<meta
-\t\tname=\"theme-color\" content=\"#98c379\">
-\t\t<!--Logo browser-->
-\t\t<link
-\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('image/LOGO/ccp-_logo.png')}}\">
-\t\t<!-- Bootstrap CSS -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
-\t\t<!-- Custom CSS -->
-\t\t<link rel=\"stylesheet\" href=\"{{asset ('styles/app.css') }}\">
 
-\t\t<!-- Font Icon Bootstrao (for icons) -->
-\t\t<link
-\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
-\t\t<!-- Font Awesome -->
-\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
-    {% endblock %}
+\t<head>
+\t\t{% block head %}
+\t\t\t<meta charset=\"UTF-8\">
+\t\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
+\t\t\t<title>CCP SRL</title>
+\t\t\t<!-- Customize browser tab color for mobile -->
+\t\t\t<meta
+\t\t\tname=\"theme-color\" content=\"#98c379\">
+\t\t\t<!--Logo browser-->
+\t\t\t<link
+\t\t\trel=\"icon\" type=\"image/x-icon\" href=\"{{asset ('image/LOGO/ccp-_logo.png')}}\">
+\t\t\t<!-- Bootstrap CSS -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css\" rel=\"stylesheet\">
+\t\t\t<!-- Custom CSS -->
+\t\t\t<link
+\t\t\trel=\"stylesheet\" href=\"{{asset ('styles/app.css') }}\">
+
+\t\t\t<!-- Font Icon Bootstrao (for icons) -->
+\t\t\t<link
+\t\t\thref=\"https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css\" rel=\"stylesheet\">
+\t\t\t<!-- Font Awesome -->
+\t\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
+\t\t{% endblock %}
 \t</head>
 
-\t<body class=\"d-flex flex-column min-vh-100\">
-\t{% block navbar %}
-
-{% endblock %}
+\t<body class=\"d-flex flex-column min-vh-100\"> {% block navbar %}{% endblock %}
 \t\t<!-- Hero Section -->
 \t\t<section class=\"hero text-center pt-5 \">
 \t\t\t<div class=\"container\">
@@ -827,21 +835,21 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 
 \t\t\t\t\t\t<p class=\"fs-3 bold-text mt-5 text-start\">
 \t\t\t\t\t\t\tFounded in 1993 by John Hellinckx, CCP is a full-service IT provider with a rich history of technological
-\t\t\t\t\t\t\t            evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
-\t\t\t\t\t\t\t            systems to modern cloud computing.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            evolution. Starting with Novell Netware networks, we’ve transitioned over the years from coaxial cable
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            systems to modern cloud computing.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<br>
 \t\t\t\t\t\t<p class=\"fs-3 bold-text text-start\">
 \t\t\t\t\t\t\tToday, we offer comprehensive IT maintenance and services to large enterprises, SMBs, and NGOs across
-\t\t\t\t\t\t\t            Belgium and Europe. Our mission is to provide tailored IT solutions that empower our clients to focus on
-\t\t\t\t\t\t\t            their core business goals, driving success, growth, and profitability.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            Belgium and Europe. Our mission is to provide tailored IT solutions that empower our clients to focus on
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            their core business goals, driving success, growth, and profitability.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<br>
 \t\t\t\t\t\t<p id=\"our-it-services\" class=\"fs-3 bold-text text-start\">
 \t\t\t\t\t\t\tNot every organization can afford an in-house IT specialist—this is where we come in, acting as your
-\t\t\t\t\t\t\t            dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
-\t\t\t\t\t\t\t            high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
-\t\t\t\t\t\t\t            at competitive rates.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            dedicated IT department. Our value lies in our ability to fully manage and support your IT needs, delivering
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            high-quality solutions across computer systems, IT infrastructure, internet, cloud, and mobile platforms—all
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t            at competitive rates.
 \t\t\t\t\t\t</p>
 \t\t\t\t\t\t<div class=\"d-flex justify-content-center mt-5 \">
 \t\t\t\t\t\t\t<button class=\"styled-button mt-5 btn-lg\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#services-grid\" aria-expanded=\"false\" aria-controls=\"services-grid\">
@@ -883,10 +891,10 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Managed IT Service</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5 fs-sm-1\">Our managed IT services allow us to act as your
-\t\t\t\t\t\t\t\t\t\t                  dedicated IT department, providing tailored support that aligns with the criticality of your
-\t\t\t\t\t\t\t\t\t\t                  equipment, system specifics, and budget constraints. Whether you need full IT management or occasional
-\t\t\t\t\t\t\t\t\t\t                  assistance, we offer a service customized to your needs, helping you maintain a reliable and efficient
-\t\t\t\t\t\t\t\t\t\t                  IT infrastructure.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  dedicated IT department, providing tailored support that aligns with the criticality of your
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  equipment, system specifics, and budget constraints. Whether you need full IT management or occasional
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  assistance, we offer a service customized to your needs, helping you maintain a reliable and efficient
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  IT infrastructure.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -898,9 +906,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">End-User Support</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Does your team need daily IT assistance? We offer
-\t\t\t\t\t\t\t\t\t\t                  responsive remote and onsite support for end-users, ensuring they have the help they need to stay
-\t\t\t\t\t\t\t\t\t\t                  productive. Our end-user support service includes troubleshooting, assistance with day-to-day issues,
-\t\t\t\t\t\t\t\t\t\t                  and guidance on best IT practices.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  responsive remote and onsite support for end-users, ensuring they have the help they need to stay
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  productive. Our end-user support service includes troubleshooting, assistance with day-to-day issues,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  and guidance on best IT practices.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -912,9 +920,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Cloud Migration and Management</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Transition to the cloud seamlessly with our migration and
-\t\t\t\t\t\t\t\t\t\t                  management services. We specialize in platforms like Microsoft Azure, Office 365, Google Workspace,
-\t\t\t\t\t\t\t\t\t\t                  AWS, and more. Whether you’re moving to the cloud or need management for an existing setup, we ensure
-\t\t\t\t\t\t\t\t\t\t                  smooth operations, optimal performance, and security for your cloud environment.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  management services. We specialize in platforms like Microsoft Azure, Office 365, Google Workspace,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  AWS, and more. Whether you’re moving to the cloud or need management for an existing setup, we ensure
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  smooth operations, optimal performance, and security for your cloud environment.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -926,9 +934,9 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Consulting</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Need expert advice on your IT setup? Our consulting
-\t\t\t\t\t\t\t\t\t\t                  service offers audits, project implementation support, and long-term strategic planning to enhance
-\t\t\t\t\t\t\t\t\t\t                  your IT infrastructure. We cover areas like IT master plans, helpdesk setup, cloud computing,
-\t\t\t\t\t\t\t\t\t\t                  licensing, and hosting advisory to ensure your IT aligns with your business goals.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  service offers audits, project implementation support, and long-term strategic planning to enhance
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  your IT infrastructure. We cover areas like IT master plans, helpdesk setup, cloud computing,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  licensing, and hosting advisory to ensure your IT aligns with your business goals.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 
@@ -940,8 +948,8 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Project Management</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">From planning to execution, our project management
-\t\t\t\t\t\t\t\t\t\t                  service supports your IT initiatives from start to finish. We ensure that each project is completed on
-\t\t\t\t\t\t\t\t\t\t                  time, within budget, and to your specifications, allowing you to focus on core business activities.
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  service supports your IT initiatives from start to finish. We ensure that each project is completed on
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  time, within budget, and to your specifications, allowing you to focus on core business activities.
 \t\t\t\t\t\t\t\t\t</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
@@ -954,8 +962,8 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t\t\t<h5 class=\"service-title mt-3\">Virtualisation</h5>
 \t\t\t\t\t\t\t\t\t<p class=\"service-description text-start fs-5\">Optimize your resources and improve scalability with our
-\t\t\t\t\t\t\t\t\t\t                  virtualization solutions. We provide expert support in implementing and managing virtual environments,
-\t\t\t\t\t\t\t\t\t\t                  helping you reduce costs, increase efficiency, and enhance flexibility.</p>
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  virtualization solutions. We provide expert support in implementing and managing virtual environments,
+\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t                  helping you reduce costs, increase efficiency, and enhance flexibility.</p>
 \t\t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t\t</div>
 \t\t\t\t\t\t</div>
@@ -1147,58 +1155,57 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t<h2 id=\"contact-menu\" class=\"text-center mb-5 fs-1 fw-bold about-ccp\">CONTACT</h2>
 \t\t\t\t<div class=\"col-lg-6 col-md-8 col-sm-10\">
 \t\t\t\t\t<div class=\"custom-card-form\">
-    <div class=\"p-4 mt-5\">
-        {{ form_start(form, { 'attr': {'class': 'needs-validation', 'novalidate': 'novalidate', 'id': 'form-CCP'} }) }}
-        
-        <div class=\"mb-3\">
-            <label for=\"{{ form.name.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Full Name</label>
-            {{ form_widget(form.name, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your full name'} }) }}
-            <div class=\"invalid-feedback\">{{ form_errors(form.name) }}</div>
-        </div>
+\t\t\t\t\t\t<div class=\"p-4 mt-5\">
+\t\t\t\t\t\t\t{{ form_start(form, { 'attr': { 'id': 'contact-form', 'novalidate': 'novalidate' } }) }}
 
-        <div class=\"mb-3\">
-            <label for=\"{{ form.email.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Email Address</label>
-            {{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your email address'} }) }}
-            <div class=\"invalid-feedback\">{{ form_errors(form.email) }}</div>
-        </div>
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"{{ form.name.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Full Name</label>
+\t\t\t\t\t\t\t\t{{ form_widget(form.name, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your full name'} }) }}
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">{{ form_errors(form.name) }}</div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"mb-3\">
-            <label for=\"{{ form.subject.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Subject</label>
-            {{ form_widget(form.subject, { 'attr': {'class': 'form-control', 'placeholder': 'Enter the subject'} }) }}
-            <div class=\"invalid-feedback\">{{ form_errors(form.subject) }}</div>
-        </div>
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"{{ form.email.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Email Address</label>
+\t\t\t\t\t\t\t\t{{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your email address'} }) }}
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">{{ form_errors(form.email) }}</div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"mb-3\">
-            <label for=\"{{ form.message.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Message</label>
-            {{ form_widget(form.message, { 'attr': {'class': 'form-control', 'placeholder': 'Type your message here...', 'rows': '5'} }) }}
-            <div class=\"invalid-feedback\">{{ form_errors(form.message) }}</div>
-        </div>
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"{{ form.subject.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Subject</label>
+\t\t\t\t\t\t\t\t{{ form_widget(form.subject, { 'attr': {'class': 'form-control', 'placeholder': 'Enter the subject'} }) }}
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">{{ form_errors(form.subject) }}</div>
+\t\t\t\t\t\t\t</div>
 
-        <div class=\"form-check mb-3\">
-            {{ form_widget(form.consent, { 'attr': {'class': 'form-check-input'} }) }}
-            <label for=\"{{ form.consent.vars.id }}\" class=\"form-check-label\" style=\"color: #fff;\">
-                I agree to have my data collected and stored for the purpose of contacting me.
-            </label>
-            <div class=\"invalid-feedback\">{{ form_errors(form.consent) }}</div>
-        </div>
+\t\t\t\t\t\t\t<div class=\"mb-3\">
+\t\t\t\t\t\t\t\t<label for=\"{{ form.message.vars.id }}\" class=\"form-label\" style=\"color: #fff;\">Message</label>
+\t\t\t\t\t\t\t\t{{ form_widget(form.message, { 'attr': {'class': 'form-control', 'placeholder': 'Type your message here...', 'rows': '5'} }) }}
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">{{ form_errors(form.message) }}</div>
+\t\t\t\t\t\t\t</div>
 
-        <input type=\"hidden\" name=\"captcha\" value=\"\">
+\t\t\t\t\t\t\t<div class=\"form-check mb-3\">
+\t\t\t\t\t\t\t\t{{ form_widget(form.consent, { 'attr': {'class': 'form-check-input'} }) }}
+\t\t\t\t\t\t\t\t<label for=\"{{ form.consent.vars.id }}\" class=\"form-check-label\" style=\"color: #fff;\">
+\t\t\t\t\t\t\t\t\tI agree to have my data collected and stored for the purpose of contacting me.
+\t\t\t\t\t\t\t\t</label>
+\t\t\t\t\t\t\t\t<div class=\"invalid-feedback\">{{ form_errors(form.consent) }}</div>
+\t\t\t\t\t\t\t</div>
 
-        <button type=\"submit\" class=\"btn btn-primary w-100\">Send Message</button>
-        {{ form_end(form) }}
-    </div>
-</div>
+\t\t\t\t\t\t\t<input type=\"hidden\" name=\"captcha\" value=\"test-token-valid\">
+\t\t\t\t\t\t\t<button type=\"submit\" class=\"btn btn-primary w-100\">Send Message</button>
+\t\t\t\t\t\t\t{{ form_end(form) }}
+\t\t\t\t\t\t</div>
+\t\t\t\t\t</div>
 
-<!-- Modal -->
-<div id=\"formModal\" class=\"modal fade\" tabindex=\"-1\" aria-hidden=\"true\">
+\t\t\t\t\t<!-- Modal -->
+\t\t\t\t\t<div id=\"formModal\" class=\"modal fade{% if modal.show %} show{% endif %}\" tabindex=\"-1\" aria-labelledby=\"modalTitle\" aria-hidden=\"true\" {% if modal.show %}style=\"display: block;\"{% endif %}>
     <div class=\"modal-dialog modal-dialog-centered\">
         <div class=\"modal-content bg-dark text-white\">
             <div class=\"modal-header\">
-                <h5 class=\"modal-title\" id=\"modalTitle\">Form Submission</h5>
+                <h5 class=\"modal-title\" id=\"modalTitle\">{{ modal.title }}</h5>
                 <button type=\"button\" class=\"btn-close btn-close-white\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
             </div>
-            <div class=\"modal-body\" id=\"modalMessage\">
-                <!-- Messaggi saranno inseriti dinamicamente tramite JavaScript -->
+            <div class=\"modal-body\">
+                <p>{{ modal.message|raw }}</p>
             </div>
             <div class=\"modal-footer\">
                 <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>
@@ -1206,6 +1213,8 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
         </div>
     </div>
 </div>
+
+
 
 \t\t\t\t</div>
 \t\t\t</div>
@@ -1224,9 +1233,7 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t</div>
 
 
- 
-        {% block footer %}
-        {% endblock %}
+\t\t{% block footer %}{% endblock %}
 
 \t\t<!-- Bootstrap JS -->
 \t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>
@@ -1253,13 +1260,13 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t<!--reCaptcha Google-->
 \t\t<script src=\"https://www.google.com/recaptcha/api.js?render={{ site_key }}\"></script>
 \t\t<script>
-\t\t\tdocument.addEventListener('DOMContentLoaded', function() {
-\t\t\t\tgrecaptcha.ready(function() {
-\t\t\t\t\tgrecaptcha.execute('{{ site_key }}', {action: 'contact_form'}).then(function(token) {
-\t\t\t\t\t\tdocument.querySelector('input[name=\"captcha\"]').value = token;
-\t\t\t\t\t});
-\t\t\t\t});
-\t\t\t});
+\t\t\tdocument.addEventListener('DOMContentLoaded', function () {
+grecaptcha.ready(function () {
+grecaptcha.execute('{{ site_key }}', {action: 'contact_form'}).then(function (token) {
+document.querySelector('input[name=\"captcha\"]').value = token;
+});
+});
+});
 \t\t</script>
 
 
