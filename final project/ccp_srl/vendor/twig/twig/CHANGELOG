@@ -1,4 +1,10 @@
-# 3.16.0 (2024-XX-XX)
+# 3.17.0 (2024-12-10)
+
+ * Fix ArrayAccess with objects as keys
+ * Support underscores in number literals
+ * Deprecate `ConditionalExpression` and `NullCoalesceExpression` (use `ConditionalTernary` and `NullCoalesceBinary` instead)
+
+# 3.16.0 (2024-11-29)
 
  * Deprecate `InlinePrint`
  * Fix having macro variables starting with an underscore

@@ -29,94 +29,51 @@ document.querySelector('.styled-link').addEventListener('click', function (event
 
   // Call the function on page load
   updateFooterYear();
+  document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('form-CCP'); // Seleziona il modulo con ID 'form-CCP'
+    const modalElement = document.getElementById('formModal'); // Seleziona il modal con ID 'formModal'
+    const modalInstance = new bootstrap.Modal(modalElement); // Inizializza il modal Bootstrap
+    const modalTitle = document.getElementById('modalTitle'); // Titolo del modal
+    const modalMessage = document.getElementById('modalMessage'); // Corpo del modal per i messaggi
 
-  // Function for the form
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Impedisce il comportamento predefinito del modulo
 
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('form');
-    const modal = document.createElement('div');
+        const formData = new FormData(form); // Recupera i dati del modulo
 
-    // Funzione per creare un modal
-    const createModal = (title, message, success = false) => {
-        modal.innerHTML = `
-            <div class="modal fade" tabindex="-1" id="feedbackModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header ${success ? 'bg-success' : 'bg-danger'} text-white">
-                            <h5 class="modal-title">${title}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <p>${message}</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>`;
-        document.body.appendChild(modal);
-        const bootstrapModal = new bootstrap.Modal(document.getElementById('feedbackModal'));
-        bootstrapModal.show();
-    };
-
-    form.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        // Validazione dei campi
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const subject = document.getElementById('subject').value.trim();
-        const message = document.getElementById('message').value.trim();
-        const consent = document.getElementById('consent').checked;
-        const recaptchaResponse = grecaptcha.getResponse();
-
-        if (!name) {
-            createModal('Error', 'Full Name is required.');
-            return;
-        }
-        if (!email.includes('@') || !email.includes('.')) {
-            createModal('Error', 'Invalid email address.');
-            return;
-        }
-        if (!subject) {
-            createModal('Error', 'Subject is required.');
-            return;
-        }
-        if (!message) {
-            createModal('Error', 'Message cannot be empty.');
-            return;
-        }
-        if (!consent) {
-            createModal('Error', 'You must agree to the consent.');
-            return;
-        }
-        if (!recaptchaResponse) {
-            createModal('Error', 'Please complete the reCAPTCHA.');
-            return;
-        }
-
-        // Simula l'invio del form
-        try {
-            // Esegui eventuali chiamate API qui
-            // Esempio di invio del form con fetch:
-            /*
-            const response = await fetch('/submit-form', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ name, email, subject, message, recaptchaResponse }),
+        // Esegue la richiesta AJAX
+        fetch(form.action, {
+            method: 'POST', // Metodo HTTP POST
+            body: formData
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json(); // Converte la risposta in JSON
+            })
+            .then(data => {
+                if (data.success) {
+                    // Mostra messaggio di successo
+                    modalTitle.textContent = 'Success';
+                    modalMessage.innerHTML = `<p>${data.message}</p>`;
+                    form.reset(); // Resetta il modulo
+                } else {
+                    // Mostra messaggi di errore
+                    modalTitle.textContent = 'Error';
+                    if (data.errors) {
+                        modalMessage.innerHTML = data.errors.map(error => `<p>${error}</p>`).join('');
+                    } else {
+                        modalMessage.innerHTML = `<p>${data.message}</p>`;
+                    }
+                }
+                modalInstance.show(); // Mostra il modal
+            })
+            .catch(error => {
+                // Gestione errore generico
+                modalTitle.textContent = 'Error';
+                modalMessage.innerHTML = `<p>An unexpected error occurred. Please try again later.</p>`;
+                modalInstance.show();
             });
-            const result = await response.json();
-            if (!result.success) throw new Error(result.message);
-            */
-
-            createModal('Success', 'Your message has been sent successfully!', true);
-            form.reset();
-            grecaptcha.reset(); // Resetta il reCAPTCHA
-        } catch (error) {
-            createModal('Error', `Failed to send message: ${error.message}`);
-        }
     });
 });
-
-

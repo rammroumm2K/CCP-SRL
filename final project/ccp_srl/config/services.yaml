@@ -1,9 +1,6 @@
-# This file is the entry point to configure your own services.
-# Files in the packages/ subdirectory configure your dependencies.
-
-# Put parameters here that don't need to change on each machine where the app is deployed
-# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+    app.recaptcha.site_key: '%env(GOOGLE_RECAPTCHA_SITE_KEY)%'
+    app.recaptcha.secret_key: '%env(GOOGLE_RECAPTCHA_SECRET_KEY)%'
 
 services:
     # default configuration for services in *this* file
@@ -19,6 +16,11 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+
+    # Registering ReCaptcha as a parameter for easier use (optional)
+    ReCaptcha\ReCaptcha:
+        arguments:
+            $secret: '%app.recaptcha.secret_key%'
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
