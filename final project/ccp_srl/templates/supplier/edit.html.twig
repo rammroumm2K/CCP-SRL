@@ -35,12 +35,16 @@
                             <td>{{ supplier.id }}</td>
                         </tr>
                         <tr>
-                            <th>Name Company</th>
+                            <th>Name</th>
                             <td>{{ form_widget(form.nameCompany, {'attr': {'class': 'form-control', 'placeholder': 'Enter company name', 'style': 'max-width: 400px'}}) }}</td>
                         </tr>
                         <tr>
                             <th>Link</th>
                             <td>{{ form_widget(form.link, {'attr': {'class': 'form-control', 'placeholder': 'Enter company link', 'style': 'max-width: 400px'}}) }}</td>
+                        </tr>
+                        <tr>
+                            <th>Tags</th>
+                            <td>{{ form_widget(form.tags, {'attr': {'class': 'form-control', 'placeholder': 'Enter tags separated by commas', 'style': 'max-width: 400px'}}) }}</td>
                         </tr>
                     </tbody>
                 </table>

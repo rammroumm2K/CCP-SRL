@@ -19,6 +19,9 @@ class Supplier
     #[ORM\Column(length: 255)]
     private ?string $link = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?array $tags = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +47,18 @@ class Supplier
     public function setLink(string $link): static
     {
         $this->link = $link;
+
+        return $this;
+    }
+
+    public function getTags(): ?array
+    {
+        return $this->tags;
+    }
+
+    public function setTags(?array $tags): static
+    {
+        $this->tags = $tags;
 
         return $this;
     }

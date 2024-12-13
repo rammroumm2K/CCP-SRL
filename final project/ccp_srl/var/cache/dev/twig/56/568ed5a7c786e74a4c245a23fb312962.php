@@ -97,7 +97,7 @@ class __TwigTemplate_26e8a30c515b527151ad4b0d50db4cd3 extends Template
         yield "</td>
                         </tr>
                         <tr>
-                            <th>Name Company</th>
+                            <th>Company Name</th>
                             <td>";
         // line 39
         yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), "nameCompany", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter company name", "style" => "max-width: 400px"]]);
@@ -110,19 +110,26 @@ class __TwigTemplate_26e8a30c515b527151ad4b0d50db4cd3 extends Template
         yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 43, $this->source); })()), "link", [], "any", false, false, false, 43), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter company link", "style" => "max-width: 400px"]]);
         yield "</td>
                         </tr>
+                        <tr>
+                            <th>Tags</th>
+                            <td>";
+        // line 47
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 47, $this->source); })()), "tags", [], "any", false, false, false, 47), 'widget', ["attr" => ["class" => "form-control", "placeholder" => "Enter tags separated by commas", "style" => "max-width: 400px"]]);
+        yield "</td>
+                        </tr>
                     </tbody>
                 </table>
 
                 <div class=\"d-flex gap-3 mt-3\">
                     <button type=\"submit\" class=\"btn btn-success\">Update</button>
                     <a href=\"";
-        // line 50
+        // line 54
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_index");
         yield "\" class=\"btn btn-primary\">Back to list</a>
                 </div>
                 ";
-        // line 52
-        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 52, $this->source); })()), 'form_end');
+        // line 56
+        yield         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 56, $this->source); })()), 'form_end');
         yield "
             </div>
         </div>
@@ -163,7 +170,7 @@ class __TwigTemplate_26e8a30c515b527151ad4b0d50db4cd3 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  125 => 52,  120 => 50,  110 => 43,  103 => 39,  96 => 35,  88 => 30,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
+        return array (  132 => 56,  127 => 54,  117 => 47,  110 => 43,  103 => 39,  96 => 35,  88 => 30,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -205,12 +212,16 @@ class __TwigTemplate_26e8a30c515b527151ad4b0d50db4cd3 extends Template
                             <td>{{ supplier.id }}</td>
                         </tr>
                         <tr>
-                            <th>Name Company</th>
+                            <th>Company Name</th>
                             <td>{{ form_widget(form.nameCompany, {'attr': {'class': 'form-control', 'placeholder': 'Enter company name', 'style': 'max-width: 400px'}}) }}</td>
                         </tr>
                         <tr>
                             <th>Link</th>
                             <td>{{ form_widget(form.link, {'attr': {'class': 'form-control', 'placeholder': 'Enter company link', 'style': 'max-width: 400px'}}) }}</td>
+                        </tr>
+                        <tr>
+                            <th>Tags</th>
+                            <td>{{ form_widget(form.tags, {'attr': {'class': 'form-control', 'placeholder': 'Enter tags separated by commas', 'style': 'max-width: 400px'}}) }}</td>
                         </tr>
                     </tbody>
                 </table>

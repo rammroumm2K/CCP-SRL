@@ -1,4 +1,21 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_start(form, {'attr': {'class': 'needs-validation', 'novalidate': true}}) }}
+<div class="mb-3">
+    {{ form_label(form.nameCompany, 'Company Name', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(form.nameCompany, {'attr': {'class': 'form-control', 'placeholder': 'Enter company name'}}) }}
+    {{ form_errors(form.nameCompany) }}
+</div>
+
+<div class="mb-3">
+    {{ form_label(form.link, 'Link', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(form.link, {'attr': {'class': 'form-control', 'placeholder': 'Enter company link'}}) }}
+    {{ form_errors(form.link) }}
+</div>
+
+<div class="mb-3">
+    {{ form_label(form.tags, 'Tags', {'label_attr': {'class': 'form-label'}}) }}
+    {{ form_widget(form.tags, {'attr': {'class': 'form-control', 'placeholder': 'Enter tags separated by commas'}}) }}
+    {{ form_errors(form.tags) }}
+</div>
+
+<button type="submit" class="btn btn-primary">{{ button_label|default('Save') }}</button>
 {{ form_end(form) }}

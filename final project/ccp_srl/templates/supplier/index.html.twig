@@ -36,8 +36,9 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name Company</th>
+                            <th>Name</th>
                             <th>Links</th>
+                            <th>Tags</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -47,6 +48,13 @@
                                 <td>{{ supplier.id }}</td>
                                 <td>{{ supplier.nameCompany }}</td>
                                 <td><a href="{{ supplier.link }}" class="truncate-link" target="_blank">{{ supplier.link }}</a></td>
+                                <td>
+                                    {% if supplier.tags is not empty %}
+                                        {{ supplier.tags|join(', ') }}
+                                    {% else %}
+                                        <em>No tags</em>
+                                    {% endif %}
+                                </td>
                                 <td>
                                     <!-- Pulsanti Azione -->
                                     <a href="{{ path('app_supplier_show', {'id': supplier.id}) }}" class="btn btn-info btn-sm">Show</a>
@@ -81,7 +89,7 @@
                             </tr>
                         {% else %}
                             <tr>
-                                <td colspan="4" class="text-center">No suppliers found.</td>
+                                <td colspan="5" class="text-center">No suppliers found.</td>
                             </tr>
                         {% endfor %}
                     </tbody>

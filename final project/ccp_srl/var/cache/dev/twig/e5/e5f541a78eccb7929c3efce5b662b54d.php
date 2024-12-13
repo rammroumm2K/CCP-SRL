@@ -98,65 +98,82 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name Company</th>
+                            <th>Company Name</th>
                             <th>Links</th>
+                            <th>Tags</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         ";
-        // line 45
+        // line 46
         $context['_parent'] = $context;
-        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["suppliers"]) || array_key_exists("suppliers", $context) ? $context["suppliers"] : (function () { throw new RuntimeError('Variable "suppliers" does not exist.', 45, $this->source); })()));
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["suppliers"]) || array_key_exists("suppliers", $context) ? $context["suppliers"] : (function () { throw new RuntimeError('Variable "suppliers" does not exist.', 46, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["supplier"]) {
-            // line 46
+            // line 47
             yield "                            <tr>
                                 <td>";
-            // line 47
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 47), "html", null, true);
+            // line 48
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 48), "html", null, true);
             yield "</td>
                                 <td>";
-            // line 48
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "nameCompany", [], "any", false, false, false, 48), "html", null, true);
+            // line 49
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "nameCompany", [], "any", false, false, false, 49), "html", null, true);
             yield "</td>
                                 <td><a href=\"";
-            // line 49
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "link", [], "any", false, false, false, 49), "html", null, true);
+            // line 50
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "link", [], "any", false, false, false, 50), "html", null, true);
             yield "\" class=\"truncate-link\" target=\"_blank\">";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "link", [], "any", false, false, false, 49), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "link", [], "any", false, false, false, 50), "html", null, true);
             yield "</a></td>
+                                <td>
+                                    ";
+            // line 52
+            if ( !Twig\Extension\CoreExtension::testEmpty(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "tags", [], "any", false, false, false, 52))) {
+                // line 53
+                yield "                                        ";
+                yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::join(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "tags", [], "any", false, false, false, 53), ", "), "html", null, true);
+                yield "
+                                    ";
+            } else {
+                // line 55
+                yield "                                        <em>No tags</em>
+                                    ";
+            }
+            // line 57
+            yield "                                </td>
                                 <td>
                                     <!-- Pulsanti Azione -->
                                     <a href=\"";
-            // line 52
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 52)]), "html", null, true);
+            // line 60
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_show", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 60)]), "html", null, true);
             yield "\" class=\"btn btn-info btn-sm\">Show</a>
                                     <a href=\"";
-            // line 53
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 53)]), "html", null, true);
+            // line 61
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 61)]), "html", null, true);
             yield "\" class=\"btn btn-primary btn-sm\">Modify</a>
                                     <!-- Pulsante Delete -->
                                     <button type=\"button\" class=\"btn btn-danger btn-sm\" data-bs-toggle=\"modal\" data-bs-target=\"#deleteModal";
-            // line 55
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 55), "html", null, true);
+            // line 63
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 63), "html", null, true);
             yield "\">
                                         Delete
                                     </button>
 
                                     <!-- Modal -->
                                     <div class=\"modal fade\" id=\"deleteModal";
-            // line 60
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 60), "html", null, true);
+            // line 68
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 68), "html", null, true);
             yield "\" tabindex=\"-1\" aria-labelledby=\"deleteModalLabel";
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 60), "html", null, true);
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 68), "html", null, true);
             yield "\" aria-hidden=\"true\">
                                         <div class=\"modal-dialog modal-dialog-centered\">
                                             <div class=\"modal-content bg-dark text-white\">
                                                 <div class=\"modal-header\">
                                                     <h5 class=\"modal-title\" id=\"deleteModalLabel";
-            // line 64
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 64), "html", null, true);
+            // line 72
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 72), "html", null, true);
             yield "\">Confirm Deletion</h5>
                                                     <button type=\"button\" class=\"btn-close btn-close-white\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>
                                                 </div>
@@ -166,12 +183,12 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
                                                 <div class=\"modal-footer\">
                                                     <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Cancel</button>
                                                     <form method=\"post\" action=\"";
-            // line 72
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 72)]), "html", null, true);
+            // line 80
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_delete", ["id" => CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 80)]), "html", null, true);
             yield "\">
                                                         <input type=\"hidden\" name=\"_token\" value=\"";
-            // line 73
-            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 73))), "html", null, true);
+            // line 81
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderCsrfToken(("delete" . CoreExtension::getAttribute($this->env, $this->source, $context["supplier"], "id", [], "any", false, false, false, 81))), "html", null, true);
             yield "\">
                                                         <button type=\"submit\" class=\"btn btn-danger\">Delete</button>
                                                     </form>
@@ -185,16 +202,16 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 83
+            // line 91
             yield "                            <tr>
-                                <td colspan=\"4\" class=\"text-center\">No suppliers found.</td>
+                                <td colspan=\"5\" class=\"text-center\">No suppliers found.</td>
                             </tr>
                         ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_key'], $context['supplier'], $context['_parent'], $context['_iterated']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 87
+        // line 95
         yield "                    </tbody>
                 </table>
             </div>
@@ -246,7 +263,7 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  198 => 87,  189 => 83,  174 => 73,  170 => 72,  159 => 64,  150 => 60,  142 => 55,  137 => 53,  133 => 52,  125 => 49,  121 => 48,  117 => 47,  114 => 46,  109 => 45,  94 => 33,  86 => 28,  78 => 23,  72 => 20,  61 => 12,  48 => 1,);
+        return array (  215 => 95,  206 => 91,  191 => 81,  187 => 80,  176 => 72,  167 => 68,  159 => 63,  154 => 61,  150 => 60,  145 => 57,  141 => 55,  135 => 53,  133 => 52,  126 => 50,  122 => 49,  118 => 48,  115 => 47,  110 => 46,  94 => 33,  86 => 28,  78 => 23,  72 => 20,  61 => 12,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -289,8 +306,9 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name Company</th>
+                            <th>Company Name</th>
                             <th>Links</th>
+                            <th>Tags</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
@@ -300,6 +318,13 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
                                 <td>{{ supplier.id }}</td>
                                 <td>{{ supplier.nameCompany }}</td>
                                 <td><a href=\"{{ supplier.link }}\" class=\"truncate-link\" target=\"_blank\">{{ supplier.link }}</a></td>
+                                <td>
+                                    {% if supplier.tags is not empty %}
+                                        {{ supplier.tags|join(', ') }}
+                                    {% else %}
+                                        <em>No tags</em>
+                                    {% endif %}
+                                </td>
                                 <td>
                                     <!-- Pulsanti Azione -->
                                     <a href=\"{{ path('app_supplier_show', {'id': supplier.id}) }}\" class=\"btn btn-info btn-sm\">Show</a>
@@ -334,7 +359,7 @@ class __TwigTemplate_c41e8fb2f66a6741d9137de303cf789e extends Template
                             </tr>
                         {% else %}
                             <tr>
-                                <td colspan=\"4\" class=\"text-center\">No suppliers found.</td>
+                                <td colspan=\"5\" class=\"text-center\">No suppliers found.</td>
                             </tr>
                         {% endfor %}
                     </tbody>

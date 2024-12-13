@@ -91,7 +91,7 @@ class __TwigTemplate_affa11be5eebea4610bbcfb71f499748 extends Template
         yield "</td>
                     </tr>
                     <tr>
-                        <th>Name Company</th>
+                        <th>Company Name</th>
                         <td>";
         // line 36
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 36, $this->source); })()), "nameCompany", [], "any", false, false, false, 36), "html", null, true);
@@ -106,20 +106,39 @@ class __TwigTemplate_affa11be5eebea4610bbcfb71f499748 extends Template
         yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 40, $this->source); })()), "link", [], "any", false, false, false, 40), "html", null, true);
         yield "</a></td>
                     </tr>
+                    <tr>
+                        <th>Tags</th>
+                        <td>
+                            ";
+        // line 45
+        if ( !Twig\Extension\CoreExtension::testEmpty(CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 45, $this->source); })()), "tags", [], "any", false, false, false, 45))) {
+            // line 46
+            yield "                                ";
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(Twig\Extension\CoreExtension::join(CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 46, $this->source); })()), "tags", [], "any", false, false, false, 46), ", "), "html", null, true);
+            yield "
+                            ";
+        } else {
+            // line 48
+            yield "                                <em>No tags</em>
+                            ";
+        }
+        // line 50
+        yield "                        </td>
+                    </tr>
                 </tbody>
             </table>
 
             <div class=\"d-flex gap-2\">
                 <a href=\"";
-        // line 46
+        // line 56
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_index");
         yield "\" class=\"btn btn-primary\">Back to list</a>
                 <a href=\"";
-        // line 47
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 47, $this->source); })()), "id", [], "any", false, false, false, 47)]), "html", null, true);
+        // line 57
+        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_edit", ["id" => CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 57, $this->source); })()), "id", [], "any", false, false, false, 57)]), "html", null, true);
         yield "\" class=\"btn btn-warning\">Edit</a>
                 ";
-        // line 48
+        // line 58
         yield Twig\Extension\CoreExtension::include($this->env, $context, "supplier/_delete_form.html.twig");
         yield "
             </div>
@@ -161,7 +180,7 @@ class __TwigTemplate_affa11be5eebea4610bbcfb71f499748 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  123 => 48,  119 => 47,  115 => 46,  104 => 40,  97 => 36,  90 => 32,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
+        return array (  142 => 58,  138 => 57,  134 => 56,  126 => 50,  122 => 48,  116 => 46,  114 => 45,  104 => 40,  97 => 36,  90 => 32,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -200,12 +219,22 @@ class __TwigTemplate_affa11be5eebea4610bbcfb71f499748 extends Template
                         <td>{{ supplier.id }}</td>
                     </tr>
                     <tr>
-                        <th>Name Company</th>
+                        <th>Company Name</th>
                         <td>{{ supplier.nameCompany }}</td>
                     </tr>
                     <tr>
                         <th>Link</th>
                         <td><a href=\"{{ supplier.link }}\" target=\"_blank\">{{ supplier.link }}</a></td>
+                    </tr>
+                    <tr>
+                        <th>Tags</th>
+                        <td>
+                            {% if supplier.tags is not empty %}
+                                {{ supplier.tags|join(', ') }}
+                            {% else %}
+                                <em>No tags</em>
+                            {% endif %}
+                        </td>
                     </tr>
                 </tbody>
             </table>
