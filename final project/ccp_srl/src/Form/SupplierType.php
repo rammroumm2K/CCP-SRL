@@ -3,29 +3,32 @@
 namespace App\Form;
 
 use App\Entity\Supplier;
+use App\Entity\Tag;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use App\Form\DataTransformer\TagsTransformer;
+use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 
 class SupplierType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('nameCompany')
-            ->add('link')
-            ->add('tags', TextType::class, [
-                'required' => false,
-                'label' => 'Tags',
+            ->add('nameCompany', null, [
+                'label' => 'Company Name',
                 'attr' => [
-                    'placeholder' => 'Inserisci i tag separati da virgola',
+                    'class' => 'form-control',
+                    'placeholder' => 'Enter company name',
                 ],
-            ]);
-
-        // Aggiungi un trasformatore per gestire i tag come stringa
-        $builder->get('tags')->addModelTransformer(new TagsTransformer());
+            ])
+            ->add('link', null, [
+                'label' => 'Link',
+                'attr' => [
+                    'class' => 'form-control',
+                    'placeholder' => 'Enter company link',
+                ],
+            ])
+            ;
     }
 
     public function configureOptions(OptionsResolver $resolver): void

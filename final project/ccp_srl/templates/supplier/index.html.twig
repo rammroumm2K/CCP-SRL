@@ -18,6 +18,7 @@
             <h4 class="text-center">CCP</h4>
             <h5 class="mt-4">Tables</h5>
             <a href="{{ path('app_supplier_index') }}">Supplier</a>
+            <a href="{{ path('app_tag_index') }}">Tag Editor</a>
             
             <h5 class="mt-3">User</h5>
             <a href="{{ path('app_logout') }}">Logout</a>
@@ -36,7 +37,7 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Name</th>
+                            <th>Company Name</th>
                             <th>Links</th>
                             <th>Tags</th>
                             <th>Actions</th>
@@ -50,7 +51,9 @@
                                 <td><a href="{{ supplier.link }}" class="truncate-link" target="_blank">{{ supplier.link }}</a></td>
                                 <td>
                                     {% if supplier.tags is not empty %}
-                                        {{ supplier.tags|join(', ') }}
+                                        {% for tag in supplier.tags %}
+                                            <span class="badge bg-secondary">{{ tag.name }}</span>
+                                        {% endfor %}
                                     {% else %}
                                         <em>No tags</em>
                                     {% endif %}

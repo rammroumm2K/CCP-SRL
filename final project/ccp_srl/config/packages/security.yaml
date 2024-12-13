@@ -46,6 +46,7 @@ security:
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/supplier, roles: ROLE_ADMIN }
+        - { path: ^/tag, roles: ROLE_ADMIN }
        # - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
 
 # Configurazioni specifiche per l'ambiente di test

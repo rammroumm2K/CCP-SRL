@@ -32,22 +32,12 @@
                         <td>{{ supplier.id }}</td>
                     </tr>
                     <tr>
-                        <th>Name</th>
+                        <th>Company Name</th>
                         <td>{{ supplier.nameCompany }}</td>
                     </tr>
                     <tr>
                         <th>Link</th>
                         <td><a href="{{ supplier.link }}" target="_blank">{{ supplier.link }}</a></td>
-                    </tr>
-                    <tr>
-                        <th>Tags</th>
-                        <td>
-                            {% if supplier.tags is not empty %}
-                                {{ supplier.tags|join(', ') }}
-                            {% else %}
-                                <em>No tags</em>
-                            {% endif %}
-                        </td>
                     </tr>
                 </tbody>
             </table>
