@@ -26,16 +26,26 @@
         <div class="flex-grow-1 p-4">
             <h2 class="mb-4">Edit Tag</h2>
 
-           
+            <!-- Flash Messages -->
+            {% for label, messages in app.flashes %}
+                <div class="alert alert-{{ label }} alert-dismissible fade show" role="alert">
+                    {% for message in messages %}
+                        {{ message }}
+                    {% endfor %}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            {% endfor %}
 
             <!-- Form -->
             <div class="table-responsive">
                 {{ form_start(form, {'attr': {'class': 'needs-validation', 'novalidate': true}}) }}
                 
                 <!-- Errori Generali del Form -->
-                <div class="mb-3">
-                    {{ form_errors(form) }}
-                </div>
+                {% if form.vars.errors|length > 0 %}
+                    <div class="alert alert-danger">
+                        {{ form_errors(form) }}
+                    </div>
+                {% endif %}
 
                 <table class="table table-dark table-striped align-middle">
                     <tbody>
@@ -54,7 +64,11 @@
                                     }
                                 }) }}
                                 <!-- Errori Specifici del Campo -->
-                                {{ form_errors(form.name) }}
+                                {% if form.name.vars.errors|length > 0 %}
+                                    <div class="text-danger mt-2">
+                                        {{ form_errors(form.name) }}
+                                    </div>
+                                {% endif %}
                             </td>
                         </tr>
                     </tbody>
