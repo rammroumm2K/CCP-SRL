@@ -2,19 +2,18 @@
 namespace App\Controller;
 
 use App\Form\ContactFormType;
+use App\Mailer\MicrosoftOAuthProvider;
 use ReCaptcha\ReCaptcha;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\RateLimiter\RateLimiterFactory;
 
 class HomeController extends AbstractController
 {
     #[Route('/', name: 'app_home')]
-    public function index(Request $request, MailerInterface $mailer, RateLimiterFactory $contactFormLimiter): Response
+    public function index(Request $request, RateLimiterFactory $contactFormLimiter): Response
     {
         $form = $this->createForm(ContactFormType::class);
         $form->handleRequest($request);
@@ -80,27 +79,44 @@ class HomeController extends AbstractController
                             'type' => 'error',
                         ];
                     } else {
-                        // Invio email solo in caso di token valido
-                        $email = (new Email())
-                            ->from('your-email@gmail.com')
-                            ->to('recipient@example.com')
-                            ->subject('New Contact Form Submission')
-                            ->text(sprintf(
-                                "Name: %s\nEmail: %s\nSubject: %s\nMessage:\n%s",
-                                htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8'),
-                                htmlspecialchars($data['email'], ENT_QUOTES, 'UTF-8'),
-                                htmlspecialchars($data['subject'], ENT_QUOTES, 'UTF-8'),
-                                htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8')
-                            ));
+                        // Invia l'email utilizzando il provider OAuth2
+                        try {
+                            $oauthProvider = new MicrosoftOAuthProvider(
+                                $_ENV['OAUTH2_CLIENT_ID'],
+                                $_ENV['OAUTH2_CLIENT_SECRET'],
+                                $_ENV['OAUTH2_TENANT_ID']
+                            );
 
-                        $mailer->send($email);
+                            $mailer = $oauthProvider->createMailer();
 
-                        $modalData = [
-                            'show' => true,
-                            'title' => 'Success',
-                            'message' => 'Your message has been sent successfully!',
-                            'type' => 'success',
-                        ];
+                            $email = (new \Symfony\Component\Mime\Email())
+                                ->from($_ENV['MAILER_FROM'])
+                                ->to($_ENV['MAILER_TO'])
+                                ->subject('New Contact Form Submission')
+                                ->text(sprintf(
+                                    "Name: %s\nEmail: %s\nSubject: %s\nMessage:\n%s",
+                                    htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8'),
+                                    htmlspecialchars($data['email'], ENT_QUOTES, 'UTF-8'),
+                                    htmlspecialchars($data['subject'], ENT_QUOTES, 'UTF-8'),
+                                    htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8')
+                                ));
+
+                            $mailer->send($email);
+
+                            $modalData = [
+                                'show' => true,
+                                'title' => 'Success',
+                                'message' => 'Your message has been sent successfully!',
+                                'type' => 'success',
+                            ];
+                        } catch (\Exception $e) {
+                            $modalData = [
+                                'show' => true,
+                                'title' => 'Error',
+                                'message' => 'Failed to send your message. Please try again later.',
+                                'type' => 'error',
+                            ];
+                        }
                     }
                 }
             }

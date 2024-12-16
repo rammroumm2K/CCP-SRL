@@ -1,9 +1,9 @@
 # Symfony specific
 /var/
 /vendor/
-.env
-.env.local
-.env.*.local
+*.env
+*.env.local
+*.env.*.local
 
 # Logs and cache (can be large and unnecessary)
 /var/log/
