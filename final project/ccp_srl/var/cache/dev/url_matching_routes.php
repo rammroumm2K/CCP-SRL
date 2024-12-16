@@ -22,6 +22,8 @@ return [
         '/tag' => [[['_route' => 'app_tag_index', '_controller' => 'App\\Controller\\TagController::index'], null, ['GET' => 0], null, false, false, null]],
         '/tag/new' => [[['_route' => 'app_tag_new', '_controller' => 'App\\Controller\\TagController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/admin' => [[['_route' => 'admin_page', '_controller' => 'App\\Controller\\AdminController::index'], null, null, null, false, false, null]],
+        '/privacy' => [[['_route' => 'privacy_policy', 'template' => 'home/privacy.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController'], null, null, null, false, false, null]],
+        '/terms' => [[['_route' => 'terms_of_service', 'template' => 'home/terms.html.twig', '_controller' => 'Symfony\\Bundle\\FrameworkBundle\\Controller\\TemplateController'], null, null, null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'

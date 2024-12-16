@@ -557,10 +557,7 @@ class __TwigTemplate_eac773d6c97ecce90582279cbf0204b7 extends Template
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
-\t\t<img id=\"circle-svg\" src=\"";
-        // line 460
-        yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape($this->extensions['Symfony\Bridge\Twig\Extension\AssetExtension']->getAssetUrl("image/vvvortex.svg"), "html", null, true);
-        yield "\" alt=\"circile\"/>
+\t\t
 \t\t<!--Cookies Sections-->
 
 \t\t<!-- Cookie Consent Modal -->
@@ -755,7 +752,7 @@ document.querySelector('input[name=\"captcha\"]').value = token;
      */
     public function getDebugInfo(): array
     {
-        return array (  716 => 474,  694 => 30,  675 => 20,  666 => 14,  656 => 6,  643 => 5,  620 => 503,  613 => 499,  595 => 484,  587 => 479,  581 => 475,  579 => 474,  562 => 460,  545 => 446,  538 => 442,  525 => 438,  517 => 433,  509 => 428,  503 => 425,  499 => 424,  492 => 420,  488 => 419,  484 => 418,  477 => 414,  473 => 413,  469 => 412,  462 => 408,  458 => 407,  454 => 406,  447 => 402,  443 => 401,  439 => 400,  433 => 397,  65 => 31,  63 => 30,  59 => 28,  57 => 5,  51 => 1,);
+        return array (  713 => 474,  691 => 30,  672 => 20,  663 => 14,  653 => 6,  640 => 5,  617 => 503,  610 => 499,  592 => 484,  584 => 479,  578 => 475,  576 => 474,  545 => 446,  538 => 442,  525 => 438,  517 => 433,  509 => 428,  503 => 425,  499 => 424,  492 => 420,  488 => 419,  484 => 418,  477 => 414,  473 => 413,  469 => 412,  462 => 408,  458 => 407,  454 => 406,  447 => 402,  443 => 401,  439 => 400,  433 => 397,  65 => 31,  63 => 30,  59 => 28,  57 => 5,  51 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -1219,7 +1216,7 @@ document.querySelector('input[name=\"captcha\"]').value = token;
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
-\t\t<img id=\"circle-svg\" src=\"{{asset ('image/vvvortex.svg')}}\" alt=\"circile\"/>
+\t\t
 \t\t<!--Cookies Sections-->
 
 \t\t<!-- Cookie Consent Modal -->

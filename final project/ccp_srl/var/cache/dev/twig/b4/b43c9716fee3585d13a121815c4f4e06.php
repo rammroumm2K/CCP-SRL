@@ -92,10 +92,16 @@ class __TwigTemplate_490b459a1c5054bda4f0485e42f8b2f3 extends Template
 \t\t\t\t\t\t\t\t<a href=\"#faqs\" class=\"text-light text-decoration-none\">FAQs</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"privacy.html\" target=\"_blank\" class=\"text-light text-decoration-none\">Policy & Privacy</a>
+\t\t\t\t\t\t\t\t<a href=\"";
+        // line 45
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("privacy_policy");
+        yield "\" target=\"_blank\" class=\"text-light text-decoration-none\">Policy & Privacy</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"terms.html\" target=\"_blank\" class=\"text-light text-decoration-none\">Terms</a>
+\t\t\t\t\t\t\t\t<a href=\"";
+        // line 48
+        yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("terms_of_service");
+        yield "\" target=\"_blank\" class=\"text-light text-decoration-none\">Terms</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t</div>
@@ -148,7 +154,7 @@ class __TwigTemplate_490b459a1c5054bda4f0485e42f8b2f3 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  69 => 20,  48 => 1,);
+        return array (  103 => 48,  97 => 45,  69 => 20,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -197,10 +203,10 @@ class __TwigTemplate_490b459a1c5054bda4f0485e42f8b2f3 extends Template
 \t\t\t\t\t\t\t\t<a href=\"#faqs\" class=\"text-light text-decoration-none\">FAQs</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"privacy.html\" target=\"_blank\" class=\"text-light text-decoration-none\">Policy & Privacy</a>
+\t\t\t\t\t\t\t\t<a href=\"{{path ('privacy_policy')}}\" target=\"_blank\" class=\"text-light text-decoration-none\">Policy & Privacy</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t\t<li>
-\t\t\t\t\t\t\t\t<a href=\"terms.html\" target=\"_blank\" class=\"text-light text-decoration-none\">Terms</a>
+\t\t\t\t\t\t\t\t<a href=\"{{path ('terms_of_service')}}\" target=\"_blank\" class=\"text-light text-decoration-none\">Terms</a>
 \t\t\t\t\t\t\t</li>
 \t\t\t\t\t\t</ul>
 \t\t\t\t\t</div>

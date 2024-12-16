@@ -22,6 +22,10 @@
   
 }
 
+#contact-block{
+  margin-bottom: 12em;
+ 
+}
 
 
 .why-icon-style{
@@ -206,7 +210,7 @@ footer {
   right: 10em;
   width: 18em;
 }
-#circle-svg {
+/*#circle-svg {
   width: 40%; 
   height: auto; 
   display: block;
@@ -214,7 +218,7 @@ footer {
   top: 110rem; 
   left: 5rem; 
    z-index: -2;
-}
+}*/
 
 
 
@@ -355,9 +359,9 @@ footer {
 #svg-square2{
   display: none;
 }
-#circle-svg {
+/*#circle-svg {
 display: none;
-}
+}*/
 }
 
 /* Tablet (768px - 1024px) */

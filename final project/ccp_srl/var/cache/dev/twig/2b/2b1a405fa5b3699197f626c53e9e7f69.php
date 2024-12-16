@@ -56,37 +56,28 @@ class __TwigTemplate_86b0fa26cf3cd6fe01471e3e78e35cfe extends Template
         yield from $this->unwrap()->yieldBlock('head', $context, $blocks);
         // line 28
         yield "\t</head>
-\t<style>
-\t\t* {
-\t\t\tmargin: 0 auto;
-\t\t\tpadding: 0;
-\t\t\ttext-align: center;
-\t\t}
-\t</style>
+\t
+
 
 
 \t<body class=\"\">
 \t\t";
-        // line 39
+        // line 34
         yield from $this->unwrap()->yieldBlock('navbar', $context, $blocks);
-        // line 42
-        yield "\t\t<div class=\"cont_principal\">
-\t\t\t<div class=\"cont_error\">
+        // line 37
+        yield "\t\t<div class=\"custom-bg text-dark\">
+    <div class=\"d-flex align-items-center justify-content-center min-vh-100 px-2\">
+        <div class=\"text-center\">
+            <h1 class=\"display-1 fw-bold\">404</h1>
+            <p class=\"fs-2 fw-medium mt-4\">Oops! Page not found</p>
+            <p class=\"mt-4 mb-5\">The page you're looking for doesn't exist or has been moved.</p>
+            <a href=\"/\" class=\"btn btn-success fw-semibold rounded-pill px-4 py-2 custom-btn\">
+                Go Home
+            </a>
+        </div>
+    </div>
+</div>
 
-\t\t\t\t<h1>Oops</h1>
-\t\t\t\t<p>The Page you're looking for isn't here.</p>
-\t\t\t</div>
-\t\t\t<div class=\"cont_aura_1\"></div>
-\t\t\t<div class=\"cont_aura_2\"></div>
-\t\t</div>
-
-
-\t\t<script>
-\t\t\twindow.onload = function () {
-document.querySelector('.cont_principal').className = \"cont_principal cont_error_active\";
-
-}
-\t\t</script>
 <!-- Bootstrap JS -->
 \t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>
 \t</body>
@@ -153,7 +144,7 @@ document.querySelector('.cont_principal').className = \"cont_principal cont_erro
         yield from [];
     }
 
-    // line 39
+    // line 34
     /**
      * @return iterable<null|scalar|\Stringable>
      */
@@ -166,10 +157,10 @@ document.querySelector('.cont_principal').className = \"cont_principal cont_erro
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "navbar"));
 
-        // line 40
+        // line 35
         yield "\t\t\t";
-        yield from $this->loadTemplate("elements/_menu.html.twig", "error/404.html.twig", 40)->unwrap()->yield($context);
-        // line 41
+        yield from $this->loadTemplate("elements/_menu.html.twig", "error/404.html.twig", 35)->unwrap()->yield($context);
+        // line 36
         yield "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -193,7 +184,7 @@ document.querySelector('.cont_principal').className = \"cont_principal cont_erro
      */
     public function getDebugInfo(): array
     {
-        return array (  173 => 41,  170 => 40,  157 => 39,  138 => 20,  129 => 14,  119 => 6,  106 => 5,  73 => 42,  71 => 39,  58 => 28,  56 => 5,  50 => 1,);
+        return array (  164 => 36,  161 => 35,  148 => 34,  129 => 20,  120 => 14,  110 => 6,  97 => 5,  68 => 37,  66 => 34,  58 => 28,  56 => 5,  50 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -226,36 +217,27 @@ document.querySelector('.cont_principal').className = \"cont_principal cont_erro
 \t\t\t<link href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css\" rel=\"stylesheet\">
 \t\t{% endblock %}
 \t</head>
-\t<style>
-\t\t* {
-\t\t\tmargin: 0 auto;
-\t\t\tpadding: 0;
-\t\t\ttext-align: center;
-\t\t}
-\t</style>
+\t
+
 
 
 \t<body class=\"\">
 \t\t{% block navbar %}
 \t\t\t{% include \"elements/_menu.html.twig\" %}
 \t\t{% endblock %}
-\t\t<div class=\"cont_principal\">
-\t\t\t<div class=\"cont_error\">
+\t\t<div class=\"custom-bg text-dark\">
+    <div class=\"d-flex align-items-center justify-content-center min-vh-100 px-2\">
+        <div class=\"text-center\">
+            <h1 class=\"display-1 fw-bold\">404</h1>
+            <p class=\"fs-2 fw-medium mt-4\">Oops! Page not found</p>
+            <p class=\"mt-4 mb-5\">The page you're looking for doesn't exist or has been moved.</p>
+            <a href=\"/\" class=\"btn btn-success fw-semibold rounded-pill px-4 py-2 custom-btn\">
+                Go Home
+            </a>
+        </div>
+    </div>
+</div>
 
-\t\t\t\t<h1>Oops</h1>
-\t\t\t\t<p>The Page you're looking for isn't here.</p>
-\t\t\t</div>
-\t\t\t<div class=\"cont_aura_1\"></div>
-\t\t\t<div class=\"cont_aura_2\"></div>
-\t\t</div>
-
-
-\t\t<script>
-\t\t\twindow.onload = function () {
-document.querySelector('.cont_principal').className = \"cont_principal cont_error_active\";
-
-}
-\t\t</script>
 <!-- Bootstrap JS -->
 \t\t<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js\"></script>
 \t</body>

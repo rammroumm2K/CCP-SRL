@@ -1,4 +1,4 @@
-O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:91:"C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-5aa23809d36d620d3c2fcc73da27fe98.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:12709:".hero {
+O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:91:"C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\assets\styles\app.css";s:10:"publicPath";s:55:"/assets/styles/app-53d039629306ce1a39ce5a20fcbfa4b4.css";s:23:"publicPathWithoutDigest";s:22:"/assets/styles/app.css";s:15:"publicExtension";s:3:"css";s:7:"content";s:12764:".hero {
     background-color: black; /* Sfondo nero */
     color: white; /* Testo bianco */
     position: relative;
@@ -22,6 +22,10 @@ O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:91:"C:\
   
 }
 
+#contact-block{
+  margin-bottom: 12em;
+ 
+}
 
 
 .why-icon-style{
@@ -206,7 +210,7 @@ footer {
   right: 10em;
   width: 18em;
 }
-#circle-svg {
+/*#circle-svg {
   width: 40%; 
   height: auto; 
   display: block;
@@ -214,7 +218,7 @@ footer {
   top: 110rem; 
   left: 5rem; 
    z-index: -2;
-}
+}*/
 
 
 
@@ -355,9 +359,9 @@ footer {
 #svg-square2{
   display: none;
 }
-#circle-svg {
+/*#circle-svg {
 display: none;
-}
+}*/
 }
 
 /* Tablet (768px - 1024px) */
@@ -604,4 +608,4 @@ display: none;
     to { -webkit-transform: rotate(-20deg);
     transform: rotate(-20deg);
     }
-  }";s:6:"digest";s:32:"5aa23809d36d620d3c2fcc73da27fe98";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:1:{i:0;O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:95:"C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\assets\image\vvvortex.svg";s:10:"publicPath";s:59:"/assets/image/vvvortex-a953302afdc7f11e9bb9fbbec23b02fa.svg";s:23:"publicPathWithoutDigest";s:26:"/assets/image/vvvortex.svg";s:15:"publicExtension";s:3:"svg";s:7:"content";N;s:6:"digest";s:32:"a953302afdc7f11e9bb9fbbec23b02fa";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:0:{}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:18:"image/vvvortex.svg";}}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:0:{}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}
+  }";s:6:"digest";s:32:"53d039629306ce1a39ce5a20fcbfa4b4";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:1:{i:0;O:41:"Symfony\Component\AssetMapper\MappedAsset":12:{s:10:"sourcePath";s:95:"C:\Users\RamiBenSalem\final_project\CCP WEBSITE\final project\ccp_srl\assets\image\vvvortex.svg";s:10:"publicPath";s:59:"/assets/image/vvvortex-a953302afdc7f11e9bb9fbbec23b02fa.svg";s:23:"publicPathWithoutDigest";s:26:"/assets/image/vvvortex.svg";s:15:"publicExtension";s:3:"svg";s:7:"content";N;s:6:"digest";s:32:"a953302afdc7f11e9bb9fbbec23b02fa";s:13:"isPredigested";b:0;s:8:"isVendor";b:0;s:55:" Symfony\Component\AssetMapper\MappedAsset dependencies";a:0:{}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:0:{}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:18:"image/vvvortex.svg";}}s:59:" Symfony\Component\AssetMapper\MappedAsset fileDependencies";a:0:{}s:60:" Symfony\Component\AssetMapper\MappedAsset javaScriptImports";a:0:{}s:11:"logicalPath";s:14:"styles/app.css";}
