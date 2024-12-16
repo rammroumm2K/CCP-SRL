@@ -6,13 +6,22 @@ use App\Entity\Tag;
 use App\Form\TagType;
 use App\Repository\TagRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Component\Routing\Annotation\Route;
 
 #[Route('/tag')]
-final class TagController extends AbstractController{
+final class TagController extends AbstractController
+{
+    private LoggerInterface $logger;
+
+    public function __construct(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+    }
+
     #[Route(name: 'app_tag_index', methods: ['GET'])]
     public function index(TagRepository $tagRepository): Response
     {
@@ -29,10 +38,16 @@ final class TagController extends AbstractController{
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($tag);
-            $entityManager->flush();
+            try {
+                $entityManager->persist($tag);
+                $entityManager->flush();
 
-            return $this->redirectToRoute('app_tag_index', [], Response::HTTP_SEE_OTHER);
+                $this->addFlash('success', 'Tag created successfully!');
+                return $this->redirectToRoute('app_tag_index', [], Response::HTTP_SEE_OTHER);
+            } catch (\Exception $e) {
+                $this->logger->error('Error creating tag', ['exception' => $e->getMessage()]);
+                $this->addFlash('error', 'Could not create the tag. It may already exist.');
+            }
         }
 
         return $this->render('tag/new.html.twig', [
@@ -56,9 +71,15 @@ final class TagController extends AbstractController{
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->flush();
+            try {
+                $entityManager->flush();
 
-            return $this->redirectToRoute('app_tag_index', [], Response::HTTP_SEE_OTHER);
+                $this->addFlash('success', 'Tag updated successfully!');
+                return $this->redirectToRoute('app_tag_index', [], Response::HTTP_SEE_OTHER);
+            } catch (\Exception $e) {
+                $this->logger->error('Error updating tag', ['exception' => $e->getMessage()]);
+                $this->addFlash('error', 'Could not update the tag. It may already exist.');
+            }
         }
 
         return $this->render('tag/edit.html.twig', [
@@ -70,9 +91,18 @@ final class TagController extends AbstractController{
     #[Route('/{id}', name: 'app_tag_delete', methods: ['POST'])]
     public function delete(Request $request, Tag $tag, EntityManagerInterface $entityManager): Response
     {
-        if ($this->isCsrfTokenValid('delete'.$tag->getId(), $request->getPayload()->getString('_token'))) {
-            $entityManager->remove($tag);
-            $entityManager->flush();
+        if ($this->isCsrfTokenValid('delete' . $tag->getId(), $request->request->get('_token'))) {
+            try {
+                $entityManager->remove($tag);
+                $entityManager->flush();
+
+                $this->addFlash('success', 'Tag deleted successfully!');
+            } catch (\Exception $e) {
+                $this->logger->error('Error deleting tag', ['exception' => $e->getMessage()]);
+                $this->addFlash('error', 'Could not delete the tag.');
+            }
+        } else {
+            $this->addFlash('error', 'Invalid CSRF token.');
         }
 
         return $this->redirectToRoute('app_tag_index', [], Response::HTTP_SEE_OTHER);

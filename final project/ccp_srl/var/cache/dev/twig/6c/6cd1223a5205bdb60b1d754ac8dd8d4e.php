@@ -103,20 +103,65 @@ class __TwigTemplate_c89a17ecc06d8c90c7910a1afa38c2f0 extends Template
         yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock(CoreExtension::getAttribute($this->env, $this->source, (isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 39, $this->source); })()), "link", [], "any", false, false, false, 39), 'widget', ["attr" => ["class" => "form-control", "style" => "max-width: 400px"]]);
         yield "</td>
                             </tr>
+                          <tr>
+                            <th>Tags</th>
+                            <td>
+                                <ul class=\"list-unstyled\">
+                                    ";
+        // line 45
+        $context['_parent'] = $context;
+        $context['_seq'] = CoreExtension::ensureTraversable((isset($context["tags"]) || array_key_exists("tags", $context) ? $context["tags"] : (function () { throw new RuntimeError('Variable "tags" does not exist.', 45, $this->source); })()));
+        foreach ($context['_seq'] as $context["_key"] => $context["tag"]) {
+            // line 46
+            yield "                                        <li>
+                                            <div class=\"form-check ms-2\">
+                                                <input class=\"form-check-input\" type=\"checkbox\" id=\"tag-";
+            // line 48
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tag"], "id", [], "any", false, false, false, 48), "html", null, true);
+            yield "\" name=\"tags[]\" value=\"";
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tag"], "id", [], "any", false, false, false, 48), "html", null, true);
+            yield "\"
+                                                    ";
+            // line 49
+            if (CoreExtension::inFilter($context["tag"], CoreExtension::getAttribute($this->env, $this->source, (isset($context["supplier"]) || array_key_exists("supplier", $context) ? $context["supplier"] : (function () { throw new RuntimeError('Variable "supplier" does not exist.', 49, $this->source); })()), "tags", [], "any", false, false, false, 49))) {
+                yield "checked";
+            }
+            yield ">
+                                                <label class=\"form-check-label\" for=\"tag-";
+            // line 50
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tag"], "id", [], "any", false, false, false, 50), "html", null, true);
+            yield "\">
+                                                    ";
+            // line 51
+            yield $this->env->getRuntime('Twig\Runtime\EscaperRuntime')->escape(CoreExtension::getAttribute($this->env, $this->source, $context["tag"], "name", [], "any", false, false, false, 51), "html", null, true);
+            yield "
+                                                </label>
+                                            </div>
+                                        </li>
+                                    ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_key'], $context['tag'], $context['_parent']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 56
+        yield "                                </ul>
+                            </td>
+                        </tr>
+  
                         </tbody>
                     </table>
 
                     <div class=\"d-flex gap-3 mt-3\">
                         <button type=\"submit\" class=\"btn btn-success\">Create</button>
                         <a href=\"";
-        // line 46
+        // line 65
         yield $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_supplier_index");
         yield "\" class=\"btn btn-primary\">Back to list</a>
                     </div>
 
                     ";
-        // line 49
-        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 49, $this->source); })()), 'rest');
+        // line 68
+        yield $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["form"]) || array_key_exists("form", $context) ? $context["form"] : (function () { throw new RuntimeError('Variable "form" does not exist.', 68, $this->source); })()), 'rest');
         yield "
                 </form>
             </div>
@@ -158,7 +203,7 @@ class __TwigTemplate_c89a17ecc06d8c90c7910a1afa38c2f0 extends Template
      */
     public function getDebugInfo(): array
     {
-        return array (  119 => 49,  113 => 46,  103 => 39,  96 => 35,  88 => 30,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
+        return array (  164 => 68,  158 => 65,  147 => 56,  136 => 51,  132 => 50,  126 => 49,  120 => 48,  116 => 46,  112 => 45,  103 => 39,  96 => 35,  88 => 30,  76 => 21,  70 => 18,  59 => 10,  48 => 1,);
     }
 
     public function getSourceContext(): Source
@@ -203,6 +248,25 @@ class __TwigTemplate_c89a17ecc06d8c90c7910a1afa38c2f0 extends Template
                                 <th>Link</th>
                                 <td>{{ form_widget(form.link, {'attr': {'class': 'form-control', 'style': 'max-width: 400px'}}) }}</td>
                             </tr>
+                          <tr>
+                            <th>Tags</th>
+                            <td>
+                                <ul class=\"list-unstyled\">
+                                    {% for tag in tags %}
+                                        <li>
+                                            <div class=\"form-check ms-2\">
+                                                <input class=\"form-check-input\" type=\"checkbox\" id=\"tag-{{ tag.id }}\" name=\"tags[]\" value=\"{{ tag.id }}\"
+                                                    {% if tag in supplier.tags %}checked{% endif %}>
+                                                <label class=\"form-check-label\" for=\"tag-{{ tag.id }}\">
+                                                    {{ tag.name }}
+                                                </label>
+                                            </div>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </td>
+                        </tr>
+  
                         </tbody>
                     </table>
 

@@ -6,8 +6,14 @@ use App\Repository\TagRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 #[ORM\Entity(repositoryClass: TagRepository::class)]
+#[UniqueEntity(
+    fields: ['name'],
+    message: 'A tag with this name already exists.'
+)]
+#[ORM\HasLifecycleCallbacks]
 class Tag
 {
     #[ORM\Id]
@@ -15,7 +21,7 @@ class Tag
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(length: 255, unique: true)]
     private ?string $name = null;
 
     /**
@@ -44,6 +50,18 @@ class Tag
         $this->name = $name;
 
         return $this;
+    }
+
+    /**
+     * Hook per convertire il nome in maiuscolo prima di salvare o aggiornare
+     */
+    #[ORM\PrePersist]
+    #[ORM\PreUpdate]
+    public function formatName(): void
+    {
+        if ($this->name) {
+            $this->name = strtoupper($this->name);
+        }
     }
 
     /**

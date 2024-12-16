@@ -28,6 +28,7 @@ class SupplierType extends AbstractType
                     'placeholder' => 'Enter company link',
                 ],
             ])
+            
             ;
     }
 
