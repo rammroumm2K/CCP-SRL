@@ -1,7 +1,7 @@
 # Symfony specific
 /var/
 /vendor/
-/.env
+.env
 .env.local
 .env.*.local
 
