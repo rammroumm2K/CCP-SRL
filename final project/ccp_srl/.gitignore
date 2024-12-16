@@ -1,0 +1,55 @@
+# Symfony specific
+/var/
+/vendor/
+/.env
+.env.local
+.env.*.local
+
+# Logs and cache (can be large and unnecessary)
+/var/log/
+/var/cache/
+
+# IDE specific
+.idea/
+.vscode/
+*.iml
+
+# Composer dependencies
+/vendor/
+/composer.lock
+
+# Node and frontend tools
+/node_modules/
+/yarn.lock
+/package-lock.json
+/public/build/
+
+# Symfony Profiler data
+/.phpunit.result.cache
+/test-results/
+coverage/
+
+# Static analysis tools
+/phpstan.cache
+/psalm-cache.xml
+
+# Security and configuration backups
+*.bak
+*.swp
+*.swo
+*.tmp
+*.temp
+
+# Docker specific
+docker-compose.override.yml
+/.docker
+/.dockerignore
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Git specific
+*.orig
