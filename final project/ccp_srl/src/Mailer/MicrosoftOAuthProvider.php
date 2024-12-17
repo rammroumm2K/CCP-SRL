@@ -1,43 +1,66 @@
 <?php
-
 namespace App\Mailer;
 
-use Symfony\Component\Mailer\Transport\Smtp\EsmtpTransport;
-use Symfony\Component\Mailer\Transport\Dsn;
+use GuzzleHttp\Client;
+use Symfony\Component\Mailer\Mailer;
+use Symfony\Component\Mailer\Transport;
 use Symfony\Component\Mime\Email;
-use Symfony\Component\Mailer\MailerInterface;
-use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
-use Symfony\Component\HttpFoundation\Response;
-use League\OAuth2\Client\Provider\GenericProvider;
 
 class MicrosoftOAuthProvider
 {
-    private $accessToken;
+    private string $clientId;
+    private string $clientSecret;
+    private string $tenantId;
 
     public function __construct(string $clientId, string $clientSecret, string $tenantId)
     {
-        $provider = new GenericProvider([
-            'clientId'                => $clientId,
-            'clientSecret'            => $clientSecret,
-            'redirectUri'             => 'https://localhost/oauth/callback',
-            'urlAuthorize'            => 'https://login.microsoftonline.com/'.$tenantId.'/oauth2/v2.0/authorize',
-            'urlAccessToken'          => 'https://login.microsoftonline.com/'.$tenantId.'/oauth2/v2.0/token',
-            'urlResourceOwnerDetails' => '',
-        ]);
-
-        $this->accessToken = $provider->getAccessToken('client_credentials', [
-            'scope' => 'https://graph.microsoft.com/.default',
-        ]);
+        $this->clientId = $clientId;
+        $this->clientSecret = $clientSecret;
+        $this->tenantId = $tenantId;
     }
 
-    public function createMailer(): MailerInterface
+    /**
+     * Crea un'istanza di Mailer con autenticazione OAuth2.
+     */
+    public function createMailer(): Mailer
     {
+        // Ottieni il token OAuth2
+        $accessToken = $this->getAccessToken();
+
+        // Configura il DSN SMTP con OAuth2
         $dsn = sprintf(
-            'smtp://%s@%s',
-            $this->accessToken->getToken(),
-            'smtp.office365.com'
+            'smtp://%s:%s@smtp.office365.com:587?auth_mode=xoauth2',
+            urlencode($_ENV['MAILER_FROM']), // Email di invio
+            urlencode($accessToken)         // Token di accesso
         );
 
-        return new EsmtpTransport(Dsn::fromString($dsn));
+        $transport = Transport::fromDsn($dsn);
+        return new Mailer($transport);
+    }
+
+    /**
+     * Ottieni il token OAuth2 tramite client Guzzle.
+     */
+    private function getAccessToken(): string
+    {
+        $tokenUrl = "https://login.microsoftonline.com/{$this->tenantId}/oauth2/v2.0/token";
+        $client = new Client();
+
+        $response = $client->post($tokenUrl, [
+            'form_params' => [
+                'grant_type'    => 'client_credentials',
+                'client_id'     => $this->clientId,
+                'client_secret' => $this->clientSecret,
+                'scope'         => 'https://outlook.office365.com/.default',
+            ],
+        ]);
+
+        $data = json_decode($response->getBody()->getContents(), true);
+
+        if (!isset($data['access_token'])) {
+            throw new \RuntimeException('Unable to retrieve access token from Azure.');
+        }
+
+        return $data['access_token'];
     }
 }

@@ -393,46 +393,54 @@
 				<h2 id="contact-menu" class="text-center mb-5 fs-1 fw-bold about-ccp">CONTACT</h2>
 				<div class="col-lg-6 col-md-8 col-sm-10">
 					<div class="custom-card-form">
-						<div class="p-4 mt-5">
-							{{ form_start(form, { 'attr': { 'id': 'contact-form', 'novalidate': 'novalidate' } }) }}
+							<div class="p-4 mt-5">
+								{{ form_start(form, { 'attr': { 'id': 'contact-form', 'novalidate': 'novalidate' } }) }}
 
-							<div class="mb-3">
-								<label for="{{ form.name.vars.id }}" class="form-label" style="color: #fff;">Full Name</label>
-								{{ form_widget(form.name, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your full name'} }) }}
-								<div class="invalid-feedback">{{ form_errors(form.name) }}</div>
+								<div class="mb-3">
+									<label for="{{ form.name.vars.id }}" class="form-label" style="color: #fff;">Full Name</label>
+									{{ form_widget(form.name, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your full name'} }) }}
+									<div class="invalid-feedback">{{ form_errors(form.name) }}</div>
+								</div>
+
+								<div class="mb-3">
+									<label for="{{ form.email.vars.id }}" class="form-label" style="color: #fff;">Email Address</label>
+									{{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your email address'} }) }}
+									<div class="invalid-feedback">{{ form_errors(form.email) }}</div>
+								</div>
+
+								<div class="mb-3">
+									<label for="{{ form.subject.vars.id }}" class="form-label" style="color: #fff;">Subject</label>
+									{{ form_widget(form.subject, { 'attr': {'class': 'form-control', 'placeholder': 'Enter the subject'} }) }}
+									<div class="invalid-feedback">{{ form_errors(form.subject) }}</div>
+								</div>
+
+								<div class="mb-3">
+									<label for="{{ form.message.vars.id }}" class="form-label" style="color: #fff;">Message</label>
+									{{ form_widget(form.message, { 'attr': {'class': 'form-control', 'placeholder': 'Type your message here...', 'rows': '5'} }) }}
+									<div class="invalid-feedback">{{ form_errors(form.message) }}</div>
+								</div>
+
+								<div class="form-check mb-3">
+									{{ form_widget(form.consent, { 'attr': {'class': 'form-check-input'} }) }}
+									<label for="{{ form.consent.vars.id }}" class="form-check-label" style="color: #fff;">
+										I agree to have my data collected and stored for the purpose of contacting me.
+									</label>
+									<div class="invalid-feedback">{{ form_errors(form.consent) }}</div>
+								</div>
+
+								<!-- reCAPTCHA -->
+								<div class="g-recaptcha mb-3" 
+									data-sitekey="{{ site_key }}">
+								</div>
+
+								<button type="submit" class="btn btn-primary w-100">Send Message</button>
+								{{ form_end(form) }}
 							</div>
-
-							<div class="mb-3">
-								<label for="{{ form.email.vars.id }}" class="form-label" style="color: #fff;">Email Address</label>
-								{{ form_widget(form.email, { 'attr': {'class': 'form-control', 'placeholder': 'Enter your email address'} }) }}
-								<div class="invalid-feedback">{{ form_errors(form.email) }}</div>
-							</div>
-
-							<div class="mb-3">
-								<label for="{{ form.subject.vars.id }}" class="form-label" style="color: #fff;">Subject</label>
-								{{ form_widget(form.subject, { 'attr': {'class': 'form-control', 'placeholder': 'Enter the subject'} }) }}
-								<div class="invalid-feedback">{{ form_errors(form.subject) }}</div>
-							</div>
-
-							<div class="mb-3">
-								<label for="{{ form.message.vars.id }}" class="form-label" style="color: #fff;">Message</label>
-								{{ form_widget(form.message, { 'attr': {'class': 'form-control', 'placeholder': 'Type your message here...', 'rows': '5'} }) }}
-								<div class="invalid-feedback">{{ form_errors(form.message) }}</div>
-							</div>
-
-							<div class="form-check mb-3">
-								{{ form_widget(form.consent, { 'attr': {'class': 'form-check-input'} }) }}
-								<label for="{{ form.consent.vars.id }}" class="form-check-label" style="color: #fff;">
-									I agree to have my data collected and stored for the purpose of contacting me.
-								</label>
-								<div class="invalid-feedback">{{ form_errors(form.consent) }}</div>
-							</div>
-
-							<input type="hidden" name="captcha" value="test-token-valid">
-							<button type="submit" class="btn btn-primary w-100">Send Message</button>
-							{{ form_end(form) }}
 						</div>
-					</div>
+
+<!-- Caricamento del JS reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 					<!-- Modal -->
 					<div id="formModal" class="modal fade{% if modal.show %} show{% endif %}" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true" {% if modal.show %}style="display: block;"{% endif %}>
@@ -495,17 +503,8 @@
 			</div>
 		</div>
 
-		<!--reCaptcha Google-->
-		<script src="https://www.google.com/recaptcha/api.js?render={{ site_key }}"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', function () {
-grecaptcha.ready(function () {
-grecaptcha.execute('{{ site_key }}', {action: 'contact_form'}).then(function (token) {
-document.querySelector('input[name="captcha"]').value = token;
-});
-});
-});
-		</script>
+	
+		
 
 
 	</body>
