@@ -3,6 +3,12 @@ parameters:
     app.recaptcha.secret_key: '%env(GOOGLE_RECAPTCHA_SECRET_KEY)%'
 
 services:
+    App\Service\MicrosoftGraphMailer:
+        arguments:
+            $tenantId: '%env(GRAPH_API_TENANT_ID)%'
+            $clientId: '%env(GRAPH_API_CLIENT_ID)%'
+            $clientSecret: '%env(GRAPH_API_CLIENT_SECRET)%'
+            $scope: '%env(GRAPH_API_SCOPE)%'
     # default configuration for services in *this* file
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.

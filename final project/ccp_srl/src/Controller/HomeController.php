@@ -1,21 +1,25 @@
 <?php
+
 namespace App\Controller;
 
 use App\Form\ContactFormType;
-use GuzzleHttp\Client;
-use ReCaptcha\ReCaptcha;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Mailer\Mailer;
-use Symfony\Component\Mailer\Transport;
-use Symfony\Component\Mime\Email;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\RateLimiter\RateLimiterFactory;
 use Psr\Log\LoggerInterface;
+use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class HomeController extends AbstractController
 {
+    private HttpClientInterface $httpClient;
+
+    public function __construct(HttpClientInterface $httpClient)
+    {
+        $this->httpClient = $httpClient;
+    }
+
     #[Route('/', name: 'app_home')]
     public function index(
         Request $request,
@@ -43,11 +47,11 @@ class HomeController extends AbstractController
                 $modalData = $this->createModal('Invalid reCAPTCHA', 'Please try again.', 'error');
             } else {
                 try {
-                    // Invio email tramite Symfony Mailer con OAuth2
-                    $this->sendEmailWithOauth2($data);
+                    // Invio email tramite Microsoft Graph API
+                    $this->sendEmailWithGraphAPI($data);
                     $modalData = $this->createModal('Success', 'Your message has been sent!', 'success');
                 } catch (\Exception $e) {
-                    $logger->error('Mailer Error: ' . $e->getMessage());
+                    $logger->error('Graph API Error: ' . $e->getMessage());
                     $modalData = $this->createModal('Error', 'Failed to send your message.', 'error');
                 }
             }
@@ -59,57 +63,62 @@ class HomeController extends AbstractController
     }
 
     /**
-     * Invia un'email utilizzando Symfony Mailer con OAuth2
+     * Invia un'email utilizzando Microsoft Graph API
      */
-    private function sendEmailWithOauth2(array $data): void
+    private function sendEmailWithGraphAPI(array $data): void
     {
-        // Configura il DSN SMTP con OAuth2
         $accessToken = $this->getOAuthToken();
 
-        $dsn = sprintf(
-            'smtp://%s:%s@smtp.office365.com:587?auth_mode=xoauth2',
-            urlencode('info@ccp.be'),  // Usa il tuo indirizzo email
-            urlencode($accessToken)    // Token OAuth2
-        );
+        $emailData = [
+            'message' => [
+                'subject' => htmlspecialchars($data['subject'], ENT_QUOTES, 'UTF-8'),
+                'body' => [
+                    'contentType' => 'Text',
+                    'content' => sprintf(
+                        "Name: %s\nEmail: %s\nMessage:\n%s",
+                        htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8'),
+                        htmlspecialchars($data['email'], ENT_QUOTES, 'UTF-8'),
+                        htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8')
+                    ),
+                ],
+                'toRecipients' => [
+                    ['emailAddress' => ['address' => 'info@ccp.be']], // Destinatario
+                ],
+            ],
+            'saveToSentItems' => 'true',
+        ];
 
-        $transport = Transport::fromDsn($dsn);
-        $mailer = new Mailer($transport);
+        $response = $this->httpClient->request('POST', 'https://graph.microsoft.com/v1.0/users/info@ccp.be/sendMail', [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $accessToken,
+                'Content-Type' => 'application/json',
+            ],
+            'json' => $emailData,
+        ]);
 
-        // Crea l'email
-        $email = (new Email())
-            ->from('info@ccp.be')
-            ->to('recipient@example.com') // Puoi usare $_ENV['MAILER_TO'] se preferisci
-            ->subject('New Contact Form Submission')
-            ->text(sprintf(
-                "Name: %s\nEmail: %s\nSubject: %s\nMessage:\n%s",
-                htmlspecialchars($data['name'], ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($data['email'], ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($data['subject'], ENT_QUOTES, 'UTF-8'),
-                htmlspecialchars($data['message'], ENT_QUOTES, 'UTF-8')
-            ));
-
-        // Invia l'email
-        $mailer->send($email);
+        if ($response->getStatusCode() !== 202) {
+            throw new \Exception("Errore nell'invio dell'email: " . $response->getContent(false));
+        }
     }
 
     /**
-     * Ottieni il token OAuth2 tramite Guzzle HTTP Client
+     * Ottieni il token OAuth2 tramite Microsoft Graph API
      */
     private function getOAuthToken(): string
     {
-        $client = new Client();
-        $tokenUrl = "https://login.microsoftonline.com/{$_ENV['OAUTH2_TENANT_ID']}/oauth2/v2.0/token";
-
-        $response = $client->post($tokenUrl, [
-            'form_params' => [
-                'grant_type'    => 'client_credentials',
-                'client_id'     => $_ENV['OAUTH2_CLIENT_ID'],
+        $response = $this->httpClient->request('POST', sprintf(
+            'https://login.microsoftonline.com/%s/oauth2/v2.0/token',
+            $_ENV['OAUTH2_TENANT_ID']
+        ), [
+            'body' => [
+                'grant_type' => 'client_credentials',
+                'client_id' => $_ENV['OAUTH2_CLIENT_ID'],
                 'client_secret' => $_ENV['OAUTH2_CLIENT_SECRET'],
-                'scope'         => 'https://outlook.office365.com/.default',
+                'scope' => 'https://graph.microsoft.com/.default',
             ],
         ]);
 
-        $data = json_decode($response->getBody()->getContents(), true);
+        $data = $response->toArray();
 
         if (!isset($data['access_token'])) {
             throw new \RuntimeException('Failed to retrieve OAuth2 access token.');
@@ -118,10 +127,9 @@ class HomeController extends AbstractController
         return $data['access_token'];
     }
 
-    // Metodi ausiliari (senza modifiche)
     private function verifyRecaptcha(string $captchaToken, string $clientIp): bool
     {
-        $recaptcha = new ReCaptcha($_ENV['GOOGLE_RECAPTCHA_SECRET_KEY']);
+        $recaptcha = new \ReCaptcha\ReCaptcha($_ENV['GOOGLE_RECAPTCHA_SECRET_KEY']);
         $response = $recaptcha->verify($captchaToken, $clientIp);
         return $response->isSuccess();
     }
@@ -151,6 +159,24 @@ class HomeController extends AbstractController
             'form' => $form->createView(),
             'modal' => $modalData,
             'site_key' => $_ENV['GOOGLE_RECAPTCHA_SITE_KEY'],
+        ]);
+    }
+
+    #[Route('/privacy', name: 'app_privacy')]
+    public function privacy(): Response
+    {
+        $email = 'info@ccp.be';
+        return $this->render('home/privacy.html.twig', [
+            'email' => $email,
+        ]);
+    }
+
+    #[Route('/terms', name: 'app_terms')]
+    public function terms(): Response
+    {
+        $email = 'info@ccp.be'; 
+        return $this->render('home/terms.html.twig', [
+            'email' => $email,
         ]);
     }
 }
